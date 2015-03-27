@@ -1,0 +1,149 @@
+<html>
+<head>
+	<title>Login</title>
+
+	<link rel="stylesheet" type="text/css" href="./bootstrap/css/bootstrap.min.css" />
+	<script type="text/javascript" src="http://code.jquery.com/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+
+
+	<link rel="stylesheet" type="text/css" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css">
+	<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/js/bootstrap-select.min.js"></script>
+	<script type="text/javascript" src="./bootstrap/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="./resources/style.css" />
+</head>
+<body class="logged-in">
+
+	<div class="dashboard-view">
+
+		<div class="container-fluid">
+
+			<div class="row">
+
+				<div class="col-md-6">
+					<div class="left">
+						
+						<div class="header text-center">
+							<span class="header-button hb-left">
+								<i class="fa fa-chevron-left"></i>
+							</span>
+							<h1>MOBART</h1>
+							<span class="header-button hb-right">
+								<i class="fa fa-search"></i>
+							</span>
+							<br style="clear:both;" />
+						</div>
+
+						<div class="profile-image text-center">
+							<div class=" spinner">
+								<i class="fa fa-check-circle"></i>
+							</div>
+
+							<div class="name">
+								<p class="title">
+									Finish
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="right">
+						<div class="to-do-replace">
+
+							<div class="upload-message text-center">
+								<p class="title">
+									You are now finished grading. Click previous to go back and review, or click finish to upload the graded project to iACCESS
+								</p>							
+							</div>
+
+
+						</div>
+
+						<div class="dashboard-btns">
+							<div class="text-center">
+
+								<div class="form-group">
+									<button class="btn btn-secondary">
+										Previous
+									</button>
+
+									<button class="btn btn-primary" data-toggle="modal" data-target="#upload-writing-modal">
+										Finish
+									</button>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+	<script type="text/javascript">
+		// To style all <select>s
+		$('select').selectpicker({
+			style: 'btn-select',
+      		size: 4
+		});
+	</script>
+
+
+<!-- Upload Art Modal -->
+<div class="modal fade" id="upload-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>
+        	How would you like to upload?
+        </p>
+      </div>
+      <div class="modal-footer">
+      	<div class="form-group">
+      		<button type="button" class="form-control btn btn-secondary" data-dismiss="modal">Dropbox</button>
+      	</div>
+
+      	<div class="form-group">
+      		<button type="button" class="form-control  btn btn-primary" data-dismiss="modal">System</button>
+      	</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Upload Writing Modal -->
+<div class="modal fade" id="upload-writing-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>
+        	How would you like to upload?
+        </p>
+      </div>
+      <div class="modal-footer">
+      	<div class="form-group">
+      		<button type="button" class="form-control btn btn-secondary" data-dismiss="modal">Dropbox</button>
+      	</div>
+
+      	<div class="form-group">
+      		<button type="button" class="form-control  btn btn-primary" data-dismiss="modal">System</button>
+      	</div>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

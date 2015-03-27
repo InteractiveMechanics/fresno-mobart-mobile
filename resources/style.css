@@ -1,0 +1,482 @@
+body.not-logged-in {
+	background: #51b6d2;
+}
+
+body.not-logged-in form.login-form {
+	margin: 100px auto 0;
+	width:350px;
+	background: #088eca;
+}
+
+form.login-form .header {
+	padding: 150px 30px 30px;
+	color:white;
+}
+
+form.login-form .input-area {
+	padding: 30px;
+	background:white;
+}
+
+form.login-form .input-area .sign-up-link {
+	text-transform: uppercase;
+}
+
+/** DASHBOARD **/
+
+.dashboard-view {
+
+}
+
+.dashboard-view .container-fluid {
+	
+}
+
+.dashboard-view .col-md-6 {
+	padding: 0px;
+}
+
+.dashboard-view .header {
+	height: 60px;
+	background-color: #3d7d8f;
+}
+
+.dashboard-view .header span.header-button {
+  	width: 80px;
+  	cursor: pointer;
+	height: 60px;
+	padding-left: 15px;
+}
+
+.dashboard-view .header span.hb-left {
+  	float: left;
+}
+
+.dashboard-view .header span.hb-right {
+	float: right;
+  	width: 60px !important;
+  	padding-right: 15px;
+}
+
+.dashboard-view .header span.header-button i {
+  	top: 50%;
+  	position: relative;
+  	color:white;
+  	transform: translateY(-50%);
+}
+
+.dashboard-view .header span.header-button:hover {
+  	background-color: #ffc61a;
+}
+
+.dashboard-view .header h1 {
+	font-weight: 400;
+	color:white;
+	font-size: 18px;
+	margin:0px;
+	padding-top: 17px;
+	display: inline-block;
+	left: 0;
+  	right: 0;
+  	position: absolute;
+}
+
+.dashboard-view .left, .right {
+	background:#51b6d2;
+	height:100%;
+}
+
+.dashboard-view .right {
+	background: white;
+	overflow-y: scroll;
+}
+
+.dashboard-view .profile-image {
+	position: relative;
+  	top: 40%;
+  	transform: translateY(-40%);
+}
+
+.dashboard-view .profile-image .image {
+	font-size: 60px;
+	text-align: center;
+	border-radius: 99999px;
+  	width: 175px;
+  	height: 175px;
+  	margin: 0 auto;
+}
+.dashboard-view .profile-image .default-image {
+	color: #51b6d2;
+	background-color: #ffffff;
+	border: solid 6px #97d3e4;
+}
+
+.dashboard-view .profile-image .add-image {
+	color: #ffffff;
+	border: solid 6px #97d3e4;
+	cursor: pointer;
+}
+
+.dashboard-view .profile-image .spinner {
+	font-size: 60px;
+	text-align: center;
+	color: #3d7d8f
+}
+
+.dashboard-view .profile-image .add-image:hover {
+	background-color: #97d3e4;
+	border-color: #ffffff;
+}
+
+.dashboard-view .profile-image .image i {
+  top: 50%;
+  position: relative;
+  transform: translateY(-50%);
+}
+
+.dashboard-view .profile-image .name p.title{
+	font-weight: 300;
+	color: #ffffff;
+	font-size: 24px;
+	margin-top:35px;
+}
+
+.dashboard-view .profile-image .name p.subtitle{
+	font-weight: 500;
+	color: #ffffff;
+	font-size: 16px;
+	margin:0px;
+}
+
+.dashboard-view .artwork-preview {
+	position: relative;
+  	top: 40%;
+  	transform: translateY(-40%);
+}
+
+.dashboard-view .artwork-preview .name p.title{
+	font-weight: 300;
+	color: #ffffff;
+	font-size: 24px;
+	margin-top:35px;
+}
+
+.dashboard-view .artwork-preview img {
+	border: solid 6px #97d3e4;
+}
+
+.dashboard-view .dashboard-btns {
+	position:absolute;
+    left:0px;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+    bottom:0;
+}
+
+.dashboard-view .dashboard-btns button {
+	margin-left:0px;
+	text-transform: uppercase;
+	padding: 20px 0px;
+	width: 250px;
+}
+
+.dashboard-view .to-do-replace {
+	padding: 30px 40px 30px 30px;
+}
+
+.dashboard-view .to-do-replace .form-group {
+	margin-bottom: 50px;
+}
+
+.dashboard-view .to-do-replace .btn-select {
+	margin: 0 auto;
+  	font-weight: 500;
+	font-size: 16px;
+	color: #aeaeae;
+	height: 60px;
+	border: solid 4px #e2e3e8;
+	outline:none;
+	border-radius: 0px;
+	background:white;
+	padding: 10px
+}
+
+.dashboard-view .to-do-replace .open .btn-select {
+	border-color: #c2c2c2;
+	box-shadow: 0 0 4px rgba(0,0,0,0.12);
+}
+
+.dashboard-view .to-do-replace .dropdown-menu {
+	border-radius: 0px;
+	padding: 0px;
+}
+
+.dashboard-view .to-do-replace .dropdown-menu > li > a {
+	color: #aeaeae;
+}
+
+.dashboard-view .to-do-replace .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+  background-color: white;
+  background-color: #c2c2c2;
+  background-image: none;
+  color:white;
+  text-align: left;
+  filter: none;
+}
+
+.dashboard-view .upload-message p.title {
+	font-weight: 300;
+	color: #001b37;
+	font-size: 24px;
+}
+
+.dashboard-view .to-do-replace ul {
+
+}
+
+.dashboard-view .to-do-replace ul li {
+	margin-bottom: 25px;
+}
+
+.dashboard-view .to-do-replace ul li div.list-item {
+	padding: 20px;
+	background-color:#e2e3e8;
+}
+
+.dashboard-view .to-do-replace ul li div.list-item .icon {
+  	top: 19%;
+	color: white;
+	transform: translateY(-19%);
+	left: 90%;
+	position: absolute;
+}
+
+.dashboard-view .to-do-replace ul li div.list-item .icon i {
+	font-size: 24px;
+	color: #3d7d8f;
+}
+
+.dashboard-view .to-do-replace ul li div.list-item h3.title {
+	font-weight: 300;
+	font-size: 24px;
+	color: #001b37;
+	margin: 0px;
+	margin-bottom: 15px;
+}
+
+.dashboard-view .to-do-replace ul li div.list-item p.li-label {
+	display: block;
+	margin: 0px;
+	font-weight: 500;
+	font-size: 16px;
+	color: #3d7d8f;
+}
+
+.dashboard-view .to-do-replace ul li div.list-item:hover {
+	background-color:#51b6d2;
+}
+
+.dashboard-view .to-do-replace ul li div.list-item:hover h3.title {
+	color:white;
+}
+
+.dashboard-view .to-do-replace ul li div.list-item:hover p.li-label {
+	color:white;
+}
+
+.dashboard-view .to-do-replace ul li div.list-item:hover .icon i {
+	color:white;
+}
+
+.dashboard-view .to-do-replace ul.thumbnail-list li {
+	margin: 0 25px 25px;
+}
+
+.dashboard-view .to-do-replace ul.thumbnail-list .thumbnail  {
+	width: 225px;
+	height: 225px;
+	border: solid 4px #aeaeae;
+	background-color: #e2e3e8;
+	border-radius: 0px;
+	padding: 0px;
+}
+
+.dashboard-view .to-do-replace ul.thumbnail-list .thumbnail  img {
+	width: 218px;
+	height: 218px;
+}
+
+.dashboard-view .to-do-replace ul.thumbnail-list .thumbnail .icon {
+	top: 50%;
+  	position: relative;
+  	color:white;
+  	transform: translateY(-50%);
+}
+.dashboard-view .to-do-replace ul.thumbnail-list .thumbnail .icon i {
+	font-size: 60px;
+	text-align: center;
+	color: #ffffff;
+
+}
+
+.dashboard-view .to-do-replace ul.thumbnail-list  p {
+	font-weight: 500;
+	font-size: 16px;
+	color: #3d7d8f;
+}
+
+/** Grade Project List **/
+
+.dashboard-view .to-do-replace ul.grade-project-list li {
+	margin: 0 5px 25px;
+}
+
+.dashboard-view .to-do-replace ul.grade-project-list .thumbnail  {
+	width: 125px;
+	border: solid 4px #aeaeae;
+	background-color: #e2e3e8;
+	border-radius: 0px;
+	padding: 0px;
+}
+
+.dashboard-view .to-do-replace ul.grade-project-list .thumbnail:hover  {
+	border: solid 4px #088eca;
+}
+
+.dashboard-view .to-do-replace ul.grade-project-list .thumbnail:hover img {
+	border-bottom: solid 4px #088eca;
+}
+
+.dashboard-view .to-do-replace ul.grade-project-list .thumbnail:hover span i {
+	display: block;
+}
+
+.dashboard-view .to-do-replace ul.grade-project-list .grade-info {
+	background: white;
+	height: 40px;
+	padding: 10px;
+}
+
+.dashboard-view .to-do-replace ul.grade-project-list .thumbnail  img {
+	width: 118px;
+	height: 118px;
+	border-bottom: solid 4px #aeaeae;
+}
+
+.dashboard-view .to-do-replace ul.grade-project-list .thumbnail:hover .overlay {
+	background-color: rgba(8,142,202,0.4);
+  	top: 0;
+  	left: 0;
+  	width: 118px;
+  	height: 115px;
+  	position: absolute;
+}
+
+.dashboard-view .to-do-replace ul.grade-project-list .thumbnail:hover .overlay span i {
+	color: white;
+  	background: #088eca;
+  	padding: 10px 8px;
+  	width: 34px;
+  	float: right;
+  	margin-top: 0px;
+}
+
+.dashboard-view .to-do-replace ul.grade-project-list .thumbnail span  {
+	font-size: 18px;
+	color:#aeaeae;
+}
+
+.dashboard-view .to-do-replace ul.grade-project-list .thumbnail span i {
+	color: #ffc61a;
+	display: none;
+	margin-top: 2px;
+}
+
+.bootstrap-select.btn-group .dropdown-menu {
+	border-color: #c2c2c2;
+	font-weight: 500;
+	font-size: 16px;
+	background-color: white;
+	box-shadow: 0 0 4px rgba(0,0,0,0.12);
+	color: #aeaeae;
+	border: solid 4px #e2e3e8;
+	margin-top:40px;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li {
+	padding: 10px 0;
+	font-weight: 500;
+	font-size: 13px;
+	color: #aeaeae;
+	color:white;
+	text-align: left;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li.selected >a {
+	color:white;
+}
+
+.bootstrap-select.btn-group .dropdown-menu li:hover {
+	color: #ffffff;
+	background-color: #c2c2c2;
+}
+/** helpers **/
+
+.btn-primary {
+	font-weight: 700;
+	font-size: 16px;
+	color: #ffffff;
+	background-color: #ffc61a;
+	border:none;
+	border-bottom: solid 4px
+	#e5b217;
+}
+
+.btn-primary:hover {
+	background-color: #f5b800;
+	border-color: #c59914;
+	color:white;
+}
+
+.btn-secondary {
+	font-weight: 700;
+	font-size: 16px;
+	color: #ffffff;
+	background-color: #c2c2c2;
+	border-bottom: solid 4px
+	#aeaeae;
+	border-radius: 0px;
+}
+
+.btn-secondary:hover {
+	background-color: #b0b0b0;
+	border-color: #9c9c9c;
+	color: white;
+}
+
+body .modal-dialog {
+    /* new custom width */
+    width:300px;
+    border-radius: 0px;
+}
+
+body .modal-dialog .modal-header, .modal-body, .modal-footer {
+	border: none;
+}
+
+body .modal-dialog .modal-body p {
+	font-weight: 300;
+	font-size: 24px;
+	color: #001b37;
+}
+body .modal-dialog .modal-content {
+	border-radius: 0px;
+}
+
+body .modal-footer button {
+	margin-left:0px;
+	text-transform: uppercase;
+	padding: 20px 0px 40px;
+	width: 250px;
+}
