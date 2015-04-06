@@ -1,0 +1,59 @@
+body {
+
+	&.not-logged-in {
+		background: #51b6d2;
+	}
+
+	.modal-dialog {
+	    width:300px;
+	    border-radius: 0px;
+
+	     .modal-body {
+	     	 p {
+				font-weight: 300;
+				font-size: 24px;
+				color: #001b37;
+			}
+	     }
+
+	     .modal-content {
+			border-radius: 0px;
+		}
+	}
+
+	.modal-footer {
+		button {
+			margin-left:0px;
+			text-transform: uppercase;
+			padding: 20px 0px 40px;
+			width: 250px;
+		}
+	}
+
+	.modal-dialog .modal-header, .modal-body, .modal-footer {
+		border: none;
+	}
+}
+
+form {
+	&.login-form {
+		margin: 100px auto 0;
+		width:350px;
+		background: #088eca;
+
+		.header {
+			padding: 150px 30px 80px;
+			color:white;
+		}
+
+		.input-area {
+			padding: 30px;
+			background:white;
+
+			.sign-up-link {
+				text-transform: uppercase;
+			}
+		}
+	}
+}
+

@@ -1,0 +1,94 @@
+/*** Helpers **/
+
+.btn-yellow {
+	font-weight: 700;
+	font-size: 16px;
+	color: #ffffff;
+	background-color: #ffc61a;
+	border:none;
+	border-bottom: solid 4px #e5b217;
+
+	&:hover {
+		background-color: #f5b800;
+		border-color: #c59914;
+		color:white;
+	}
+}
+
+
+
+.btn-secondary {
+	font-weight: 700;
+	font-size: 16px;
+	color: #ffffff;
+	background-color: #c2c2c2;
+	border-bottom: solid 4px #aeaeae;
+	border-radius: 0px;
+
+	&:hover {
+		background-color: #b0b0b0;
+		border-color: #9c9c9c;
+		color: white;
+	}
+}
+
+
+/**Bootstrap Select**/
+
+.bootstrap-select {
+	&.btn-group {
+		.dropdown-menu {
+			border-color: #c2c2c2;
+			font-weight: 500;
+			font-size: 16px;
+			background-color: white;
+			box-shadow: 0 0 4px rgba(0,0,0,0.12);
+			color: #aeaeae;
+			border: solid 4px #e2e3e8;
+			margin-top:40px;
+
+			li {
+				padding: 10px 0;
+				font-weight: 500;
+				font-size: 13px;
+				color: #aeaeae;
+				text-align: left;
+
+				&:hover {
+					color: #ffffff;
+					background-color: #c2c2c2;
+
+					a {
+						color: #ffffff;
+						background-color: #c2c2c2;
+					}
+				}
+
+				&.selected  {
+					color: #ffffff;
+					background-color: #c2c2c2;
+
+					&:hover {
+						a {
+							color: #aeaeae;
+						}
+					}
+
+					> a {
+						color:white;
+					}
+				}
+
+				&:hover {
+					color: #ffffff;
+					background-color: #c2c2c2;
+
+					a {
+						color: #ffffff;
+						background-color: #c2c2c2;
+					}
+				}
+			}
+		}
+	}
+}

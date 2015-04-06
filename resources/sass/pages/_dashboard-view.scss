@@ -1,0 +1,51 @@
+/**DASHBOARD VIEW**/
+
+.dashboard-view {
+
+	.container-fluid {
+	
+	}
+
+	.col-md-6 {
+		padding: 0px;
+	}
+
+	.dashboard-btns {
+		position:absolute;
+	    left:0px;
+	    right:0;
+	    margin-left:auto;
+	    margin-right:auto;
+	    bottom:0;
+
+	    button {
+			text-transform: uppercase;
+			padding: 15px 0px;
+			width: 200px;
+			margin-left: 30px;
+		  	margin-right: 30px;
+		}
+	}
+
+	.right {
+		background: white;
+		overflow-y: scroll;
+		height:100%;
+	}
+
+	.left {
+		background:#51b6d2;
+		height:100%;
+	}
+
+	.upload-message {
+		
+		p {
+			&.title {
+				font-weight: 300;
+				color: #001b37;
+				font-size: 24px;
+			}
+		}
+	}
+}

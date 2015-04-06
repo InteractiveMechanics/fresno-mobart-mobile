@@ -1,0 +1,50 @@
+/**HEADER**/
+
+.header {
+	height: 60px;
+	background-color: #3d7d8f;
+
+	h1 {
+		font-weight: 400;
+		color:white;
+		font-size: 18px;
+		margin:0px;
+		padding-top: 17px;
+		display: inline-block;
+		left: 0;
+	  	right: 0;
+	  	position: absolute;
+	}
+
+	span {
+		&.header-button {
+		  	width: 80px;
+		  	cursor: pointer;
+			height: 60px;
+			padding-left: 15px;
+		}
+
+		&.hb-left {
+		  	float: left;
+		}
+
+		&.hb-right {
+			float: right;
+		  	width: 60px !important;
+		  	padding-right: 15px;
+		}
+
+		&.header-button {
+			i {
+			  	top: 50%;
+			  	position: relative;
+			  	color:white;
+			  	transform: translateY(-50%);
+			}
+
+			&:hover {
+			  	background-color: #ffc61a;
+			}
+		}
+	}
+}
