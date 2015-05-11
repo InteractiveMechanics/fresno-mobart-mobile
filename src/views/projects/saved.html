@@ -1,0 +1,52 @@
+<div class="col-md-6">
+	<div class="left">
+		
+		<div class="header text-center">
+			<a href="./#dashboard">
+				<span class="header-button hb-left">
+					<i class="fa fa-chevron-left"></i>
+				</span>
+			</a>
+
+			<h1>MOBART</h1>
+
+			<a href="./#dashboard">
+				<span class="header-button hb-right">
+					<i class="fa fa-search"></i>
+				</span>
+			</a>
+			<br style="clear:both;" />
+		</div>
+
+		<div class="profile-image text-center">
+			<div class=" spinner">
+				<i class="fa fa-spinner fa-spin"></i>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="col-md-6">
+	<div class="right">
+		<div class="to-do-replace">
+
+			<ul class="list-unstyled">
+
+				<li ng-repeat="saved_project in saved_projects">
+					<div class="list-item" ng-click="open_saved_project(saved_project.project_id)">
+						<h3 class="title">
+							{{saved_project.student_name}}
+						</h3>
+						<p class="li-label">
+							{{saved_project.class_name}}
+						</p>
+						<p class="li-label">
+							{{saved_project.project_name}}
+						</p>
+					</div>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+</div>

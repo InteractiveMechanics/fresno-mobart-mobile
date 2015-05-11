@@ -1,0 +1,138 @@
+<div class="col-md-6">
+	<div class="left">
+		
+		<div class="header text-center">
+			<a href="./#dashboard">
+				<span class="header-button hb-left">
+					<i class="fa fa-chevron-left"></i>
+				</span>
+			</a>
+			<h1>MOBART</h1>
+			<br style="clear:both;" />
+		</div>
+
+		<div class="profile-image text-center">
+
+			<div class="upload-form">
+				<div class="image add-image" data-toggle="modal" data-target="#upload-modal">
+					<i class="fa fa-plus"></i>
+				</div>
+
+				<div class="name">
+					<p class="title">
+						Add Image
+					</p>
+					<p style="margin:0 auto; visibility:hidden; width:225px; font-size:16px; color:white;">
+						<input type="file" />
+					</p>
+				</div>
+			</div>
+			
+			<div class="uploading-area" style="display:none;">
+				<div class=" spinner">
+					<i class="fa fa-spinner fa-spin"></i>
+				</div>
+
+				<div class="name">
+					<p class="title">
+						Uploading Artwork to iACCESS <br /> Please wait.
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="col-md-6">
+	<div class="right">
+
+		<div class="to-do-replace">
+			<div class="form-group">
+				<select class="form-control"  multiple title='Class'>
+					<option>4th Grade Theatre - 01</option>
+				    <option>4th Grade Theatre - 02</option>
+				    <option>4th Grade Theatre - 03</option>
+				  </select>
+			</div>
+
+			<div class="form-group">
+				<select class="form-control"  multiple title='Student'>
+					<option>4th Grade Theatre - 01</option>
+				    <option>4th Grade Theatre - 02</option>
+				    <option>4th Grade Theatre - 03</option>
+				  </select>
+			</div>
+
+			<div class="form-group">
+				<select class="form-control"  multiple title='Project'>
+					<option>4th Grade Theatre - 01</option>
+				    <option>4th Grade Theatre - 02</option>
+				    <option>4th Grade Theatre - 03</option>
+				  </select>
+			</div>
+
+			<div class="checkbox">
+				<label>
+				  <input type="checkbox"> Project Incomplete
+				</label>
+			</div>
+		</div>
+
+		<div class="dashboard-btns">
+			<div class="text-center">
+
+				<div class="form-group">
+					<button ng-click="dashboard_redirect();" class="btn btn-secondary">
+						Cacnel
+					</button>
+
+					<button ng-click="upload_artwork();" class="btn btn-yellow">
+						Finish
+					</button>
+				</div>
+
+			</div>
+		</div>
+
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="upload-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+      </div>
+      <div class="modal-body">
+        <p>
+        	How would you like to upload?
+        </p>
+      </div>
+      <div class="modal-footer">
+      	<div class="form-group">
+      		<button type="button"  class="upload-btn form-control  btn btn-yellow" data-dismiss="modal">System</button>
+      	</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+	// To style all <select>s
+	$('select').selectpicker({
+		style: 'btn-select',
+  		size: 4
+	});
+
+	$('button.upload-btn').click(function(){
+		$('input[type=file]').click();
+	});
+
+	$('input[type=file]').change( function(){
+	    var file_name = $(this).val();
+	    var arr = file_name.split("\\");
+
+	    $('.profile-image div.name p.title').text(arr[arr.length - 1]);
+	});
+</script>
