@@ -7,9 +7,11 @@ var sampleApp = angular.module('sampleApp', ['ngRoute']);
 
 sampleApp.run(function($rootScope) {
   $rootScope.dashboard_redirect = function() {
-    var path = window.location.origin + window.location.pathname;
-    path += "#/dashboard";
-    window.location.href = path;
+    //var path = window.location.origin + window.location.pathname;
+    //path += "#/dashboard";
+    //window.location.href = path;
+
+    $location.path('dashboard');
   };
 });
 
@@ -61,21 +63,23 @@ sampleApp.config(['$routeProvider',
       });
 }]);
 
-sampleApp.controller('LoginController', function($scope) {
+sampleApp.controller('LoginController', function($scope, $location) {
   $scope.show_error_message = false;
   $scope.forms = {};
 
   $scope.login = function() {
     //$scope.show_error_message = true;
     //$scope.error_message = 'Error';
-    var path = window.location.origin + window.location.pathname;
-    path += "#/dashboard";
-    window.location.href = path;
+    //var path = window.location.origin + window.location.pathname;
+    //path += "#/dashboard";
+    //window.location.href = path;
+
+    $location.path('dashboard');
   };
 
 }); 
 
-sampleApp.controller('DashboardController', function($scope) {
+sampleApp.controller('DashboardController', function($scope, $location) {
   $scope.full_name = 'Max Power';
 
   $scope.new_project = function() {
@@ -83,7 +87,8 @@ sampleApp.controller('DashboardController', function($scope) {
     path += "#/new-projects";
 
     $('.modal-backdrop').remove();
-    window.location.href = path; 
+    //window.location.href = path; 
+    $location.path('new-projects');
   };
 
   $scope.saved_projects = function() {
@@ -91,27 +96,30 @@ sampleApp.controller('DashboardController', function($scope) {
     path += "#/saved-projects";
 
     $('.modal-backdrop').remove();
-    window.location.href = path; 
+    //window.location.href = path; 
+    $location.path('saved-projects');
   };
 }); 
 
-sampleApp.controller('GradeController', function($scope) {
+sampleApp.controller('GradeController', function($scope, $location) {
     $scope.grade_project = function() {
       var path = window.location.origin + window.location.pathname;
       path += "#/finish-grading/" + 13243;
 
       $('.modal-backdrop').remove();
-      window.location.href = path; 
+      //window.location.href = path;
+      $location.path('finish-grading/1224'); 
     };
 }); 
 
-sampleApp.controller('FinishGradingController', function($scope) {
+sampleApp.controller('FinishGradingController', function($scope, $location) {
   $scope.back_to_grading = function() {
     var path = window.location.origin + window.location.pathname;
     path += "#/grade-project/" + 12324;
 
     $('.modal-backdrop').remove();
-    window.location.href = path;
+    //window.location.href = path;
+    $location.path('grade-project/12421');
   };
 
   $scope.finished_grading = function() {
@@ -119,11 +127,12 @@ sampleApp.controller('FinishGradingController', function($scope) {
     path += "#/dashboard";
 
     $('.modal-backdrop').remove();
-    window.location.href = path;
+    //window.location.href = path;
+    $location.path('dashboard');
   };
 }); 
 
-sampleApp.controller('ArtUploadedController', function($scope) {
+sampleApp.controller('ArtUploadedController', function($scope, $location) {
   $scope.upload_writing = function() {
     $('.upload-form').hide();
     $('.to-do-replace').hide();
@@ -134,21 +143,23 @@ sampleApp.controller('ArtUploadedController', function($scope) {
     path += "#/writing-uploaded/" + 13243;
 
     $('.modal-backdrop').remove();
-    window.location.href = path; 
+    //window.location.href = path;
+    $location.path('writing-uploaded/12131'); 
   };  
 }); 
 
-sampleApp.controller('WritingUploadedController', function($scope) {
+sampleApp.controller('WritingUploadedController', function($scope, $location) {
   $scope.grade_now = function() {
     var path = window.location.origin + window.location.pathname;
     path += "#/grade-project/" + 12324;
 
     $('.modal-backdrop').remove();
-    window.location.href = path;
+    //window.location.href = path;
+    $location.path('grade-project/22311');
   };
 }); 
 
-sampleApp.controller('ProjectDetailController', function($scope) {
+sampleApp.controller('ProjectDetailController', function($scope, $location) {
     $scope.project = {
       'image_url': 'http://i.imgur.com/JLxuCgr.jpg',
       'writing_url': '',
@@ -164,7 +175,8 @@ sampleApp.controller('ProjectDetailController', function($scope) {
       path += "#/saved-projects";
 
       $('.modal-backdrop').remove();
-      window.location.href = path;
+      //window.location.href = path;
+      $location.path('saved-projects');
     };
 
     $scope.grade_now = function() {
@@ -172,11 +184,12 @@ sampleApp.controller('ProjectDetailController', function($scope) {
       path += "#/grade-project/" + 12324;
 
       $('.modal-backdrop').remove();
-      window.location.href = path;
+      //window.location.href = path;
+      $location.path('grade-project/1213');
     }
 }); 
 
-sampleApp.controller('NewProjectController', function($scope) {
+sampleApp.controller('NewProjectController', function($scope, $location) {
   $scope.upload_artwork = function() {
     $('.upload-form').hide();
     $('.to-do-replace').hide();
@@ -187,11 +200,12 @@ sampleApp.controller('NewProjectController', function($scope) {
     path += "#/art-uploaded/" + 13243;
 
     $('.modal-backdrop').remove();
-    window.location.href = path; 
+    //window.location.href = path; 
+    $location.path('art-uploaded/124');
   };
 });
  
-sampleApp.controller('ProjectController', function($scope) {
+sampleApp.controller('ProjectController', function($scope, $location) {
   $scope.saved_projects = [
     {
       'student_name': 'Katie Smith',
@@ -248,7 +262,8 @@ sampleApp.controller('ProjectController', function($scope) {
     path += "#/project-detail/" + id;
 
     $('.modal-backdrop').remove();
-    window.location.href = path;
+    //window.location.href = path;
+    $location.path('project-detail/1231');
   }; 
 
 });
