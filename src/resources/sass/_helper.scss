@@ -7,6 +7,7 @@
 	background-color: #ffc61a;
 	border:none;
 	border-bottom: solid 4px #e5b217;
+	border-radius:0px;
 
 	&:hover {
 		background-color: #f5b800;
@@ -24,6 +25,7 @@
 	background-color: #c2c2c2;
 	border-bottom: solid 4px #aeaeae;
 	border-radius: 0px;
+	border-radius:0px;
 
 	&:hover {
 		background-color: #b0b0b0;
@@ -31,6 +33,8 @@
 		color: white;
 	}
 }
+
+
 
 
 /**Bootstrap Select**/

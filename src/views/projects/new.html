@@ -1,4 +1,4 @@
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6">
 	<div class="left">
 		
 		<div class="header text-center">
@@ -7,7 +7,7 @@
 					<i class="fa fa-chevron-left"></i>
 				</span>
 			</a>
-			<h1>MOBART</h1>
+			<h1>{{title}}</h1>
 			<br style="clear:both;" />
 		</div>
 
@@ -43,12 +43,12 @@
 	</div>
 </div>
 
-<div class="col-md-6">
+<div class="col-md-6 col-sm-6">
 	<div class="right">
 
 		<div class="to-do-replace">
 			<div class="form-group">
-				<select class="form-control"  multiple title='Class'>
+				<select class="form-control" title='Class'>
 					<option>4th Grade Theatre - 01</option>
 				    <option>4th Grade Theatre - 02</option>
 				    <option>4th Grade Theatre - 03</option>
@@ -56,7 +56,7 @@
 			</div>
 
 			<div class="form-group">
-				<select class="form-control"  multiple title='Student'>
+				<select class="form-control" title='Student'>
 					<option>4th Grade Theatre - 01</option>
 				    <option>4th Grade Theatre - 02</option>
 				    <option>4th Grade Theatre - 03</option>
@@ -64,7 +64,7 @@
 			</div>
 
 			<div class="form-group">
-				<select class="form-control"  multiple title='Project'>
+				<select class="form-control" title='Project'>
 					<option>4th Grade Theatre - 01</option>
 				    <option>4th Grade Theatre - 02</option>
 				    <option>4th Grade Theatre - 03</option>
@@ -83,7 +83,7 @@
 
 				<div class="form-group">
 					<button ng-click="dashboard_redirect();" class="btn btn-secondary">
-						Cacnel
+						Cancel
 					</button>
 
 					<button ng-click="upload_artwork();" class="btn btn-yellow">
@@ -97,27 +97,6 @@
 	</div>
 </div>
 
-<!-- Modal -->
-<div class="modal fade" id="upload-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-      </div>
-      <div class="modal-body">
-        <p>
-        	How would you like to upload?
-        </p>
-      </div>
-      <div class="modal-footer">
-      	<div class="form-group">
-      		<button type="button"  class="upload-btn form-control  btn btn-yellow" data-dismiss="modal">System</button>
-      	</div>
-      </div>
-    </div>
-  </div>
-</div>
-
 <script type="text/javascript">
 	// To style all <select>s
 	$('select').selectpicker({
@@ -125,7 +104,7 @@
   		size: 4
 	});
 
-	$('button.upload-btn').click(function(){
+	$('.add-image').click(function(){
 		$('input[type=file]').click();
 	});
 

@@ -1,18 +1,13 @@
 <div class="col-md-6 col-sm-6">
 	<div class="left">
-		
-		<div class="header text-center">
-			<h1>{{title}}</h1>
-		</div>
-
 		<div class="profile-image text-center">
-			<div class="image default-image">
-				<i class="fa fa-user"></i>
+			<div class=" spinner">
+				<i class="fa fa-check-circle"></i>
 			</div>
 
 			<div class="name">
 				<p class="title">
-					{{full_name}}
+					Grade Project Uploaded!
 				</p>
 			</div>
 		</div>
@@ -21,22 +16,31 @@
 
 <div class="col-md-6 col-sm-6">
 	<div class="right">
+		<div class="to-do-replace">
+
+			<div class="upload-message text-center">
+				<p class="title">
+					Would you like to grade the project now?
+				</p>							
+			</div>
+
+
+		</div>
 
 		<div class="dashboard-btns">
 			<div class="text-center">
 
 				<div class="form-group">
-					<button ng-click="saved_projects();" class="btn btn-secondary">
+					<button ng-click="go_back_to_projects();"  class="btn btn-secondary">
 						Saved Projects
 					</button>
 
-					<button ng-click="new_project();" class="btn btn-yellow">
-						New Projects
+					<button ng-click="dashboard_redirect();" class="btn btn-yellow">
+						Home
 					</button>
 				</div>
 
 			</div>
 		</div>
-
 	</div>
 </div>

@@ -23,6 +23,32 @@
     border-color: #9c9c9c;
     color: white; }
 
+.form-group button {
+    text-transform: uppercase;
+    padding: 15px 0px;
+    width: 100%;
+    border-radius: 0px; }
+
+.form-control {
+  border: none;
+  border-bottom: solid 1px #aeaeae;
+  border-radius: 0px;
+  box-shadow: none;
+  color:#aeaeae;
+}
+
+.exmplar-text label {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: left;
+  color: #3d7d8f;
+}
+
+input.form-control:focus{
+  color: #088eca;
+  border-color: #088eca;
+}
+
 /**Bootstrap Select**/
 .bootstrap-select.btn-group .dropdown-menu {
   border-color: #c2c2c2;
@@ -106,16 +132,16 @@ form.login-form {
     right: 0;
     position: absolute; }
   .header span.header-button {
-    width: 80px;
+    width: 60px;
     cursor: pointer;
-    height: 60px;
-    padding-left: 15px; }
+    z-index: 9999999999999;
+    position: relative;
+    height: 60px; }
   .header span.hb-left {
     float: left; }
   .header span.hb-right {
     float: right;
-    width: 60px !important;
-    padding-right: 15px; }
+    width: 60px !important; }
   .header span.header-button i {
     top: 50%;
     position: relative;
@@ -133,16 +159,18 @@ form.login-form {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  bottom: 0; }
+  bottom: 30; }
   .dashboard-view .dashboard-btns button {
     text-transform: uppercase;
     padding: 15px 0px;
-    width: 200px;
-    margin-left: 30px;
-    margin-right: 30px; }
+    width: 285px;
+    margin-left: 10px;
+    border-radius: 0px;
+    margin-right: 10px; }
 .dashboard-view .right {
   background: white;
   overflow-y: scroll;
+  padding: 20px;
   height: 100%; }
 .dashboard-view .left {
   background: #51b6d2;
@@ -307,6 +335,29 @@ form.login-form {
           width: 34px;
           float: right;
           margin-top: 0px; }
+
+
+  .to-do-replace ul.grade-project-list li.active .thumbnail {
+      border: solid 4px #088eca; }
+      .to-do-replace ul.grade-project-list li.active .thumbnail img {
+        border-bottom: solid 4px #088eca; }
+      .to-do-replace ul.grade-project-list li.active .thumbnail span i {
+        display: block; }
+      .to-do-replace ul.grade-project-list li.active .thumbnail .overlay {
+        background-color: rgba(8, 142, 202, 0.4);
+        top: 0;
+        left: 0;
+        width: 118px;
+        height: 115px;
+        position: absolute; }
+        .to-do-replace ul.grade-project-list li.active .thumbnail .overlay span i {
+          color: white;
+          background: #088eca;
+          padding: 10px 8px;
+          width: 34px;
+          float: right;
+          margin-top: 0px; }
+
   .to-do-replace ul.grade-project-list .grade-info {
     background: white;
     height: 40px;

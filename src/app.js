@@ -5,7 +5,7 @@ var sampleApp = angular.module('sampleApp', ['ngRoute']);
 //Uri /AddNewOrder -> template add_order.html and Controller AddOrderController
 //Uri /ShowOrders -> template show_orders.html and Controller AddOrderController
 
-sampleApp.run(function($rootScope) {
+sampleApp.run(function($rootScope, $location) {
   $rootScope.dashboard_redirect = function() {
     //var path = window.location.origin + window.location.pathname;
     //path += "#/dashboard";
@@ -58,6 +58,10 @@ sampleApp.config(['$routeProvider',
         templateUrl: 'src/views/grade/finish.html',
         controller: 'FinishGradingController'
       }).
+      when('/project-uploaded', {
+        templateUrl: 'src/views/projects/project-uploaded.html',
+        controller: 'ProjectUploadController'
+      }).
       otherwise({
         redirectTo: '/login'
       });
@@ -81,6 +85,7 @@ sampleApp.controller('LoginController', function($scope, $location) {
 
 sampleApp.controller('DashboardController', function($scope, $location) {
   $scope.full_name = 'Max Power';
+  $scope.title = "MOBART";
 
   $scope.new_project = function() {
     var path = window.location.origin + window.location.pathname;
@@ -105,11 +110,19 @@ sampleApp.controller('GradeController', function($scope, $location) {
     $scope.grade_project = function() {
       var path = window.location.origin + window.location.pathname;
       path += "#/finish-grading/" + 13243;
-
-      $('.modal-backdrop').remove();
       //window.location.href = path;
       $location.path('finish-grading/1224'); 
     };
+
+    $scope.go_back_to_projects = function() {
+      $location.path('saved-projects'); 
+    }
+});
+
+sampleApp.controller('ProjectUploadController', function($scope, $location) {
+    $scope.go_back_to_projects = function() {
+      $location.path('saved-projects'); 
+    }
 }); 
 
 sampleApp.controller('FinishGradingController', function($scope, $location) {
@@ -123,12 +136,7 @@ sampleApp.controller('FinishGradingController', function($scope, $location) {
   };
 
   $scope.finished_grading = function() {
-    var path = window.location.origin + window.location.pathname;
-    path += "#/dashboard";
-
-    $('.modal-backdrop').remove();
-    //window.location.href = path;
-    $location.path('dashboard');
+    $location.path('project-uploaded');
   };
 }); 
 
@@ -143,7 +151,10 @@ sampleApp.controller('ArtUploadedController', function($scope, $location) {
     path += "#/writing-uploaded/" + 13243;
 
     $('.modal-backdrop').remove();
-    //window.location.href = path;
+    $location.path('grade-project/22311'); 
+  }; 
+
+  $scope.go_to_grade_now = function() {
     $location.path('writing-uploaded/12131'); 
   };  
 }); 
@@ -190,6 +201,130 @@ sampleApp.controller('ProjectDetailController', function($scope, $location) {
 }); 
 
 sampleApp.controller('NewProjectController', function($scope, $location) {
+
+  $scope.project_list = [
+    {
+      'name':'Project - 01 (Theatre)'
+    },
+    {
+      'name':'Project - 01 (Visual Arts)'
+    }
+  ];
+
+  $scope.class_list = [
+    {
+      'name':'4th Grade Theatre - 01'
+    },
+    {
+      'name':'4th Grade Visual Arts - 01'
+    }
+  ];
+
+  $scope.student_list = [
+    {
+      'name': 'Abbot, Jared'
+    },
+    {
+      'name': 'Alfaro, Adriana'
+    },
+    {
+      'name': 'Anderson, Ashley'
+    },
+    {
+      'name': 'Ashley, Sean'
+    },
+    {
+      'name': 'Baggot, Erin'
+    },
+    {
+      'name': 'Brandt, Zachary'
+    },
+    {
+      'name': 'Cho, Joan'
+    },
+    {
+      'name': 'Clure, Graham'
+    },
+    {
+      'name': 'Conti, Gregory'
+    },
+    {
+      'name': 'Dowdy, Jamin'
+    },
+    {
+      'name': 'Eisler, Jacob'
+    },
+    {
+      'name': 'Faller, Julie'
+    },
+    {
+      'name': 'Foster, Chase'
+    },
+    {
+      'name': 'Gill, Michael'
+    },
+    {
+      'name': 'Grossman, Shelby'
+    },
+    {
+      'name': 'Hall, Andrew'
+    },
+    {
+      'name': 'Hinshelwood, Bradley'
+    },
+    {
+      'name': 'Kaufman, Aaron'
+    },
+    {
+      'name': 'Kimlee, Sungho'
+    },
+    {
+      'name': 'Kruszewska, Dominika'
+    },
+    {
+      'name': 'Koss, Daniel'
+    },
+    {
+      'name': 'Lall, Ranjit'
+    },
+    {
+      'name': 'Landeau, David'
+    },
+    {
+      'name': 'Lastra-Anado, Carlos'
+    },
+    {
+      'name': 'Latura, Audrey'
+    },
+    {
+      'name': 'Lebovitz, Adam'
+    },
+    {
+      'name': 'Lee, Boram'
+    },
+    {
+      'name': 'Lillios, Nicholas'
+    },
+    {
+      'name': 'Lucas, Christopher'
+    },
+    {
+      'name': 'Luna, Joseph'
+    },
+    {
+      'name': 'Mabud, Rakeen'
+    },
+    {
+      'name': 'Smith, Katie'
+    },
+    {
+      'name': 'Smith, Kevin'
+    },
+    {
+      'name': 'Thompson, William'
+    }
+  ];
+
   $scope.upload_artwork = function() {
     $('.upload-form').hide();
     $('.to-do-replace').hide();
@@ -263,7 +398,7 @@ sampleApp.controller('ProjectController', function($scope, $location) {
 
     $('.modal-backdrop').remove();
     //window.location.href = path;
-    $location.path('project-detail/1231');
+    $location.path('grade-project/1213');
   }; 
 
 });
