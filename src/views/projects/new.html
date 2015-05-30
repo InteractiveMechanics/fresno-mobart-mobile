@@ -52,7 +52,7 @@
 		<div class="to-do-replace" ng-controller="NewProjectController">
 			<div class="form-group">
 				<select class="form-control" 
-						ng-options="project.name for project in project_list track by project.id" 
+						ng-options="class.name for class in class_list track by class.name" 
 						ng-model="selected">
 					<option value="" ng-if="false"></option>
 				</select>
@@ -68,7 +68,7 @@
 
 			<div class="form-group">
 				<select class="form-control" 
-						ng-options="class.name for class in class_list track by class.name" 
+						ng-options="project.name for project in project_list track by project.id" 
 						ng-model="selected">
 						<option value="" ng-if="false"></option>
 				  </select>
