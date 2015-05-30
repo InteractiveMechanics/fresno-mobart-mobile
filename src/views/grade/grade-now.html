@@ -15,7 +15,7 @@
 		</div>
 
 		<div class="profile-image text-center">
-			<a class=" img-lightbox" href="http://i.imgur.com/NxVpOW4.jpg" data-lightbox="image-1"><img src="http://i.imgur.com/NxVpOW4.jpg" width="45%"></a>
+			<a class="img-lightbox" href="http://i.imgur.com/NxVpOW4.jpg" data-lightbox="image-1"><img src="http://i.imgur.com/NxVpOW4.jpg" class="img-class" width="45%"></a>
 		</div>
 	</div>
 </div>
@@ -33,93 +33,23 @@
 
 			<ul class="list-inline grade-project-list text-center">
 
-				<li data-exmplar="This is a short description of exemplar #1. This will act as a seconday validation if a teacher needs information beyond the thumbnail. We should keep it to one or two sentences.">
-					<div class="thumbnail">
+				<li ng-repeat="v in visual_exmps">
+					<div class="thumbnail" data-exmplar="{{v.exmplars}}">
 						<div style="position:relative">
-							<img src="http://upload.wikimedia.org/wikipedia/commons/8/81/Linea_1.png" />
+							<img src="{{v.thumbnail}}" />
 
 							<div class="overlay">
-								<span style="font-size: 18px; color: #ffffff; background-color: #088eca;">
-									<i style="color:white;" class="fa fa-search"></i>
-								</span>
+								<a href="{{v.source_image}}" data-lightbox="image-{{v.id}}">
+									<span style="font-size: 18px; color: #ffffff; background-color: #088eca;">
+										<i style="color:white;" class="fa fa-search"></i>
+									</span>
+								</a>
 							</div>
 						</div>
 
 						<div class="grade-info">
 							<span style="pull-left">
-								1
-							</span>
-
-							<span class="pull-right">
-								<i class="fa fa-check-circle"></i>
-							</span>
-						</div>
-					</div>
-				</li>
-
-				<li data-exmplar="This is a short description of exemplar #2. This will act as a seconday validation if a teacher needs information beyond the thumbnail. We should keep it to one or two sentences.">
-					<div class="thumbnail">
-						<div style="position:relative">
-							<img src="http://upload.wikimedia.org/wikipedia/commons/c/ca/Linea_2.png" />
-
-							<div class="overlay">
-								<span style="font-size: 18px; color: #ffffff; background-color: #088eca;">
-									<i style="color:white;" class="fa fa-search"></i>
-								</span>
-							</div>
-						</div>
-
-						<div class="grade-info">
-							<span style="pull-left">
-								2
-							</span>
-
-							<span class="pull-right">
-								<i class="fa fa-check-circle"></i>
-							</span>
-						</div>
-					</div>
-				</li>
-
-				<li data-exmplar="This is a short description of exemplar #3. This will act as a seconday validation if a teacher needs information beyond the thumbnail. We should keep it to one or two sentences.">
-					<div class="thumbnail">
-						<div style="position:relative">
-							<img src="http://upload.wikimedia.org/wikipedia/commons/2/26/MRT_Singapore_Destination_3.png" />
-
-							<div class="overlay">
-								<span style="font-size: 18px; color: #ffffff; background-color: #088eca;">
-									<i style="color:white;" class="fa fa-search"></i>
-								</span>
-							</div>
-						</div>
-
-						<div class="grade-info">
-							<span style="pull-left">
-								3
-							</span>
-
-							<span class="pull-right">
-								<i class="fa fa-check-circle"></i>
-							</span>
-						</div>
-					</div>
-				</li>
-
-				<li data-exmplar="This is a short description of exemplar #4. This will act as a seconday validation if a teacher needs information beyond the thumbnail. We should keep it to one or two sentences.">
-					<div class="thumbnail">
-						<div style="position:relative">
-							<img src="http://upload.wikimedia.org/wikipedia/commons/c/ce/Linea_4.png" />
-
-							<div class="overlay">
-								<span style="font-size: 18px; color: #ffffff; background-color: #088eca;">
-									<i style="color:white;" class="fa fa-search"></i>
-								</span>
-							</div>
-						</div>
-
-						<div class="grade-info">
-							<span style="pull-left">
-								4
+								{{v.id}}
 							</span>
 
 							<span class="pull-right">
@@ -160,14 +90,22 @@
 
 <script type="text/javascript">
 	
-	$('ul.grade-project-list li').click(function(){
-		$('ul.grade-project-list li').removeClass('active');
-		$(this).addClass('active');
-		var exmplar = $(this).data('exmplar');
+	$(document).ready(function(){
+		var img = window.localStorage.getItem('temp_image');
+		$('a.img-lightbox').attr('href', img);
+		$('img.img-class').attr('src', img);
+	});
 
-		$('div.exmplar-text label').text(exmplar);
+	setTimeout(function(){
+		$('.thumbnail').click(function(){
+			$('ul.grade-project-list li').removeClass('active');
+			$(this).parent().addClass('active');
+			var exmplar = $(this).data('exmplar');
 
-	})
+			$('div.exmplar-text label').text(exmplar);
+
+		});
+	}, 0);
 
 	$('span.search-button').click(function(){
 		$('a.img-lightbox').click();

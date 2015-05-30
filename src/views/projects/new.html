@@ -19,17 +19,20 @@
 				</div>
 
 				<div class="name">
+					<div class="img-area">
+
+					</div>
 					<p class="title">
 						Add Image
 					</p>
 					<p style="margin:0 auto; visibility:hidden; width:225px; font-size:16px; color:white;">
-						<input type="file" />
+						<input id="art-upload-form" type="file" />
 					</p>
 				</div>
 			</div>
 			
 			<div class="uploading-area" style="display:none;">
-				<div class=" spinner">
+				<div class="spinner">
 					<i class="fa fa-spinner fa-spin"></i>
 				</div>
 
@@ -46,28 +49,28 @@
 <div class="col-md-6 col-sm-6">
 	<div class="right">
 
-		<div class="to-do-replace">
+		<div class="to-do-replace" ng-controller="NewProjectController">
 			<div class="form-group">
-				<select class="form-control" title='Class'>
-					<option>4th Grade Theatre - 01</option>
-				    <option>4th Grade Theatre - 02</option>
-				    <option>4th Grade Theatre - 03</option>
+				<select class="form-control" 
+						ng-options="project.name for project in project_list track by project.id" 
+						ng-model="selected">
+					<option value="" ng-if="false"></option>
+				</select>
+			</div>
+
+			<div class="form-group student-dropdown">
+				<select class="form-control" 
+						ng-options="student.name for student in student_list track by student.name" 
+						ng-model="selected">
+					<option value="" ng-if="false"></option>
 				  </select>
 			</div>
 
 			<div class="form-group">
-				<select class="form-control" title='Student'>
-					<option>4th Grade Theatre - 01</option>
-				    <option>4th Grade Theatre - 02</option>
-				    <option>4th Grade Theatre - 03</option>
-				  </select>
-			</div>
-
-			<div class="form-group">
-				<select class="form-control" title='Project'>
-					<option>4th Grade Theatre - 01</option>
-				    <option>4th Grade Theatre - 02</option>
-				    <option>4th Grade Theatre - 03</option>
+				<select class="form-control" 
+						ng-options="class.name for class in class_list track by class.name" 
+						ng-model="selected">
+						<option value="" ng-if="false"></option>
 				  </select>
 			</div>
 
@@ -99,10 +102,15 @@
 
 <script type="text/javascript">
 	// To style all <select>s
-	$('select').selectpicker({
-		style: 'btn-select',
-  		size: 4
-	});
+	
+	setTimeout(function(){
+		$('select').selectpicker({
+			style: 'btn-select',
+	  		size: 4
+		});
+	}, 0);
+
+	
 
 	$('.add-image').click(function(){
 		$('input[type=file]').click();
@@ -114,4 +122,42 @@
 
 	    $('.profile-image div.name p.title').text(arr[arr.length - 1]);
 	});
+
+	var inputElement = document.getElementById("art-upload-form");
+		inputElement.addEventListener("change", handleFiles, false);
+		
+	function handleFiles() {
+	  var fileList = this.files;
+	  upload_image(fileList[0]);
+	}
+
+	function upload_image(file) {
+		$('.uploading-area').show();
+		$('.upload-form').hide();
+
+		var xhttp    = new XMLHttpRequest(),
+	        fd       = new FormData();
+
+	    fd.append('image', file);
+
+	    xhttp.open('POST', 'https://api.imgur.com/3/image');
+	    xhttp.setRequestHeader('Authorization', 'Client-ID f86db3d75c1ac53');
+	    xhttp.onreadystatechange = function () {
+	        if (xhttp.status === 200 && xhttp.readyState === 4) {
+	            var res = JSON.parse(xhttp.responseText), link;
+	            link = res.data.link;
+	            console.log(link);
+
+	            window.localStorage.setItem('temp_image', link);
+
+
+	            $('.img-area').html('<img src="'+ link +'" />');
+	            $('.upload-form').show();
+	            $('.uploading-area').hide();
+	            $('.add-image').hide();
+	        }
+	    };
+
+	    xhttp.send(fd);
+	}
 </script>

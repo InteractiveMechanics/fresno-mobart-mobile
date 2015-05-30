@@ -15,8 +15,12 @@
 		</div>
 
 		<div class="profile-image text-center">
-			<div class="upload-form">
-				<div class=" spinner">
+			<div class="upload-form uploading-area">
+				<div class="img-area">
+
+				</div>
+
+				<div class="add-writing spinner">
 					<i class="fa fa-check-circle"></i>
 				</div>
 
@@ -29,6 +33,10 @@
 			</div>
 
 			<div class="uploading-area" style="display:none;">
+				<div class="img-area">
+
+				</div>
+
 				<div class=" spinner">
 					<i class="fa fa-spinner fa-spin"></i>
 				</div>
@@ -64,8 +72,27 @@
 						Upload Later
 					</button>
 
-					<button class="btn btn-yellow">
+					<button class="btn btn-yellow upload-writing">
 						Upload Now
+					</button>
+					<div class="hidden">
+						<input id="writing-upload-form" type="file" />
+					</div>
+				</div>
+
+			</div>
+		</div>
+
+		<div class="dashboard-btns" style="display:none;">
+			<div class="text-center">
+
+				<div class="form-group">
+					<button ng-click="go_to_grade_now();" class="btn btn-secondary">
+						Cancel
+					</button>
+
+					<button class="btn btn-yellow upload-writing">
+						Finish
 					</button>
 				</div>
 
@@ -77,5 +104,51 @@
 <script type="text/javascript">
 	$('span.search-button').click(function(){
 		$('a.img-lightbox').click();
-	})
+	});
+
+	$('.upload-writing').click(function(){
+		$('input[type=file]').click();
+	});
+
+	$('input[type=file]').change( function(){
+	    var file_name = $(this).val();
+	    var arr = file_name.split("\\");
+
+	    $('.profile-image div.name p.title').text(arr[arr.length - 1]);
+	});
+
+	var inputElement = document.getElementById("writing-upload-form");
+		inputElement.addEventListener("change", handleFiles, false);
+		
+	function handleFiles() {
+	  var fileList = this.files;
+	  upload_image(fileList[0]);
+	}
+
+	function upload_image(file) {
+		$('.uploading-area').show();
+		$('.upload-form').hide();
+
+		var xhttp    = new XMLHttpRequest(),
+	        fd       = new FormData();
+
+	    fd.append('image', file);
+
+	    xhttp.open('POST', 'https://api.imgur.com/3/image');
+	    xhttp.setRequestHeader('Authorization', 'Client-ID f86db3d75c1ac53');
+	    xhttp.onreadystatechange = function () {
+	        if (xhttp.status === 200 && xhttp.readyState === 4) {
+	            var res = JSON.parse(xhttp.responseText), link;
+	            link = res.data.link;
+	            console.log(link);
+
+	            window.localStorage.setItem('temp_writing', link);
+
+	            window.location = "./#/writing-uploaded/12131";
+	        }
+	    };
+
+	    xhttp.send(fd);
+	}
+	
 </script>

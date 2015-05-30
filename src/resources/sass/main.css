@@ -134,7 +134,7 @@ form.login-form {
   .header span.header-button {
     width: 60px;
     cursor: pointer;
-    z-index: 9999999999999;
+    z-index: 10;
     position: relative;
     height: 60px; }
   .header span.hb-left {
@@ -399,5 +399,4 @@ form.login-form {
           color: white;
           text-align: left;
           filter: none; }
-
 /*# sourceMappingURL=main.css.map */

@@ -13,11 +13,11 @@
 		</div>-->
 
 		<div class="profile-image text-center">
-			<div class=" spinner">
-				<i class="fa fa-check-circle"></i>
-			</div>
-
 			<div class="name">
+				<div class="img-area">
+					<a class="img-lightbox" href="http://i.imgur.com/NxVpOW4.jpg" data-lightbox="image-1"><img src="http://i.imgur.com/NxVpOW4.jpg" class="img-class" width="45%"></a>
+				</div>
+
 				<p class="title">
 					Writing Uploaded!
 				</p>
@@ -56,3 +56,12 @@
 		</div>
 	</div>
 </div>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		var img = window.localStorage.getItem('temp_writing');
+		$('a.img-lightbox').attr('href', img);
+		$('img.img-class').attr('src', img);
+	});
+	
+</script>

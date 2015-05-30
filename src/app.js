@@ -117,6 +117,33 @@ sampleApp.controller('GradeController', function($scope, $location) {
     $scope.go_back_to_projects = function() {
       $location.path('saved-projects'); 
     }
+
+    $scope.visual_exmps = [
+      {
+        'thumbnail':'./src/resources/exmplars/visual/CE2.5_1_thumb.jpg.png',
+        'id': 1,
+        'exmplars': 'The artwork does not include complementary colors.',
+        'source_image': './src/resources/exmplars/visual/CE2.5_1_small.jpg'
+      },
+      {
+        'thumbnail':'./src/resources/exmplars/visual/CE2.5_2_thumb.jpg.png',
+        'id': 2,
+        'exmplars': 'Complementary colors are used. The choices seem random or lacking in purpose.',
+        'source_image': './src/resources/exmplars/visual/CE2.5_2_small.jpg'
+      },
+      {
+        'thumbnail':'./src/resources/exmplars/visual/CE2.5_3_thumb.jpg.png',
+        'id': 3,
+        'exmplars': 'Complementary colors are used and show contrast. The emphasis may not be intentional.',
+        'source_image': './src/resources/exmplars/visual/CE2.5_3_small.jpg'
+      },
+      {
+        'thumbnail':'./src/resources/exmplars/visual/CE2.5_4_thumb.jpg.png',
+        'id': 4,
+        'exmplars': 'Complementary colors are used to create effective emphasis through contrast.',
+        'source_image': './src/resources/exmplars/visual/CE2.5_4_small.jpg'
+      }
+    ];
 });
 
 sampleApp.controller('ProjectUploadController', function($scope, $location) {
@@ -136,7 +163,7 @@ sampleApp.controller('FinishGradingController', function($scope, $location) {
   };
 
   $scope.finished_grading = function() {
-    $location.path('project-uploaded');
+    $location.path('dashboard');
   };
 }); 
 
@@ -202,12 +229,24 @@ sampleApp.controller('ProjectDetailController', function($scope, $location) {
 
 sampleApp.controller('NewProjectController', function($scope, $location) {
 
+  $scope.colors = [
+      {name:'black', shade:'dark'},
+      {name:'white', shade:'light', notAnOption: true},
+      {name:'red', shade:'dark'},
+      {name:'blue', shade:'dark', notAnOption: true},
+      {name:'yellow', shade:'light', notAnOption: false}
+    ];
+
+$scope.selected = { name: 'aSubItem' };
+
   $scope.project_list = [
     {
-      'name':'Project - 01 (Theatre)'
+      'name':'Project - 01 (Theatre)',
+      id: 1324
     },
     {
-      'name':'Project - 01 (Visual Arts)'
+      'name':'Project - 01 (Visual Arts)',
+      id: 45324
     }
   ];
 
