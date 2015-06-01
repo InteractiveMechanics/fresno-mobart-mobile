@@ -153,28 +153,28 @@ sampleApp.controller('GradeController', function($scope, $location) {
       {
         'thumbnail':'./src/resources/exmplars/theatre/CRA5.3_1_thumb.png',
         'id': 1,
-        'exmplars': 'The artwork does not include complementary colors.',
+        'exmplars': 'Student lacks energy or concentration, or goes in and out of character.',
         'source': './src/resources/exmplars/theatre/CRA5.3_1.mp4',
         'isVideo': true
       },
       {
         'thumbnail':'./src/resources/exmplars/theatre/CRA5.3_2_thumb.png',
         'id': 2,
-        'exmplars': 'Complementary colors are used. The choices seem random or lacking in purpose.',
+        'exmplars': 'Student has some energy and goes in and out of character.',
         'source': './src/resources/exmplars/theatre/CRA5.3_2.mp4',
         'isVideo': true
       },
       {
         'thumbnail':'./src/resources/exmplars/theatre/CRA5.3_3_thumb.png',
         'id': 3,
-        'exmplars': 'Complementary colors are used and show contrast. The emphasis may not be intentional.',
+        'exmplars': 'Student shows some energy and stays in character most of the time.',
         'source': './src/resources/exmplars/theatre/CRA5.3_3.mp4',
         'isVideo': true
       },
       {
         'thumbnail':'./src/resources/exmplars/theatre/CRA5.3_4_thumb.png',
         'id': 4,
-        'exmplars': 'Complementary colors are used to create effective emphasis through contrast.',
+        'exmplars': 'Student stays in character and shows high degree of energy, attention, concentration.',
         'source': './src/resources/exmplars/theatre/CRA5.3_4.mp4',
         'isVideo': true
       }
