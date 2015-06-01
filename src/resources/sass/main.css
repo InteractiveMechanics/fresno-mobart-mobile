@@ -194,6 +194,9 @@ form.login-form {
     border: solid 6px #97d3e4; }
 
 /**PROFILE-IMAGE**/
+.profile-image img {
+  cursor: pointer;
+}
 .profile-image {
   position: relative;
   top: 40%;

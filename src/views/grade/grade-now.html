@@ -15,7 +15,12 @@
 		</div>
 
 		<div class="profile-image text-center">
-			<a class="img-lightbox" href="http://i.imgur.com/NxVpOW4.jpg" data-lightbox="image-1"><img src="http://i.imgur.com/NxVpOW4.jpg" class="img-class" width="45%"></a>
+			<img src="http://i.imgur.com/NxVpOW4.jpg" class="img-class" width="45%" />
+			<div class="hidden">
+				<div id="large-image">
+					<img src="http://i.imgur.com/NxVpOW4.jpg" />
+				</div>
+			</div>
 		</div>
 	</div>
 </div>
@@ -33,15 +38,15 @@
 
 			<ul class="list-inline grade-project-list text-center">
 
-				<li ng-repeat="v in visual_exmps">
+				<li ng-repeat="v in exmps">
 					<div class="thumbnail" data-exmplar="{{v.exmplars}}">
 						<div style="position:relative">
 							<img src="{{v.thumbnail}}" />
 
 							<div class="overlay">
-								<a href="{{v.source_image}}" data-lightbox="image-{{v.id}}">
+								<a href="javascript:void(0);">
 									<span style="font-size: 18px; color: #ffffff; background-color: #088eca;">
-										<i style="color:white;" class="fa fa-search"></i>
+										<i style="color:white;" class="fa fa-search search-icon" data-colorid="colorbox-{{v.id}}"></i>
 									</span>
 								</a>
 							</div>
@@ -55,6 +60,16 @@
 							<span class="pull-right">
 								<i class="fa fa-check-circle"></i>
 							</span>
+						</div>
+					</div>
+
+					<div class="hidden">
+						<div id="colorbox-{{v.id}}">
+							<video ng-show="{{v.isVideo}}" width="640" controls>
+								  <source src="{{v.source}}" type="video/mp4">
+							</video>
+
+							<img ng-show="{{v.isImage}}" src="{{v.source}}">
 						</div>
 					</div>
 				</li>
@@ -92,8 +107,8 @@
 	
 	$(document).ready(function(){
 		var img = window.localStorage.getItem('temp_image');
-		$('a.img-lightbox').attr('href', img);
 		$('img.img-class').attr('src', img);
+		$('#large-image img').attr('src', img);
 	});
 
 	setTimeout(function(){
@@ -101,9 +116,30 @@
 			$('ul.grade-project-list li').removeClass('active');
 			$(this).parent().addClass('active');
 			var exmplar = $(this).data('exmplar');
-
 			$('div.exmplar-text label').text(exmplar);
+		});
 
+		$('img.img-class').click(function(){
+			$.colorbox({
+			   inline:true, 
+			   href: "#large-image",
+			});
+		});
+
+		$('.search-button').click(function(){
+			$.colorbox({
+			   inline:true, 
+			   href: "#large-image",
+			});
+		});
+
+		$('.search-icon').click(function(){
+			var _id = $(this).data('colorid');
+
+			$.colorbox({
+			   inline:true, 
+			   href: "#" + _id,
+			});
 		});
 	}, 0);
 

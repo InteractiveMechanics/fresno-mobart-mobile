@@ -123,27 +123,73 @@ sampleApp.controller('GradeController', function($scope, $location) {
         'thumbnail':'./src/resources/exmplars/visual/CE2.5_1_thumb.jpg.png',
         'id': 1,
         'exmplars': 'The artwork does not include complementary colors.',
-        'source_image': './src/resources/exmplars/visual/CE2.5_1_small.jpg'
+        'source': './src/resources/exmplars/visual/CE2.5_1_small.jpg',
+        'isImage': true
       },
       {
         'thumbnail':'./src/resources/exmplars/visual/CE2.5_2_thumb.jpg.png',
         'id': 2,
         'exmplars': 'Complementary colors are used. The choices seem random or lacking in purpose.',
-        'source_image': './src/resources/exmplars/visual/CE2.5_2_small.jpg'
+        'source': './src/resources/exmplars/visual/CE2.5_2_small.jpg',
+        'isImage': true
       },
       {
         'thumbnail':'./src/resources/exmplars/visual/CE2.5_3_thumb.jpg.png',
         'id': 3,
         'exmplars': 'Complementary colors are used and show contrast. The emphasis may not be intentional.',
-        'source_image': './src/resources/exmplars/visual/CE2.5_3_small.jpg'
+        'source': './src/resources/exmplars/visual/CE2.5_3_small.jpg',
+        'isImage': true
       },
       {
         'thumbnail':'./src/resources/exmplars/visual/CE2.5_4_thumb.jpg.png',
         'id': 4,
         'exmplars': 'Complementary colors are used to create effective emphasis through contrast.',
-        'source_image': './src/resources/exmplars/visual/CE2.5_4_small.jpg'
+        'source': './src/resources/exmplars/visual/CE2.5_4_small.jpg',
+        'isImage': true
       }
     ];
+
+    $scope.theatre_exmps = [
+      {
+        'thumbnail':'./src/resources/exmplars/theatre/CRA5.3_1_thumb.png',
+        'id': 1,
+        'exmplars': 'The artwork does not include complementary colors.',
+        'source': './src/resources/exmplars/theatre/CRA5.3_1.mp4',
+        'isVideo': true
+      },
+      {
+        'thumbnail':'./src/resources/exmplars/theatre/CRA5.3_2_thumb.png',
+        'id': 2,
+        'exmplars': 'Complementary colors are used. The choices seem random or lacking in purpose.',
+        'source': './src/resources/exmplars/theatre/CRA5.3_2.mp4',
+        'isVideo': true
+      },
+      {
+        'thumbnail':'./src/resources/exmplars/theatre/CRA5.3_3_thumb.png',
+        'id': 3,
+        'exmplars': 'Complementary colors are used and show contrast. The emphasis may not be intentional.',
+        'source': './src/resources/exmplars/theatre/CRA5.3_3.mp4',
+        'isVideo': true
+      },
+      {
+        'thumbnail':'./src/resources/exmplars/theatre/CRA5.3_4_thumb.png',
+        'id': 4,
+        'exmplars': 'Complementary colors are used to create effective emphasis through contrast.',
+        'source': './src/resources/exmplars/theatre/CRA5.3_4.mp4',
+        'isVideo': true
+      }
+    ];
+
+    var p_type = window.localStorage.getItem('project_type');
+    var type = p_type == null ? 'theatre': p_type;
+    
+    console.log(type);
+    if(type == 'theatre') {
+      $scope.exmps = $scope.theatre_exmps;
+    } else {
+      $scope.exmps = $scope.visual_exmps;
+    }
+    
 });
 
 sampleApp.controller('ProjectUploadController', function($scope, $location) {
@@ -242,11 +288,11 @@ $scope.selected = { name: 'aSubItem' };
   $scope.project_list = [
     {
       'name':'Project - 01 (Theatre)',
-      id: 1324
+      id: 'theatre'
     },
     {
       'name':'Project - 01 (Visual Arts)',
-      id: 45324
+      id: 'visual'
     }
   ];
 
@@ -373,8 +419,7 @@ $scope.selected = { name: 'aSubItem' };
     var path = window.location.origin + window.location.pathname;
     path += "#/art-uploaded/" + 13243;
 
-    $('.modal-backdrop').remove();
-    //window.location.href = path; 
+    window.localStorage.setItem('project_type', $('.project-select').val());
     $location.path('art-uploaded/124');
   };
 });
