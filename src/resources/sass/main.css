@@ -5,7 +5,8 @@
   color: #ffffff;
   background-color: #ffc61a;
   border: none;
-  border-bottom: solid 4px #e5b217; }
+  border-bottom: solid 4px #e5b217;
+  border-radius: 0px; }
   .btn-yellow:hover {
     background-color: #f5b800;
     border-color: #c59914;
@@ -17,37 +18,12 @@
   color: #ffffff;
   background-color: #c2c2c2;
   border-bottom: solid 4px #aeaeae;
+  border-radius: 0px;
   border-radius: 0px; }
   .btn-secondary:hover {
     background-color: #b0b0b0;
     border-color: #9c9c9c;
     color: white; }
-
-.form-group button {
-    text-transform: uppercase;
-    padding: 15px 0px;
-    width: 100%;
-    border-radius: 0px; }
-
-.form-control {
-  border: none;
-  border-bottom: solid 1px #aeaeae;
-  border-radius: 0px;
-  box-shadow: none;
-  color:#aeaeae;
-}
-
-.exmplar-text label {
-  font-weight: 500;
-  font-size: 16px;
-  text-align: left;
-  color: #3d7d8f;
-}
-
-input.form-control:focus{
-  color: #088eca;
-  border-color: #088eca;
-}
 
 /**Bootstrap Select**/
 .bootstrap-select.btn-group .dropdown-menu {
@@ -134,9 +110,9 @@ form.login-form {
   .header span.header-button {
     width: 60px;
     cursor: pointer;
+    height: 60px;
     z-index: 10;
-    position: relative;
-    height: 60px; }
+    position: relative; }
   .header span.hb-left {
     float: left; }
   .header span.hb-right {
@@ -164,14 +140,14 @@ form.login-form {
     text-transform: uppercase;
     padding: 15px 0px;
     width: 285px;
-    margin-left: 10px;
     border-radius: 0px;
+    margin-left: 10px;
     margin-right: 10px; }
 .dashboard-view .right {
   background: white;
   overflow-y: scroll;
-  padding: 20px;
-  height: 100%; }
+  height: 100%;
+  padding: 20px; }
 .dashboard-view .left {
   background: #51b6d2;
   height: 100%; }
@@ -194,13 +170,12 @@ form.login-form {
     border: solid 6px #97d3e4; }
 
 /**PROFILE-IMAGE**/
-.profile-image img {
-  cursor: pointer;
-}
 .profile-image {
   position: relative;
   top: 40%;
   transform: translateY(-40%); }
+  .profile-image img {
+    cursor: pointer; }
   .profile-image .image {
     font-size: 60px;
     text-align: center;
@@ -242,6 +217,26 @@ form.login-form {
   padding: 30px 40px 30px 30px; }
   .to-do-replace ul li {
     margin-bottom: 25px; }
+    .to-do-replace ul li.active .thumbnail {
+      border: solid 4px #088eca; }
+      .to-do-replace ul li.active .thumbnail img {
+        border-bottom: solid 4px #088eca; }
+      .to-do-replace ul li.active .thumbnail span i {
+        display: block; }
+      .to-do-replace ul li.active .thumbnail .overlay {
+        background-color: rgba(8, 142, 202, 0.4);
+        top: 0;
+        left: 0;
+        width: 118px;
+        height: 115px;
+        position: absolute; }
+        .to-do-replace ul li.active .thumbnail .overlay span i {
+          color: white;
+          background: #088eca;
+          padding: 10px 8px;
+          width: 34px;
+          float: right;
+          margin-top: 0px; }
     .to-do-replace ul li div.list-item {
       padding: 20px;
       background-color: #e2e3e8; }
@@ -338,29 +333,6 @@ form.login-form {
           width: 34px;
           float: right;
           margin-top: 0px; }
-
-
-  .to-do-replace ul.grade-project-list li.active .thumbnail {
-      border: solid 4px #088eca; }
-      .to-do-replace ul.grade-project-list li.active .thumbnail img {
-        border-bottom: solid 4px #088eca; }
-      .to-do-replace ul.grade-project-list li.active .thumbnail span i {
-        display: block; }
-      .to-do-replace ul.grade-project-list li.active .thumbnail .overlay {
-        background-color: rgba(8, 142, 202, 0.4);
-        top: 0;
-        left: 0;
-        width: 118px;
-        height: 115px;
-        position: absolute; }
-        .to-do-replace ul.grade-project-list li.active .thumbnail .overlay span i {
-          color: white;
-          background: #088eca;
-          padding: 10px 8px;
-          width: 34px;
-          float: right;
-          margin-top: 0px; }
-
   .to-do-replace ul.grade-project-list .grade-info {
     background: white;
     height: 40px;
@@ -402,4 +374,5 @@ form.login-form {
           color: white;
           text-align: left;
           filter: none; }
+
 /*# sourceMappingURL=main.css.map */

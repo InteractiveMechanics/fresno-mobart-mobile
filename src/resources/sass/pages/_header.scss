@@ -18,10 +18,11 @@
 
 	span {
 		&.header-button {
-		  	width: 80px;
+		  	width: 60px;
 		  	cursor: pointer;
 			height: 60px;
-			padding-left: 15px;
+			z-index:10;
+			position:relative;
 		}
 
 		&.hb-left {
@@ -31,7 +32,6 @@
 		&.hb-right {
 			float: right;
 		  	width: 60px !important;
-		  	padding-right: 15px;
 		}
 
 		&.header-button {

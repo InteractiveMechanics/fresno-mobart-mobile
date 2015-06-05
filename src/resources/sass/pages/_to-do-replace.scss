@@ -6,6 +6,41 @@
 		li {
 			margin-bottom: 25px;
 
+			&.active {
+				.thumbnail {
+					border: solid 4px #088eca;
+
+					img {
+						border-bottom: solid 4px #088eca; 
+					}
+
+					span {
+						i {
+							display: block;
+						}
+					}
+
+					.overlay {
+						background-color: rgba(8, 142, 202, 0.4);
+				        top: 0;
+				        left: 0;
+				        width: 118px;
+				        height: 115px;
+				        position: absolute;
+
+				        span {
+				        	i {
+				        		color: white;
+						        background: #088eca;
+						        padding: 10px 8px;
+						        width: 34px;
+						        float: right;
+						        margin-top: 0px; 
+				        	}
+				        }
+					}
+				}
+			}
 			div {
 				&.list-item {
 					padding: 20px;

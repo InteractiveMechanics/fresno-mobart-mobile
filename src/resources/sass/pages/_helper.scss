@@ -33,6 +33,39 @@
 }
 
 
+.form-group {
+	button {
+	    text-transform: uppercase;
+	    padding: 15px 0px;
+	    width: 100%;
+	    border-radius: 0px; 
+	}
+}
+
+.form-control {
+  border: none;
+  border-bottom: solid 1px #aeaeae;
+  border-radius: 0px;
+  box-shadow: none;
+  color:#aeaeae;
+}
+
+.exmplar-text {
+	label {
+  		font-weight: 500;
+  		font-size: 16px;
+  		text-align: left;
+  		color: #3d7d8f;
+  	}
+}
+
+input {
+	&form-control:focus {
+  		color: #088eca;
+  		border-color: #088eca;
+  	}
+}
+
 /**Bootstrap Select**/
 
 .bootstrap-select {
