@@ -1,6 +1,6 @@
 //Define an angular module for our app
 var sampleApp = angular.module('sampleApp', ['ngRoute']);
- 
+
 //Define Routing for app
 //Uri /AddNewOrder -> template add_order.html and Controller AddOrderController
 //Uri /ShowOrders -> template show_orders.html and Controller AddOrderController
@@ -81,7 +81,7 @@ sampleApp.controller('LoginController', function($scope, $location) {
     $location.path('dashboard');
   };
 
-}); 
+});
 
 sampleApp.controller('DashboardController', function($scope, $location) {
   $scope.full_name = 'Max Power';
@@ -92,7 +92,7 @@ sampleApp.controller('DashboardController', function($scope, $location) {
     path += "#/new-projects";
 
     $('.modal-backdrop').remove();
-    //window.location.href = path; 
+    //window.location.href = path;
     $location.path('new-projects');
   };
 
@@ -101,49 +101,49 @@ sampleApp.controller('DashboardController', function($scope, $location) {
     path += "#/saved-projects";
 
     $('.modal-backdrop').remove();
-    //window.location.href = path; 
+    //window.location.href = path;
     $location.path('saved-projects');
   };
-}); 
+});
 
 sampleApp.controller('GradeController', function($scope, $location) {
     $scope.grade_project = function() {
       var path = window.location.origin + window.location.pathname;
       path += "#/finish-grading/" + 13243;
       //window.location.href = path;
-      $location.path('finish-grading/1224'); 
+      $location.path('finish-grading/1224');
     };
 
     $scope.go_back_to_projects = function() {
-      $location.path('saved-projects'); 
+      $location.path('saved-projects');
     }
 
     $scope.visual_exmps = [
       {
         'thumbnail':'./src/resources/exmplars/visual/CE2.5_1_thumb.jpg.png',
         'id': 1,
-        'exmplars': 'The artwork does not include complementary colors.',
+        'exmplars': 'Facial proportions are inaccurate and/or facial features are missing.',
         'source': './src/resources/exmplars/visual/CE2.5_1_small.jpg',
         'isImage': true
       },
       {
         'thumbnail':'./src/resources/exmplars/visual/CE2.5_2_thumb.jpg.png',
         'id': 2,
-        'exmplars': 'Complementary colors are used. The choices seem random or lacking in purpose.',
+        'exmplars': 'All facial features are present. Most of the features are sized or placed inaccurately.',
         'source': './src/resources/exmplars/visual/CE2.5_2_small.jpg',
         'isImage': true
       },
       {
         'thumbnail':'./src/resources/exmplars/visual/CE2.5_3_thumb.jpg.png',
         'id': 3,
-        'exmplars': 'Complementary colors are used and show contrast. The emphasis may not be intentional.',
+        'exmplars': 'All facial features are present. One or two features are sized or placed inaccurately.',
         'source': './src/resources/exmplars/visual/CE2.5_3_small.jpg',
         'isImage': true
       },
       {
         'thumbnail':'./src/resources/exmplars/visual/CE2.5_4_thumb.jpg.png',
         'id': 4,
-        'exmplars': 'Complementary colors are used to create effective emphasis through contrast.',
+        'exmplars': 'All facial features are present. Facial  proportions are accurate.',
         'source': './src/resources/exmplars/visual/CE2.5_4_small.jpg',
         'isImage': true
       }
@@ -182,21 +182,21 @@ sampleApp.controller('GradeController', function($scope, $location) {
 
     var p_type = window.localStorage.getItem('project_type');
     var type = p_type == null ? 'theatre': p_type;
-    
+
     console.log(type);
     if(type == 'theatre') {
       $scope.exmps = $scope.theatre_exmps;
     } else {
       $scope.exmps = $scope.visual_exmps;
     }
-    
+
 });
 
 sampleApp.controller('ProjectUploadController', function($scope, $location) {
     $scope.go_back_to_projects = function() {
-      $location.path('saved-projects'); 
+      $location.path('saved-projects');
     }
-}); 
+});
 
 sampleApp.controller('FinishGradingController', function($scope, $location) {
   $scope.back_to_grading = function() {
@@ -211,7 +211,7 @@ sampleApp.controller('FinishGradingController', function($scope, $location) {
   $scope.finished_grading = function() {
     $location.path('dashboard');
   };
-}); 
+});
 
 sampleApp.controller('ArtUploadedController', function($scope, $location) {
   $scope.upload_writing = function() {
@@ -224,13 +224,13 @@ sampleApp.controller('ArtUploadedController', function($scope, $location) {
     path += "#/writing-uploaded/" + 13243;
 
     $('.modal-backdrop').remove();
-    $location.path('grade-project/22311'); 
-  }; 
+    $location.path('grade-project/22311');
+  };
 
   $scope.go_to_grade_now = function() {
-    $location.path('writing-uploaded/12131'); 
-  };  
-}); 
+    $location.path('writing-uploaded/12131');
+  };
+});
 
 sampleApp.controller('WritingUploadedController', function($scope, $location) {
   $scope.grade_now = function() {
@@ -241,7 +241,7 @@ sampleApp.controller('WritingUploadedController', function($scope, $location) {
     //window.location.href = path;
     $location.path('grade-project/22311');
   };
-}); 
+});
 
 sampleApp.controller('ProjectDetailController', function($scope, $location) {
     $scope.project = {
@@ -271,7 +271,7 @@ sampleApp.controller('ProjectDetailController', function($scope, $location) {
       //window.location.href = path;
       $location.path('grade-project/1213');
     }
-}); 
+});
 
 sampleApp.controller('NewProjectController', function($scope, $location) {
 
@@ -423,55 +423,55 @@ $scope.selected = { name: 'aSubItem' };
     $location.path('art-uploaded/124');
   };
 });
- 
+
 sampleApp.controller('ProjectController', function($scope, $location) {
   $scope.saved_projects = [
     {
       'student_name': 'Katie Smith',
       'studnet_id': 12345,
-      'class_name': '4th Grade Theatre - 03',
+      'class_name': '4th Grade Visual Arts - 01',
       'class_id': 1234,
-      'project_name': 'Tableau 1',
+      'project_name': 'Project 1',
       'project_id': 4532
     },
     {
       'student_name': 'Jane Wilson',
       'studnet_id': 12345,
-      'class_name': '4th Grade Theatre - 03',
+      'class_name': '4th Grade Visual Arts - 01',
       'class_id': 1234,
-      'project_name': 'Tableau 1',
+      'project_name': 'Project 1',
       'project_id': 4532
     },
     {
       'student_name': 'Roy Coba',
       'studnet_id': 12345,
-      'class_name': '4th Grade Theatre - 03',
+      'class_name': '4th Grade Visual Arts - 01',
       'class_id': 1234,
-      'project_name': 'Tableau 1',
+      'project_name': 'Project 1',
       'project_id': 4532
     },
     {
       'student_name': 'Tammy Taffy',
       'studnet_id': 12345,
-      'class_name': '4th Grade Theatre - 03',
+      'class_name': '4th Grade Visual Arts - 01',
       'class_id': 1234,
-      'project_name': 'Tableau 1',
+      'project_name': 'Project 1',
       'project_id': 4532
     },
     {
       'student_name': 'Freddie Jones',
       'studnet_id': 12345,
-      'class_name': '4th Grade Theatre - 03',
+      'class_name': '4th Grade Visual Arts - 01',
       'class_id': 1234,
-      'project_name': 'Tableau 1',
+      'project_name': 'Project 1',
       'project_id': 4532
     },
     {
       'student_name': 'Larry Sminchers',
       'studnet_id': 12345,
-      'class_name': '4th Grade Theatre - 03',
+      'class_name': '4th Grade Visual Arts - 01',
       'class_id': 1234,
-      'project_name': 'Tableau 1',
+      'project_name': 'Project 1',
       'project_id': 4532
     }
   ];
@@ -483,6 +483,6 @@ sampleApp.controller('ProjectController', function($scope, $location) {
     $('.modal-backdrop').remove();
     //window.location.href = path;
     $location.path('grade-project/1213');
-  }; 
+  };
 
 });

@@ -61,6 +61,27 @@
         color: #ffffff;
         background-color: #c2c2c2; }
 
+/**Colorbox**/
+#colorbox {
+  max-width: 90%;
+  left: 5% !important;
+  top: 5% !important; }
+  #colorbox #cboxWrapper, #colorbox #cboxContent, #colorbox #cboxLoadedContent {
+    width: 100% !important;
+    height: auto !important;
+    background: transparent; }
+    #colorbox #cboxWrapper #colorbox-1, #colorbox #cboxWrapper #colorbox-2, #colorbox #cboxWrapper #colorbox-3, #colorbox #cboxWrapper #colorbox-4, #colorbox #cboxContent #colorbox-1, #colorbox #cboxContent #colorbox-2, #colorbox #cboxContent #colorbox-3, #colorbox #cboxContent #colorbox-4, #colorbox #cboxLoadedContent #colorbox-1, #colorbox #cboxLoadedContent #colorbox-2, #colorbox #cboxLoadedContent #colorbox-3, #colorbox #cboxLoadedContent #colorbox-4 {
+      width: 100%;
+      text-align: center; }
+      #colorbox #cboxWrapper #colorbox-1 img, #colorbox #cboxWrapper #colorbox-2 img, #colorbox #cboxWrapper #colorbox-3 img, #colorbox #cboxWrapper #colorbox-4 img, #colorbox #cboxContent #colorbox-1 img, #colorbox #cboxContent #colorbox-2 img, #colorbox #cboxContent #colorbox-3 img, #colorbox #cboxContent #colorbox-4 img, #colorbox #cboxLoadedContent #colorbox-1 img, #colorbox #cboxLoadedContent #colorbox-2 img, #colorbox #cboxLoadedContent #colorbox-3 img, #colorbox #cboxLoadedContent #colorbox-4 img {
+        width: auto !important;
+        height: 100% !important;
+        margin: 0 auto; }
+    #colorbox #cboxWrapper img, #colorbox #cboxContent img, #colorbox #cboxLoadedContent img {
+      width: 100% !important;
+      height: auto !important;
+      background: transparent; }
+
 body.not-logged-in {
   background: #51b6d2; }
 body .modal-dialog {
@@ -130,24 +151,34 @@ form.login-form {
 .dashboard-view .col-md-6 {
   padding: 0px; }
 .dashboard-view .dashboard-btns {
-  position: absolute;
-  left: 0px;
-  right: 0;
-  margin-left: auto;
-  margin-right: auto;
-  bottom: 30; }
+  position: relative;
+  margin: 24px auto; }
+  @media (min-width: 640px) {
+    .dashboard-view .dashboard-btns {
+      position: absolute;
+      bottom: 20;
+      left: 0px;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto; } }
   .dashboard-view .dashboard-btns button {
     text-transform: uppercase;
     padding: 15px 0px;
-    width: 285px;
-    border-radius: 0px;
-    margin-left: 10px;
-    margin-right: 10px; }
+    width: 100%;
+    margin-bottom: 18px;
+    border-radius: 0px; }
+    @media (min-width: 640px) {
+      .dashboard-view .dashboard-btns button {
+        width: 42%;
+        margin-left: 10px;
+        margin-right: 10px; } }
 .dashboard-view .right {
   background: white;
-  overflow-y: scroll;
-  height: 100%;
-  padding: 20px; }
+  padding: 40px 20px; }
+  @media (min-width: 640px) {
+    .dashboard-view .right {
+      overflow-y: scroll;
+      height: 100%; } }
 .dashboard-view .left {
   background: #51b6d2;
   height: 100%; }
@@ -159,15 +190,16 @@ form.login-form {
 /** ARTWORK PREVIEW **/
 .artwork-preview {
   position: relative;
-  top: 40%;
-  transform: translateY(-40%); }
+  top: 60px; }
   .artwork-preview .name p.title {
     font-weight: 300;
     color: #ffffff;
     font-size: 24px;
     margin-top: 35px; }
   .artwork-preview img {
-    border: solid 6px #97d3e4; }
+    border: solid 6px #97d3e4;
+    width: 80% !important;
+    height: auto !important; }
 
 /**PROFILE-IMAGE**/
 .profile-image {
@@ -228,7 +260,7 @@ form.login-form {
     margin: 0px; }
 
 .to-do-replace {
-  padding: 30px 40px 30px 30px; }
+  padding: 0; }
   .to-do-replace ul li {
     margin-bottom: 25px; }
     .to-do-replace ul li.active .thumbnail {
@@ -241,8 +273,8 @@ form.login-form {
         background-color: rgba(8, 142, 202, 0.4);
         top: 0;
         left: 0;
-        width: 118px;
-        height: 115px;
+        width: 100%;
+        height: 100%;
         position: absolute; }
         .to-do-replace ul li.active .thumbnail .overlay span i {
           color: white;
@@ -286,15 +318,15 @@ form.login-form {
   .to-do-replace ul.thumbnail-list li {
     margin: 0 25px 25px; }
   .to-do-replace ul.thumbnail-list .thumbnail {
-    width: 225px;
-    height: 225px;
+    width: 100%;
+    height: auto;
     border: solid 4px #aeaeae;
     background-color: #e2e3e8;
     border-radius: 0px;
     padding: 0px; }
     .to-do-replace ul.thumbnail-list .thumbnail img {
-      width: 218px;
-      height: 218px; }
+      width: 100%;
+      height: auto; }
     .to-do-replace ul.thumbnail-list .thumbnail .icon {
       top: 50%;
       position: relative;
@@ -311,11 +343,11 @@ form.login-form {
   .to-do-replace ul.grade-project-list li {
     margin: 0 5px 25px; }
   .to-do-replace ul.grade-project-list img {
-    width: 118px;
-    height: 118px;
+    width: 100%;
+    height: auto;
     border-bottom: solid 4px #aeaeae; }
   .to-do-replace ul.grade-project-list .thumbnail {
-    width: 125px;
+    width: 100%;
     border: solid 4px #aeaeae;
     background-color: #e2e3e8;
     border-radius: 0px;
@@ -327,26 +359,6 @@ form.login-form {
         color: #ffc61a;
         display: none;
         margin-top: 2px; }
-    .to-do-replace ul.grade-project-list .thumbnail:hover {
-      border: solid 4px #088eca; }
-      .to-do-replace ul.grade-project-list .thumbnail:hover img {
-        border-bottom: solid 4px #088eca; }
-      .to-do-replace ul.grade-project-list .thumbnail:hover span i {
-        display: block; }
-      .to-do-replace ul.grade-project-list .thumbnail:hover .overlay {
-        background-color: rgba(8, 142, 202, 0.4);
-        top: 0;
-        left: 0;
-        width: 118px;
-        height: 115px;
-        position: absolute; }
-        .to-do-replace ul.grade-project-list .thumbnail:hover .overlay span i {
-          color: white;
-          background: #088eca;
-          padding: 10px 8px;
-          width: 34px;
-          float: right;
-          margin-top: 0px; }
   .to-do-replace ul.grade-project-list .grade-info {
     background: white;
     height: 40px;
@@ -388,5 +400,10 @@ form.login-form {
           color: white;
           text-align: left;
           filter: none; }
+  .to-do-replace ul.grade-project-list li {
+    width: 40% !important; }
+    @media (min-width: 640px) {
+      .to-do-replace ul.grade-project-list li {
+        width: 20% !important; } }
 
 /*# sourceMappingURL=main.css.map */

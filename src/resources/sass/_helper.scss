@@ -96,3 +96,34 @@
 		}
 	}
 }
+
+/**Colorbox**/
+
+#colorbox{
+	max-width: 90%;
+	left: 5%!important;
+	top: 5%!important;
+
+	#cboxWrapper, #cboxContent, #cboxLoadedContent{
+		width: 100%!important;
+		height: auto!important;
+		background: transparent;
+
+		#colorbox-1, #colorbox-2, #colorbox-3, #colorbox-4{
+			width: 100%;
+			text-align: center;
+
+			img{
+				width: auto!important;
+				height: 100%!important;
+				margin: 0 auto;
+			}
+		}
+
+		img{
+			width: 100%!important;
+			height: auto!important;
+			background: transparent;
+		}
+	}
+}

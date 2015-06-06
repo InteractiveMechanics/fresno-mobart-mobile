@@ -1,5 +1,5 @@
 .to-do-replace {
-	padding: 30px 40px 30px 30px;
+	padding: 0;
 
 	ul {
 
@@ -11,7 +11,7 @@
 					border: solid 4px #088eca;
 
 					img {
-						border-bottom: solid 4px #088eca; 
+						border-bottom: solid 4px #088eca;
 					}
 
 					span {
@@ -24,8 +24,8 @@
 						background-color: rgba(8, 142, 202, 0.4);
 				        top: 0;
 				        left: 0;
-				        width: 118px;
-				        height: 115px;
+				        width: 100%;
+				        height: 100%;
 				        position: absolute;
 
 				        span {
@@ -35,7 +35,7 @@
 						        padding: 10px 8px;
 						        width: 34px;
 						        float: right;
-						        margin-top: 0px; 
+						        margin-top: 0px;
 				        	}
 				        }
 					}
@@ -112,16 +112,16 @@
 			}
 
 			.thumbnail  {
-				width: 225px;
-				height: 225px;
+				width: 100%;
+				height: auto;
 				border: solid 4px #aeaeae;
 				background-color: #e2e3e8;
 				border-radius: 0px;
 				padding: 0px;
 
 				img {
-					width: 218px;
-					height: 218px;
+					width: 100%;
+					height: auto;
 				}
 
 				.icon {
@@ -151,13 +151,13 @@
 			}
 
 			img {
-				width: 118px;
-				height: 118px;
+				width: 100%;
+				height: auto;
 				border-bottom: solid 4px #aeaeae;
 			}
 
 			.thumbnail  {
-				width: 125px;
+				width: 100%;
 				border: solid 4px #aeaeae;
 				background-color: #e2e3e8;
 				border-radius: 0px;
@@ -174,39 +174,6 @@
 					}
 				}
 
-				&:hover  {
-					border: solid 4px #088eca;
-
-					img {
-						border-bottom: solid 4px #088eca;
-					}
-
-					span {
-						i {
-							display: block;
-						}
-					}
-
-					.overlay {
-						background-color: rgba(8,142,202,0.4);
-					  	top: 0;
-					  	left: 0;
-					  	width: 118px;
-					  	height: 115px;
-					  	position: absolute;
-
-					  	span {
-					  		i {
-								color: white;
-							  	background: #088eca;
-							  	padding: 10px 8px;
-							  	width: 34px;
-							  	float: right;
-							  	margin-top: 0px;
-							}
-					  	}
-					}
-				}
 			}
 
 			.grade-info {
@@ -248,7 +215,7 @@
 		ul {
 			> li {
 				margin-bottom: 0px;
-				
+
 				> a {
 					color:#aeaeae;
 
@@ -271,6 +238,16 @@
 					}
 				}
 
+			}
+		}
+	}
+
+	ul.grade-project-list{
+		li{
+			width: 40%!important;
+
+			@media(min-width: 640px){
+				width: 20%!important;
 			}
 		}
 	}

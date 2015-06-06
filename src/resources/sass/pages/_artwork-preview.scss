@@ -1,8 +1,7 @@
 /** ARTWORK PREVIEW **/
 .artwork-preview {
 	position: relative;
-  	top: 40%;
-  	transform: translateY(-40%);
+  	top: 60px;
 
   	.name  {
   		p {
@@ -17,5 +16,7 @@
 
 	img {
 		border: solid 6px #97d3e4;
+        width: 80%!important;
+        height: auto!important;
 	}
 }
