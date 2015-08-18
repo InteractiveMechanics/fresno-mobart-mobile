@@ -13,14 +13,16 @@
 
 		<div class="profile-image text-center">
 
-			<div class="upload-form">
-				<div class="image add-image" data-toggle="modal" data-target="#upload-modal">
+			<div class="upload-form" ng-hide="is_uploading">
+				<div ng-hide="uploaded" class="image add-image" ngf-select ng-model="file" ngf-change="uploadArtwork($files)" data-toggle="modal" data-target="#upload-modal">
 					<i class="fa fa-plus"></i>
 				</div>
 
 				<div class="name">
-					<div class="img-area"></div>
-					<p class="title">
+					<div class="img-area" ng-show="uploaded">
+						<img src="{{artwork_url}}" />
+					</div>
+					<p class="title" ng-hide="uploaded">
 						Add Image
 					</p>
 					<p style="margin:0 auto; visibility:hidden; width:225px; font-size:16px; color:white;">
@@ -29,7 +31,7 @@
 				</div>
 			</div>
 
-			<div class="uploading-area" style="display:none;">
+			<div class="uploading-area" ng-show="is_uploading">
 				<div class="spinner">
 					<i class="fa fa-spinner fa-spin"></i>
 				</div>
@@ -46,35 +48,41 @@
 
 <div class="col-md-6 col-sm-12">
 	<div class="right">
-
-		<div class="to-do-replace" ng-controller="NewProjectController">
+		<div class="to-do-replace">
+			
+			<div class="error">
+				<p class="error_message" style="margin:0px; padding:0px; color:red;">
+					
+				</p>
+			</div>
+		
 			<div class="form-group">
-				<select class="form-control"
-						ng-options="class.name for class in class_list track by class.name"
-						ng-model="selected">
-					<option value="" ng-if="false"></option>
+				<select class="form-control class-dropdown" ng-change="update_students()"
+						ng-options="class.classname for class in classes track by class.id"
+						ng-model="selected_class">
+					<option value="" ng-if="true">Select Class</option>
 				</select>
 			</div>
 
 			<div class="form-group student-dropdown">
-				<select class="form-control"
-						ng-options="student.name for student in student_list track by student.name"
-						ng-model="selected">
-					<option value="" ng-if="false"></option>
+				<select class="form-control student-dropdownlist"
+						ng-options='student.lastname + ", " + student.firstname for student in students track by student.id'
+						ng-model="selected_student" ng-change="update_projects()">
+					<option value="" ng-if="true">Select Student</option>
 				  </select>
 			</div>
 
 			<div class="form-group">
-				<select class="project-select form-control"
+				<select class="project-select form-control project-dropdown"
 						ng-options="project.name for project in project_list track by project.id"
-						ng-model="selected">
-						<option value="" ng-if="false"></option>
+						ng-model="selected_project">
+						<option value="" ng-if="true">Select Project</option>
 				  </select>
 			</div>
 
 			<div class="checkbox">
 				<label>
-				  <input type="checkbox"> Project Incomplete
+				  <input type="checkbox"  class="checkbox" > Project Incomplete
 				</label>
 			</div>
 		</div>
@@ -101,16 +109,16 @@
 <script type="text/javascript">
 	// To style all <select>s
 
-	setTimeout(function(){
+	/*setTimeout(function(){
 		$('select').selectpicker({
 			style: 'btn-select',
 	  		size: 4
 		});
-	}, 0);
+	}, 0);*/
 
 
 
-	$('.add-image').click(function(){
+	/*$('.add-image').click(function(){
 		$('input[type=file]').click();
 	});
 
@@ -157,5 +165,5 @@
 	    };
 
 	    xhttp.send(fd);
-	}
+	}*/
 </script>

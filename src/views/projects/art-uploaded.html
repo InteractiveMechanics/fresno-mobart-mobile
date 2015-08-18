@@ -15,7 +15,7 @@
 		</div>
 
 		<div class="profile-image text-center">
-			<div class="upload-form uploading-area">
+			<div class="upload-form uploading-area" ng-hide="uploading">
 				<div class="img-area"></div>
 
 				<div class="add-writing spinner">
@@ -24,13 +24,13 @@
 
 				<div class="name">
 					<p class="title">
-						<a class="hidden img-lightbox" href="http://i.imgur.com/NxVpOW4.jpg" data-lightbox="image-1" data-title="My caption"><img src="http://i.imgur.com/NxVpOW4.jpg" width="25%"></a>
+						<a class="hidden img-lightbox" href="/mobart/data/files/{{artwork_url}}" data-lightbox="image-1" data-title="My caption"><img src="/mobart/data/files/{{artwork_url}}" width="25%"></a>
 						Artwork Uploaded!
 					</p>
 				</div>
 			</div>
 
-			<div class="uploading-area" style="display:none;">
+			<div class="uploading-area" ng-show="show_icon">
 				<div class="img-area">
 
 				</div>
@@ -70,7 +70,7 @@
 						Upload Later
 					</button>
 
-					<button class="btn btn-yellow upload-writing">
+					<button class="btn btn-yellow upload-writing" ngf-select ng-model="file" ngf-change="upload_writing_work($files)">
 						Upload Now
 					</button>
 					<div class="hidden">
@@ -104,7 +104,7 @@
 		$('a.img-lightbox').click();
 	});
 
-	$('.upload-writing').click(function(){
+	/*$('.upload-writing').click(function(){
 		$('input[type=file]').click();
 	});
 
@@ -147,6 +147,6 @@
 	    };
 
 	    xhttp.send(fd);
-	}
+	}*/
 
 </script>

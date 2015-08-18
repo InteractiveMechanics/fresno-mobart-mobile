@@ -14,12 +14,12 @@
 
 		<div class="profile-image text-center">
 			<div class="name">
-				<div class="img-area">
-					<a class="img-lightbox" href="http://i.imgur.com/NxVpOW4.jpg" data-lightbox="image-1"><img src="http://i.imgur.com/NxVpOW4.jpg" class="img-class" width="45%"></a>
+				<div class="img-area" ng-if="writing_url">
+					<a class="img-lightbox" href="{{writing_url}}" data-lightbox="image-1" data-title="My caption"><img src="{{writing_url}}" width="25%"></a>
 				</div>
-
-				<p class="title">
-					Writing Uploaded!
+				
+				<p class="title" style="margin:0px; padding:0px;">
+					{{writing_text}}
 				</p>
 			</div>
 		</div>
@@ -47,7 +47,7 @@
 						Grade Now
 					</button>
 
-					<button ng-click="dashboard_redirect();" class="btn btn-yellow">
+					<button ng-click="grade_later();" class="btn btn-yellow">
 						Grade Later
 					</button>
 				</div>
@@ -56,12 +56,3 @@
 		</div>
 	</div>
 </div>
-
-<script type="text/javascript">
-	$(document).ready(function(){
-		var img = window.localStorage.getItem('temp_writing');
-		$('a.img-lightbox').attr('href', img);
-		$('img.img-class').attr('src', img);
-	});
-
-</script>

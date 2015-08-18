@@ -15,10 +15,10 @@
 		</div>
 
 		<div class="artwork-preview text-center">
-			<img src="http://i.imgur.com/NxVpOW4.jpg" class="img-class" width="45%" />
+			<img src="{{artwork_url}}" class="img-class" width="45%" />
 			<div class="hidden">
 				<div id="large-image">
-					<img src="http://i.imgur.com/NxVpOW4.jpg" />
+					<img src="{{artwork_url}}" />
 				</div>
 			</div>
 		</div>
@@ -38,8 +38,8 @@
 
 			<ul class="list-inline grade-project-list text-center">
 
-				<li ng-repeat="v in exmps">
-					<div class="thumbnail" data-exmplar="{{v.exmplars}}">
+				<li ng-repeat="v in exmps" class="{{v.class_value}}">
+					<div class="thumbnail" data-exmplar="{{v.exmplars}}" ng-click="exemplar_click(v.id);">
 						<div style="position:relative">
 							<img src="{{v.thumbnail}}" />
 
@@ -88,8 +88,8 @@
 			<div class="text-center">
 
 				<div class="form-group">
-					<button ng-click="dashboard_redirect();" class="btn btn-secondary">
-						Cancel
+					<button ng-click="go_back();" class="btn btn-secondary">
+						{{back_btn_text}}
 					</button>
 
 					<button ng-click="grade_project();" class="btn btn-yellow">
@@ -104,12 +104,6 @@
 </div>
 
 <script type="text/javascript">
-
-	$(document).ready(function(){
-		var img = window.localStorage.getItem('temp_image');
-		$('img.img-class').attr('src', img);
-		$('#large-image img').attr('src', img);
-	});
 
 	setTimeout(function(){
 		$('.thumbnail').click(function(){

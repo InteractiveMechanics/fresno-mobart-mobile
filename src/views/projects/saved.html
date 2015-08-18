@@ -27,17 +27,17 @@
 
 			<ul class="list-unstyled">
 
-				<li ng-repeat="saved_project in saved_projects">
-					<div class="list-item" ng-click="open_saved_project(saved_project.project_id)">
+				<li ng-repeat="saved in saved_items">
+					<div class="list-item" ng-click="open_saved_project(saved.id)">
 						<h3 class="title">
-							{{saved_project.student_name}}
+							{{saved.firstname}} {{saved.lastname}}
 						</h3>
 						<p class="li-label">
-							{{saved_project.class_name}}
+							{{saved.classname}}
 						</p>
-						<p class="li-label">
+						<!--<p class="li-label">
 							{{saved_project.project_name}}
-						</p>
+						</p>-->
 					</div>
 				</li>
 			</ul>
