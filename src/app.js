@@ -198,31 +198,31 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 
 	if(pid == 1) {
 		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_1_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/third/PhysicalExpression/pe_1_thumb.jpg',
 	        'id': 1,
 	        'exmplars': 'Facial proportions are inaccurate and/or facial features are missing.',
-	        'source': './src/resources/exmplars/visual/CE2.5_1_small.jpg',
+	        'source': './src/resources/exmplars/third/PhysicalExpression/pe_1.jpg',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_2_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/third/PhysicalExpression/pe_2_thumb.jpg',
 	        'id': 2,
 	        'exmplars': 'All facial features are present. Most of the features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_2_small.jpg',
+	        'source': './src/resources/exmplars/third/PhysicalExpression/pe_2.jpg',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_3_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/third/PhysicalExpression/pe_3_thumb.jpg',
 	        'id': 3,
 	        'exmplars': 'All facial features are present. One or two features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_3_small.jpg',
+	        'source': './src/resources/exmplars/third/PhysicalExpression/pe_3.jpg',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_4_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/third/PhysicalExpression/pe_4_thumb.jpg',
 	        'id': 4,
 	        'exmplars': 'All facial features are present. Facial  proportions are accurate.',
-	        'source': './src/resources/exmplars/visual/CE2.5_4_small.jpg',
+	        'source': './src/resources/exmplars/third/PhysicalExpression/pe_4.jpg',
 	        'isImage': true,
 	        'class_value': ''
 	    }];	
@@ -230,31 +230,31 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 
 	if(pid == 2) {
 		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_1_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/fourth/FacialExpression/fe_1_thumb.jpg',
 	        'id': 1,
 	        'exmplars': 'Facial proportions are inaccurate and/or facial features are missing.',
-	        'source': './src/resources/exmplars/visual/CE2.5_1_small.jpg',
+	        'source': './src/resources/exmplars/fourth/FacialExpression/fe_1.jpg',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_2_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/fourth/FacialExpression/fe_2_thumb.jpg',
 	        'id': 2,
 	        'exmplars': 'All facial features are present. Most of the features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_2_small.jpg',
+	        'source': './src/resources/exmplars/fourth/FacialExpression/fe_2.jpg',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_3_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/fourth/FacialExpression/fe_3_thumb.jpg',
 	        'id': 3,
 	        'exmplars': 'All facial features are present. One or two features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_3_small.jpg',
+	        'source': './src/resources/exmplars/fourth/FacialExpression/fe_3.jpg',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_4_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/fourth/FacialExpression/fe_4_thumb.jpg',
 	        'id': 4,
 	        'exmplars': 'All facial features are present. Facial  proportions are accurate.',
-	        'source': './src/resources/exmplars/visual/CE2.5_4_small.jpg',
+	        'source': './src/resources/exmplars/fourth/FacialExpression/fe_4.jpg',
 	        'isImage': true,
 	        'class_value': ''
 	    }];	
@@ -364,31 +364,31 @@ sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $h
 
 	if(pid == 1) {
 		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_1_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/third/FacialExpression/fe_1_thumb.jpg',
 	        'id': 1,
 	        'exmplars': 'Facial proportions are inaccurate and/or facial features are missing.',
-	        'source': './src/resources/exmplars/visual/CE2.5_1_small.jpg',
+	        'source': './src/resources/exmplars/third/FacialExpression/fe_1.jpg',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_2_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/third/FacialExpression/fe_2_thumb.jpg',
 	        'id': 2,
 	        'exmplars': 'All facial features are present. Most of the features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_2_small.jpg',
+	        'source': './src/resources/exmplars/third/FacialExpression/fe_2.jpg',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_3_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/third/FacialExpression/fe_3_thumb.jpg',
 	        'id': 3,
 	        'exmplars': 'All facial features are present. One or two features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_3_small.jpg',
+	        'source': './src/resources/exmplars/third/FacialExpression/fe_3.jpg',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_4_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/third/FacialExpression/fe_4_thumb.jpg',
 	        'id': 4,
 	        'exmplars': 'All facial features are present. Facial  proportions are accurate.',
-	        'source': './src/resources/exmplars/visual/CE2.5_4_small.jpg',
+	        'source': './src/resources/exmplars/third/FacialExpression/fe_4.jpg',
 	        'isImage': true,
 	        'class_value': ''
 	    }];	
@@ -396,31 +396,31 @@ sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $h
 
 	if(pid == 2) {
 		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_1_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/fourth/VocalExpression/ve_1_thumb.jpg',
 	        'id': 1,
 	        'exmplars': 'Facial proportions are inaccurate and/or facial features are missing.',
-	        'source': './src/resources/exmplars/visual/CE2.5_1_small.jpg',
+	        'source': './src/resources/exmplars/fourth/VocalExpression/ve_1.mp4',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_2_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/fourth/VocalExpression/ve_2_thumb.jpg',
 	        'id': 2,
 	        'exmplars': 'All facial features are present. Most of the features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_2_small.jpg',
+	        'source': './src/resources/exmplars/fourth/VocalExpression/ve_2.mp4',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_3_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/fourth/VocalExpression/ve_3_thumb.jpg',
 	        'id': 3,
 	        'exmplars': 'All facial features are present. One or two features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_3_small.jpg',
+	        'source': './src/resources/exmplars/fourth/VocalExpression/ve_3.mp4',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_4_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/fourth/VocalExpression/ve_4_thumb.jpg',
 	        'id': 4,
 	        'exmplars': 'All facial features are present. Facial  proportions are accurate.',
-	        'source': './src/resources/exmplars/visual/CE2.5_4_small.jpg',
+	        'source': './src/resources/exmplars/fourth/VocalExpression/ve_4.mp4',
 	        'isImage': true,
 	        'class_value': ''
 	    }];	
@@ -527,31 +527,31 @@ sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $ht
     
     if(pid == 1) {
 		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_1_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/third/storytelling/s_1_thumb.jpg',
 	        'id': 1,
 	        'exmplars': 'Facial proportions are inaccurate and/or facial features are missing.',
-	        'source': './src/resources/exmplars/visual/CE2.5_1_small.jpg',
+	        'source': './src/resources/exmplars/third/storytelling/s_1.jpg',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_2_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/third/storytelling/s_2_thumb.jpg',
 	        'id': 2,
 	        'exmplars': 'All facial features are present. Most of the features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_2_small.jpg',
+	        'source': './src/resources/exmplars/third/storytelling/s_2.jpg',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_3_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/third/storytelling/s_3_thumb.jpg',
 	        'id': 3,
 	        'exmplars': 'All facial features are present. One or two features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_3_small.jpg',
+	        'source': './src/resources/exmplars/third/storytelling/s_3.jpg',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_4_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/third/storytelling/s_4_thumb.jpg',
 	        'id': 4,
 	        'exmplars': 'All facial features are present. Facial  proportions are accurate.',
-	        'source': './src/resources/exmplars/visual/CE2.5_4_small.jpg',
+	        'source': './src/resources/exmplars/third/storytelling/s_4.jpg',
 	        'isImage': true,
 	        'class_value': ''
 	    }];	
@@ -559,31 +559,31 @@ sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $ht
 
 	if(pid == 2) {
 		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_1_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/fourth/PhysicalExpression/pe_1_thumb.jpg',
 	        'id': 1,
 	        'exmplars': 'Facial proportions are inaccurate and/or facial features are missing.',
-	        'source': './src/resources/exmplars/visual/CE2.5_1_small.jpg',
+	        'source': './src/resources/exmplars/fourth/PhysicalExpression/pe_1.mp4',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_2_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/fourth/PhysicalExpression/pe_2_thumb.jpg',
 	        'id': 2,
 	        'exmplars': 'All facial features are present. Most of the features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_2_small.jpg',
+	        'source': './src/resources/exmplars/fourth/PhysicalExpression/pe_2.mp4',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_3_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/fourth/PhysicalExpression/pe_3_thumb.jpg',
 	        'id': 3,
 	        'exmplars': 'All facial features are present. One or two features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_3_small.jpg',
+	        'source': './src/resources/exmplars/fourth/PhysicalExpression/pe_3.mp4',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_4_thumb.jpg.png',
+	        'thumbnail': './src/resources/exmplars/fourth/PhysicalExpression/pe_4_thumb.jpg',
 	        'id': 4,
 	        'exmplars': 'All facial features are present. Facial  proportions are accurate.',
-	        'source': './src/resources/exmplars/visual/CE2.5_4_small.jpg',
+	        'source': './src/resources/exmplars/fourth/PhysicalExpression/pe_4.mp4',
 	        'isImage': true,
 	        'class_value': ''
 	    }];	
