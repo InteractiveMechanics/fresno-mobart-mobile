@@ -195,34 +195,35 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
     };
     
     $scope.artwork_url = item.artwork_url;
-
+	
+	// Assessment 1
 	if(pid == 1) {
 		$scope.exmps = [{
 	        'thumbnail': './src/resources/exmplars/third/PhysicalExpression/pe_1_thumb.jpg',
 	        'id': 1,
-	        'exmplars': 'Facial proportions are inaccurate and/or facial features are missing.',
 	        'source': './src/resources/exmplars/third/PhysicalExpression/pe_1.jpg',
+	        'exmplars': 'The student’s pose is unclear or difficult to view. Student detracts from the overall effect of the tableau.',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/third/PhysicalExpression/pe_2_thumb.jpg',
 	        'id': 2,
-	        'exmplars': 'All facial features are present. Most of the features are sized or placed inaccurately.',
 	        'source': './src/resources/exmplars/third/PhysicalExpression/pe_2.jpg',
+	        'exmplars': 'The student exhibits a frozen pose. Choices about level or shape are only partially visible. Student shows some attempt at physical expression.',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/third/PhysicalExpression/pe_3_thumb.jpg',
 	        'id': 3,
-	        'exmplars': 'All facial features are present. One or two features are sized or placed inaccurately.',
 	        'source': './src/resources/exmplars/third/PhysicalExpression/pe_3.jpg',
+	        'exmplars': 'The student exhibits a frozen pose. Choices about  level and shape are visible. The pose lacks bold, strong choices for physical expression.',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/third/PhysicalExpression/pe_4_thumb.jpg',
 	        'id': 4,
-	        'exmplars': 'All facial features are present. Facial  proportions are accurate.',
 	        'source': './src/resources/exmplars/third/PhysicalExpression/pe_4.jpg',
+	        'exmplars': 'The student exhibits a bold, strong pose. Choices about level and body shape are effective. The student is clearly visible and the spacing is well balanced.',
 	        'isImage': true,
 	        'class_value': ''
 	    }];	
@@ -232,29 +233,29 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 		$scope.exmps = [{
 	        'thumbnail': './src/resources/exmplars/fourth/FacialExpression/fe_1_thumb.jpg',
 	        'id': 1,
-	        'exmplars': 'Facial proportions are inaccurate and/or facial features are missing.',
 	        'source': './src/resources/exmplars/fourth/FacialExpression/fe_1.jpg',
+	        'exmplars': 'Dialogue does not reflect character motivations or emotions.',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/fourth/FacialExpression/fe_2_thumb.jpg',
 	        'id': 2,
-	        'exmplars': 'All facial features are present. Most of the features are sized or placed inaccurately.',
 	        'source': './src/resources/exmplars/fourth/FacialExpression/fe_2.jpg',
+	        'exmplars': 'The student makes some attempt at showing what the character is feeling through facial expression. The focal point is somewhat appropriate for the scene.',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/fourth/FacialExpression/fe_3_thumb.jpg',
 	        'id': 3,
-	        'exmplars': 'All facial features are present. One or two features are sized or placed inaccurately.',
 	        'source': './src/resources/exmplars/fourth/FacialExpression/fe_3.jpg',
+	        'exmplars': 'The student exhibits an appropriate facial expression and focal point. The face shows some emotional expression, but the student has not made a bold, strong choice to show what the character wants or feels.',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/fourth/FacialExpression/fe_4_thumb.jpg',
 	        'id': 4,
-	        'exmplars': 'All facial features are present. Facial  proportions are accurate.',
 	        'source': './src/resources/exmplars/fourth/FacialExpression/fe_4.jpg',
+	        'exmplars': 'The student exhibits a bold, strong facial expression with an appropriate focal point. The face clearly expresses what the character wants or feels.',
 	        'isImage': true,
 	        'class_value': ''
 	    }];	
@@ -362,33 +363,34 @@ sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $h
     
     $scope.artwork_url = item.artwork_url;
 
+  // Assessment 2
 	if(pid == 1) {
 		$scope.exmps = [{
 	        'thumbnail': './src/resources/exmplars/third/FacialExpression/fe_1_thumb.jpg',
 	        'id': 1,
-	        'exmplars': 'Facial proportions are inaccurate and/or facial features are missing.',
 	        'source': './src/resources/exmplars/third/FacialExpression/fe_1.jpg',
+	        'exmplars': 'The students has very little facial expression or the facial  expression does not fit the tableau. The student looks right at the audience or camera.',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/third/FacialExpression/fe_2_thumb.jpg',
 	        'id': 2,
-	        'exmplars': 'All facial features are present. Most of the features are sized or placed inaccurately.',
 	        'source': './src/resources/exmplars/third/FacialExpression/fe_2.jpg',
+	        'exmplars': 'The student makes some attempt at showing what the character is feeling through facial expression. The focal point is somewhat appropriate for the scene.',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/third/FacialExpression/fe_3_thumb.jpg',
 	        'id': 3,
-	        'exmplars': 'All facial features are present. One or two features are sized or placed inaccurately.',
 	        'source': './src/resources/exmplars/third/FacialExpression/fe_3.jpg',
+	        'exmplars': 'The student exhibits an appropriate facial expression and focal point. The face shows some emotional expression, but the student has not made a bold, strong choice to show what the character is feeling.',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/third/FacialExpression/fe_4_thumb.jpg',
 	        'id': 4,
-	        'exmplars': 'All facial features are present. Facial  proportions are accurate.',
 	        'source': './src/resources/exmplars/third/FacialExpression/fe_4.jpg',
+	        'exmplars': 'The student exhibits a bold, strong facial expression with an appropriate focal point. The face clearly expresses what the character is feeling.',
 	        'isImage': true,
 	        'class_value': ''
 	    }];	
@@ -398,29 +400,29 @@ sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $h
 		$scope.exmps = [{
 	        'thumbnail': './src/resources/exmplars/fourth/VocalExpression/ve_1_thumb.jpg',
 	        'id': 1,
-	        'exmplars': 'Facial proportions are inaccurate and/or facial features are missing.',
 	        'source': './src/resources/exmplars/fourth/VocalExpression/ve_1.mp4',
+	        'exmplars': 'It is unclear what the student is saying;student mumbles lines or races through them. Tone does not match the character.',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/fourth/VocalExpression/ve_2_thumb.jpg',
 	        'id': 2,
-	        'exmplars': 'All facial features are present. Most of the features are sized or placed inaccurately.',
 	        'source': './src/resources/exmplars/fourth/VocalExpression/ve_2.mp4',
+	        'exmplars': 'The student has some difficulty speaking with appropriate diction, pace, or volume; sometimes hard to understand what the character is saying. Student speaks in a monotone.',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/fourth/VocalExpression/ve_3_thumb.jpg',
 	        'id': 3,
-	        'exmplars': 'All facial features are present. One or two features are sized or placed inaccurately.',
 	        'source': './src/resources/exmplars/fourth/VocalExpression/ve_3.mp4',
+	        'exmplars': 'The student speaks with appropriate diction, pace and volume; the character can be heard and understood most of the time. The tone sometimes matches the character being portrayed.',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/fourth/VocalExpression/ve_4_thumb.jpg',
 	        'id': 4,
-	        'exmplars': 'All facial features are present. Facial  proportions are accurate.',
 	        'source': './src/resources/exmplars/fourth/VocalExpression/ve_4.mp4',
+	        'exmplars': 'The student speaks with clear diction, at an appropriate pace and volume; the character can easily be heard and understood. The tone matches the character being portrayed. ',
 	        'isImage': true,
 	        'class_value': ''
 	    }];	
@@ -525,33 +527,34 @@ sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $ht
     
     $scope.artwork_url = item.artwork_url;
     
+    // Assessment 3
     if(pid == 1) {
 		$scope.exmps = [{
 	        'thumbnail': './src/resources/exmplars/third/storytelling/s_1_thumb.jpg',
 	        'id': 1,
-	        'exmplars': 'Facial proportions are inaccurate and/or facial features are missing.',
 	        'source': './src/resources/exmplars/third/storytelling/s_1.jpg',
+	        'exmplars': 'It is unclear who or what the student is representing.The pose detracts from the story being told.',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/third/storytelling/s_2_thumb.jpg',
 	        'id': 2,
-	        'exmplars': 'All facial features are present. Most of the features are sized or placed inaccurately.',
 	        'source': './src/resources/exmplars/third/storytelling/s_2.jpg',
+	        'exmplars': 'The student makes some attempt to show who or what he represents in the story being told. The pose does not seem to be an important part of the story.',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/third/storytelling/s_3_thumb.jpg',
 	        'id': 3,
-	        'exmplars': 'All facial features are present. One or two features are sized or placed inaccurately.',
 	        'source': './src/resources/exmplars/third/storytelling/s_3.jpg',
+	        'exmplars': 'The student’s pose is part of the story being told in the tableau. Who or what the student represents in the story needs clarification.',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/third/storytelling/s_4_thumb.jpg',
 	        'id': 4,
-	        'exmplars': 'All facial features are present. Facial  proportions are accurate.',
 	        'source': './src/resources/exmplars/third/storytelling/s_4.jpg',
+	        'exmplars': 'The student’s pose is an integral part of the story being told. It is obvious who or what the student represents.',
 	        'isImage': true,
 	        'class_value': ''
 	    }];	
@@ -561,29 +564,29 @@ sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $ht
 		$scope.exmps = [{
 	        'thumbnail': './src/resources/exmplars/fourth/PhysicalExpression/pe_1_thumb.jpg',
 	        'id': 1,
-	        'exmplars': 'Facial proportions are inaccurate and/or facial features are missing.',
 	        'source': './src/resources/exmplars/fourth/PhysicalExpression/pe_1.mp4',
+	        'exmplars': 'The student’s physical expression is unclear or difficult to view. Gestures portray very little emotion or student breaks character.',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/fourth/PhysicalExpression/pe_2_thumb.jpg',
 	        'id': 2,
-	        'exmplars': 'All facial features are present. Most of the features are sized or placed inaccurately.',
 	        'source': './src/resources/exmplars/fourth/PhysicalExpression/pe_2.mp4',
+	        'exmplars': 'Student shows some attempt at physical expression. Portrays emotion through a simple stereotyped gesture (such as pretend crying).',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/fourth/PhysicalExpression/pe_3_thumb.jpg',
 	        'id': 3,
-	        'exmplars': 'All facial features are present. One or two features are sized or placed inaccurately.',
 	        'source': './src/resources/exmplars/fourth/PhysicalExpression/pe_3.mp4',
+	        'exmplars': 'The student exhibits body shape, level, and gesture to show what the character feels. Portrays simple emotions (happiness, sadness) through gestures and action.',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/fourth/PhysicalExpression/pe_4_thumb.jpg',
 	        'id': 4,
-	        'exmplars': 'All facial features are present. Facial  proportions are accurate.',
 	        'source': './src/resources/exmplars/fourth/PhysicalExpression/pe_4.mp4',
+	        'exmplars': 'The student exhibits a bold, strong choice in body shape, level, and gesture to show what the character feels. Portrays nuances of emotions (confusion, excitement, anxiety, etc.) that fit the character.',
 	        'isImage': true,
 	        'class_value': ''
 	    }];	
@@ -933,11 +936,11 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
         'name': '3rd Grade (Theatre)',
         id: 'theatre'
     }, {
-        'name': '3rd Grade (Visual Arts)',
-        id: 'visual'
-    },{
         'name': '4th Grade (Theatre)',
         id: 'theatre'
+    },{
+        'name': '3rd Grade (Visual Arts)',
+        id: 'visual'
     }, {
         'name': '4th Grade (Visual Arts)',
         id: 'visual'
