@@ -6,7 +6,7 @@
 				<i class="fa fa-chevron-left"></i>
 			</span>
 
-			<h1>Project-1</h1>
+			<h1>{{ project }}</h1>
 
 			<span class="header-button  search-button hb-right">
 				<i class="fa fa-search"></i>
@@ -32,7 +32,7 @@
 
 			<div class="upload-message text-center">
 				<p class="title">
-					Assessment #1
+					{{ assessment }}
 				</p>
 			</div>
 
@@ -65,7 +65,7 @@
 
 					<div class="hidden">
 						<div id="colorbox-{{v.id}}">
-							<video ng-show="{{v.isVideo}}" width="640" controls>
+							<video ng-show="{{v.isVideo}}" width="640" height="100%" controls>
 								  <source src="{{v.source}}" type="video/mp4">
 							</video>
 

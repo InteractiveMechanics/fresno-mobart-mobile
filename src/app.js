@@ -138,12 +138,11 @@ sampleApp.controller('DashboardController', function($scope, $location) {
     };
 });
 
-sampleApp.controller('GradeController', function($scope, $rootScope, $http, $location, Upload) {
-	var pid = 1; //Controls which exemplar will show
-	
+sampleApp.controller('GradeController', function($scope, $rootScope, $http, $location, Upload) {	
 	$scope.back_btn_text = "Save For Later";
 	$scope.selected_item = -1;
 	var item = JSON.parse(localStorage.getItem('current_item')); 
+    var pid = item.pid;
 	
     $scope.grade_project = function() {
     	if($scope.selected_item > 0) {
@@ -168,7 +167,8 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 		    	ex1grade: 0,
 		    	ex2grade: 0,
 		    	ex3grade: 0,
-		    	ex4grade: 0
+		    	ex4grade: 0,
+                pid: item.pid
 	    	}
 	    	
 	    	if(item.writing_id) {
@@ -198,6 +198,8 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 	
 	// Assessment 1
 	if(pid == 1) {
+        $scope.project = '3rd Grade (Theatre)';
+        $scope.assessment = 'Physical Expression';
 		$scope.exmps = [{
 	        'thumbnail': './src/resources/exmplars/third/PhysicalExpression/pe_1_thumb.jpg',
 	        'id': 1,
@@ -230,6 +232,8 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 	}
 
 	if(pid == 2) {
+        $scope.project = '4th Grade (Theatre)';
+        $scope.assessment = 'Facial Expression';
 		$scope.exmps = [{
 	        'thumbnail': './src/resources/exmplars/fourth/FacialExpression/fe_1_thumb.jpg',
 	        'id': 1,
@@ -260,71 +264,6 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 	        'class_value': ''
 	    }];	
 	}
-
-	if(pid == 3) {
-		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_1_thumb.jpg.png',
-	        'id': 1,
-	        'exmplars': 'Facial proportions are inaccurate and/or facial features are missing.',
-	        'source': './src/resources/exmplars/visual/CE2.5_1_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_2_thumb.jpg.png',
-	        'id': 2,
-	        'exmplars': 'All facial features are present. Most of the features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_2_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_3_thumb.jpg.png',
-	        'id': 3,
-	        'exmplars': 'All facial features are present. One or two features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_3_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_4_thumb.jpg.png',
-	        'id': 4,
-	        'exmplars': 'All facial features are present. Facial  proportions are accurate.',
-	        'source': './src/resources/exmplars/visual/CE2.5_4_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }];	
-	}
-
-	if(pid == 4) {
-		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_1_thumb.jpg.png',
-	        'id': 1,
-	        'exmplars': 'Facial proportions are inaccurate and/or facial features are missing.',
-	        'source': './src/resources/exmplars/visual/CE2.5_1_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_2_thumb.jpg.png',
-	        'id': 2,
-	        'exmplars': 'All facial features are present. Most of the features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_2_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_3_thumb.jpg.png',
-	        'id': 3,
-	        'exmplars': 'All facial features are present. One or two features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_3_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_4_thumb.jpg.png',
-	        'id': 4,
-	        'exmplars': 'All facial features are present. Facial  proportions are accurate.',
-	        'source': './src/resources/exmplars/visual/CE2.5_4_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }];	
-	}
-
     
     if( item.exemplar_one > 0 ) {
 	 	var index = item.exemplar_one - 1;
@@ -334,12 +273,10 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 });
 
 sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $http, $location) {
-	var pid = 1; //Controls which exemplar will show
-	
 	$scope.back_btn_text = "Back";
-	
 	$scope.selected_item = -1;
 	var item = JSON.parse(localStorage.getItem('current_item')); 
+    var pid = item.pid;
 	
     $scope.grade_project = function() {
     	if($scope.selected_item > 0) {
@@ -353,7 +290,7 @@ sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $h
     };
 
     $scope.go_back = function() {
-        $location.path('second-exemplar');
+        $location.path('grade-project');
     }
     
     $scope.exemplar_click = function(index) {
@@ -365,6 +302,8 @@ sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $h
 
   // Assessment 2
 	if(pid == 1) {
+        $scope.project = '3rd Grade (Theatre)';
+        $scope.assessment = 'Facial Expression';
 		$scope.exmps = [{
 	        'thumbnail': './src/resources/exmplars/third/FacialExpression/fe_1_thumb.jpg',
 	        'id': 1,
@@ -397,97 +336,35 @@ sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $h
 	}
 
 	if(pid == 2) {
+        $scope.project = '4th Grade (Theatre)';
+        $scope.assessment = 'Vocal Expression';
 		$scope.exmps = [{
 	        'thumbnail': './src/resources/exmplars/fourth/VocalExpression/ve_1_thumb.jpg',
 	        'id': 1,
 	        'source': './src/resources/exmplars/fourth/VocalExpression/ve_1.mp4',
 	        'exmplars': 'It is unclear what the student is saying;student mumbles lines or races through them. Tone does not match the character.',
-	        'isImage': true,
+	        'isVideo': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/fourth/VocalExpression/ve_2_thumb.jpg',
 	        'id': 2,
 	        'source': './src/resources/exmplars/fourth/VocalExpression/ve_2.mp4',
 	        'exmplars': 'The student has some difficulty speaking with appropriate diction, pace, or volume; sometimes hard to understand what the character is saying. Student speaks in a monotone.',
-	        'isImage': true,
+	        'isVideo': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/fourth/VocalExpression/ve_3_thumb.jpg',
 	        'id': 3,
 	        'source': './src/resources/exmplars/fourth/VocalExpression/ve_3.mp4',
 	        'exmplars': 'The student speaks with appropriate diction, pace and volume; the character can be heard and understood most of the time. The tone sometimes matches the character being portrayed.',
-	        'isImage': true,
+	        'isVideo': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/fourth/VocalExpression/ve_4_thumb.jpg',
 	        'id': 4,
 	        'source': './src/resources/exmplars/fourth/VocalExpression/ve_4.mp4',
 	        'exmplars': 'The student speaks with clear diction, at an appropriate pace and volume; the character can easily be heard and understood. The tone matches the character being portrayed. ',
-	        'isImage': true,
-	        'class_value': ''
-	    }];	
-	}
-
-	if(pid == 3) {
-		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_1_thumb.jpg.png',
-	        'id': 1,
-	        'exmplars': 'Facial proportions are inaccurate and/or facial features are missing.',
-	        'source': './src/resources/exmplars/visual/CE2.5_1_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_2_thumb.jpg.png',
-	        'id': 2,
-	        'exmplars': 'All facial features are present. Most of the features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_2_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_3_thumb.jpg.png',
-	        'id': 3,
-	        'exmplars': 'All facial features are present. One or two features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_3_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_4_thumb.jpg.png',
-	        'id': 4,
-	        'exmplars': 'All facial features are present. Facial  proportions are accurate.',
-	        'source': './src/resources/exmplars/visual/CE2.5_4_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }];	
-	}
-
-	if(pid == 4) {
-		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_1_thumb.jpg.png',
-	        'id': 1,
-	        'exmplars': 'Facial proportions are inaccurate and/or facial features are missing.',
-	        'source': './src/resources/exmplars/visual/CE2.5_1_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_2_thumb.jpg.png',
-	        'id': 2,
-	        'exmplars': 'All facial features are present. Most of the features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_2_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_3_thumb.jpg.png',
-	        'id': 3,
-	        'exmplars': 'All facial features are present. One or two features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_3_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_4_thumb.jpg.png',
-	        'id': 4,
-	        'exmplars': 'All facial features are present. Facial  proportions are accurate.',
-	        'source': './src/resources/exmplars/visual/CE2.5_4_small.jpg',
-	        'isImage': true,
+	        'isVideo': true,
 	        'class_value': ''
 	    }];	
 	}
@@ -500,11 +377,10 @@ sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $h
 });
 
 sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $http, $location) {
-	var pid = 1; //Controls which exemplar will show
-	
 	$scope.back_btn_text = "Back";
 	$scope.selected_item = -1;
 	var item = JSON.parse(localStorage.getItem('current_item')); 
+    var pid = item.pid;
 	
     $scope.grade_project = function() {
     	if($scope.selected_item > 0) {
@@ -529,130 +405,69 @@ sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $ht
     
     // Assessment 3
     if(pid == 1) {
+        $scope.project = '3rd Grade (Theatre)';
+        $scope.assessment = 'Storytelling Through Tableau';
 		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/third/storytelling/s_1_thumb.jpg',
+	        'thumbnail': './src/resources/exmplars/third/Storytelling/s_1_thumb.jpg',
 	        'id': 1,
-	        'source': './src/resources/exmplars/third/storytelling/s_1.jpg',
+	        'source': './src/resources/exmplars/third/Storytelling/s_1.jpg',
 	        'exmplars': 'It is unclear who or what the student is representing.The pose detracts from the story being told.',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/third/storytelling/s_2_thumb.jpg',
+	        'thumbnail': './src/resources/exmplars/third/Storytelling/s_2_thumb.jpg',
 	        'id': 2,
-	        'source': './src/resources/exmplars/third/storytelling/s_2.jpg',
+	        'source': './src/resources/exmplars/third/Storytelling/s_2.jpg',
 	        'exmplars': 'The student makes some attempt to show who or what he represents in the story being told. The pose does not seem to be an important part of the story.',
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/third/storytelling/s_3_thumb.jpg',
+	        'thumbnail': './src/resources/exmplars/third/Storytelling/s_3_thumb.jpg',
 	        'id': 3,
-	        'source': './src/resources/exmplars/third/storytelling/s_3.jpg',
-	        'exmplars': 'The student’s pose is part of the story being told in the tableau. Who or what the student represents in the story needs clarification.',
+	        'source': './src/resources/exmplars/third/Storytelling/s_3.jpg',
+	        'exmplars': "The student's pose is part of the story being told in the tableau. Who or what the student represents in the story needs clarification.",
 	        'isImage': true,
 	        'class_value': ''
 	    }, {
-	        'thumbnail': './src/resources/exmplars/third/storytelling/s_4_thumb.jpg',
+	        'thumbnail': './src/resources/exmplars/third/Storytelling/s_4_thumb.jpg',
 	        'id': 4,
-	        'source': './src/resources/exmplars/third/storytelling/s_4.jpg',
-	        'exmplars': 'The student’s pose is an integral part of the story being told. It is obvious who or what the student represents.',
+	        'source': './src/resources/exmplars/third/Storytelling/s_4.jpg',
+	        'exmplars': "The student's pose is an integral part of the story being told. It is obvious who or what the student represents.",
 	        'isImage': true,
 	        'class_value': ''
 	    }];	
 	}
 
 	if(pid == 2) {
+        $scope.project = '4th Grade (Theatre)';
+        $scope.assessment = 'Character Physicalization';
 		$scope.exmps = [{
 	        'thumbnail': './src/resources/exmplars/fourth/PhysicalExpression/pe_1_thumb.jpg',
 	        'id': 1,
 	        'source': './src/resources/exmplars/fourth/PhysicalExpression/pe_1.mp4',
 	        'exmplars': 'The student’s physical expression is unclear or difficult to view. Gestures portray very little emotion or student breaks character.',
-	        'isImage': true,
+	        'isVideo': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/fourth/PhysicalExpression/pe_2_thumb.jpg',
 	        'id': 2,
 	        'source': './src/resources/exmplars/fourth/PhysicalExpression/pe_2.mp4',
 	        'exmplars': 'Student shows some attempt at physical expression. Portrays emotion through a simple stereotyped gesture (such as pretend crying).',
-	        'isImage': true,
+	        'isVideo': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/fourth/PhysicalExpression/pe_3_thumb.jpg',
 	        'id': 3,
 	        'source': './src/resources/exmplars/fourth/PhysicalExpression/pe_3.mp4',
 	        'exmplars': 'The student exhibits body shape, level, and gesture to show what the character feels. Portrays simple emotions (happiness, sadness) through gestures and action.',
-	        'isImage': true,
+	        'isVideo': true,
 	        'class_value': ''
 	    }, {
 	        'thumbnail': './src/resources/exmplars/fourth/PhysicalExpression/pe_4_thumb.jpg',
 	        'id': 4,
 	        'source': './src/resources/exmplars/fourth/PhysicalExpression/pe_4.mp4',
 	        'exmplars': 'The student exhibits a bold, strong choice in body shape, level, and gesture to show what the character feels. Portrays nuances of emotions (confusion, excitement, anxiety, etc.) that fit the character.',
-	        'isImage': true,
-	        'class_value': ''
-	    }];	
-	}
-
-	if(pid == 3) {
-		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_1_thumb.jpg.png',
-	        'id': 1,
-	        'exmplars': 'Facial proportions are inaccurate and/or facial features are missing.',
-	        'source': './src/resources/exmplars/visual/CE2.5_1_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_2_thumb.jpg.png',
-	        'id': 2,
-	        'exmplars': 'All facial features are present. Most of the features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_2_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_3_thumb.jpg.png',
-	        'id': 3,
-	        'exmplars': 'All facial features are present. One or two features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_3_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_4_thumb.jpg.png',
-	        'id': 4,
-	        'exmplars': 'All facial features are present. Facial  proportions are accurate.',
-	        'source': './src/resources/exmplars/visual/CE2.5_4_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }];	
-	}
-
-
-	if(pid == 4) {
-		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_1_thumb.jpg.png',
-	        'id': 1,
-	        'exmplars': 'Facial proportions are inaccurate and/or facial features are missing.',
-	        'source': './src/resources/exmplars/visual/CE2.5_1_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_2_thumb.jpg.png',
-	        'id': 2,
-	        'exmplars': 'All facial features are present. Most of the features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_2_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_3_thumb.jpg.png',
-	        'id': 3,
-	        'exmplars': 'All facial features are present. One or two features are sized or placed inaccurately.',
-	        'source': './src/resources/exmplars/visual/CE2.5_3_small.jpg',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/visual/CE2.5_4_thumb.jpg.png',
-	        'id': 4,
-	        'exmplars': 'All facial features are present. Facial  proportions are accurate.',
-	        'source': './src/resources/exmplars/visual/CE2.5_4_small.jpg',
-	        'isImage': true,
+	        'isVideo': true,
 	        'class_value': ''
 	    }];	
 	}
@@ -688,7 +503,8 @@ sampleApp.controller('FinishGradingController', function($scope, $rootScope, $ht
 	    	ex1grade: parseInt(item.exemplar_one),
 	    	ex2grade: parseInt(item.exemplar_two),
 	    	ex3grade: parseInt(item.exemplar_three),
-	    	ex4grade: 0
+	    	ex4grade: 0,
+            pid: parseInt(item.pid)
     	}
     	
     	if(item.gid) {
@@ -804,7 +620,8 @@ sampleApp.controller('WritingUploadedController', function($scope, $location, $h
 	    	ex1grade: 0,
 	    	ex2grade: 0,
 	    	ex3grade: 0,
-	    	ex4grade: 0
+	    	ex4grade: 0,
+            pid: item.pid
     	}
     	
     	if(item.writing_id) {
@@ -934,16 +751,10 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
 
     $scope.project_list = [{
         'name': '3rd Grade (Theatre)',
-        id: 'theatre'
+        id: 1
     }, {
         'name': '4th Grade (Theatre)',
-        id: 'theatre'
-    },{
-        'name': '3rd Grade (Visual Arts)',
-        id: 'visual'
-    }, {
-        'name': '4th Grade (Visual Arts)',
-        id: 'visual'
+        id: 2
     }];
 
     $scope.upload_artwork = function() {
@@ -968,8 +779,8 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
 			    	ex1grade: 0,
 			    	ex2grade: 0,
 			    	ex3grade: 0,
-			    	ex4grade: 0
-			    	
+			    	ex4grade: 0,
+			    	pid: _project
 		    	}
 		        var promise = $http.post($rootScope.baseUrl + '/api/grades', postData);
 		        promise.success(function(data, status, headers, config){
@@ -990,7 +801,8 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
 						class_id: _class,
 						student_id: _student,
 						artwork_id: $scope.artwork_id,
-						artwork_url: $scope.artwork_url
+						artwork_url: $scope.artwork_url,
+                        pid: _project
 					};
 					
 					localStorage.setItem('current_item', JSON.stringify(post_data));
@@ -1039,13 +851,14 @@ sampleApp.controller('ProjectController', function($scope, $rootScope, $http, $l
 		    	class_id: response[0].cid,
 		    	student_id: response[0].sid,
 		    	artwork_id: response[0].artworkid,
-		    	artwork_url: response[0].artworkfilepath,
+		    	artwork_url: "/mobart/data/files/" + response[0].artworkfilepath,
 		    	writing_id: response[0].writingid,
 		    	exemplar_one: response[0].ex1grade,
 		    	exemplar_two: response[0].ex2grade,
 		    	exemplar_three: response[0].ex3grade,
 		    	ex4grade: 0, 
-		    	gid: response[0].id
+		    	gid: response[0].id,
+                pid: response[0].pid
 			};
 			
 			console.log(postData);
