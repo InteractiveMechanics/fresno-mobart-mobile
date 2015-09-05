@@ -198,7 +198,6 @@ form.login-form {
     margin-top: 35px; }
   .artwork-preview img {
     border: solid 6px #97d3e4;
-    width: 80% !important;
     height: auto !important; }
 
 /**PROFILE-IMAGE**/

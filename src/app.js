@@ -15,6 +15,20 @@ sampleApp.run(function($rootScope, $location) {
 
         $location.path('dashboard');
     };
+    $rootScope.checkMimetype = function (mimetype) {
+        switch (mimetype) {
+            case 'video/mov':
+            case 'video/mp4':
+                return 'video';
+                break;
+            case 'image/png':
+            case 'image/jpeg':
+                return 'image';
+                break;
+            default:
+                return 'no-file';
+        }
+    }
 });
 
 sampleApp.config(['$routeProvider',
@@ -162,6 +176,7 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 		    	cid: item.class_id,
 		    	sid: item.student_id,
 		    	artworkid: item.artwork_id,
+                artwork_mimetype: item.artwork_mimetype,
 		    	saved: 1,
 		    	incomplete: 0,
 		    	ex1grade: 0,
@@ -194,6 +209,7 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 	  	$scope.selected_item = index;  
     };
     
+    $scope.artwork_mimetype = item.artwork_mimetype;
     $scope.artwork_url = item.artwork_url;
 	
 	// Assessment 1
@@ -297,7 +313,7 @@ sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $h
 	  	$scope.selected_item = index;  
     };
     
-    
+    $scope.artwork_mimetype = item.artwork_mimetype;
     $scope.artwork_url = item.artwork_url;
 
   // Assessment 2
@@ -401,6 +417,7 @@ sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $ht
 	  	$scope.selected_item = index;  
     };
     
+    $scope.artwork_mimetype = item.artwork_mimetype;
     $scope.artwork_url = item.artwork_url;
     
     // Assessment 3
@@ -604,9 +621,11 @@ sampleApp.controller('WritingUploadedController', function($scope, $location, $h
 	    	$http
 		        .get($rootScope.baseUrl + '/api/files/' + item.writing_id)
 		        .success(function(response) {
-		           $scope.writing_url = '/mobart/data/files/' + response[0].filename;
-		           $scope.is_uploading = false;
-		           $scope.uploaded = true;
+		            $scope.writing_url = '/mobart/data/files/' + response[0].filename;
+                    $scope.writing_mimetype = response[0].mimetype;
+                    $scope.writing_filename = response[0].filename;
+		            $scope.is_uploading = false;
+		            $scope.uploaded = true;
 		        });
     	}
     
@@ -719,8 +738,6 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
                         'mimetype': file.type
                     };
 					
-					
-					
                     var promise = $http.post($rootScope.baseUrl + '/api/files', fileData);
                     promise.success(function(data, status, headers, config) {
                         if (status == 200) {
@@ -729,12 +746,9 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
 						        .get($rootScope.baseUrl + '/api/files/' + data)
 						        .success(function(response) {
 						        	console.log(response);
-						        	if(response[0].mimetype == "video/mp4") {
-						        		$scope.artwork_url = "/mobart/data/no_file.png";
-						        	} else {
-							        	$scope.artwork_url = "/mobart/data/files/" + response[0].filename;
-						        	}
-									
+						        	$scope.artwork_mimetype = response[0].mimetype;
+                                    $scope.artwork_url = "/mobart/data/files/" + response[0].filename;
+                                    $scope.artwork_filename = response[0].filename;
 									$scope.is_uploading = false;
 									$scope.uploaded = true;
 						        });
@@ -744,9 +758,7 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
                     });
                 });
             } //end for
-            
         }//end if
-
     };
 
     $scope.project_list = [{
@@ -802,6 +814,7 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
 						student_id: _student,
 						artwork_id: $scope.artwork_id,
 						artwork_url: $scope.artwork_url,
+                        artwork_mimetype: $scope.artwork_mimetype,
                         pid: _project
 					};
 					
@@ -828,7 +841,6 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
 			$('p.error_message').html(error_str);
 			
 		}
-		//$location.path('art-uploaded/124');
     };
 });
 
@@ -852,6 +864,7 @@ sampleApp.controller('ProjectController', function($scope, $rootScope, $http, $l
 		    	student_id: response[0].sid,
 		    	artwork_id: response[0].artworkid,
 		    	artwork_url: "/mobart/data/files/" + response[0].artworkfilepath,
+                artwork_mimetype: response[0].artworkmimetype,
 		    	writing_id: response[0].writingid,
 		    	exemplar_one: response[0].ex1grade,
 		    	exemplar_two: response[0].ex2grade,

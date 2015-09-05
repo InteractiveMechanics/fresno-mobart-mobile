@@ -15,7 +15,11 @@
 		<div class="profile-image text-center">
 			<div class="name">
 				<div class="img-area" ng-if="writing_url">
-					<a class="img-lightbox" href="{{writing_url}}" data-lightbox="image-1" data-title="My caption"><img src="{{writing_url}}" width="25%"></a>
+					<a class="img-lightbox" href="{{writing_url}}" data-lightbox="image-1" data-title="My caption">
+                        <img class="img-class" ng-show="checkMimetype(writing_mimetype) == 'no-file'" src="/mobart/data/no_file.png" style="max-width: 65%;" />
+                        <img class="img-class" ng-show="checkMimetype(writing_mimetype) == 'video'" src="/mobart/data/ic_video.png" style="max-width: 65%;" />
+                        <img class="img-class" ng-show="checkMimetype(writing_mimetype) == 'image'" src="{{ writing_url }}" style="max-width: 65%;" />
+                    </a>
 				</div>
 				
 				<p class="title" style="margin:0px; padding:0px;">

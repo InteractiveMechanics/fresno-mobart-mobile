@@ -8,17 +8,23 @@
 
 			<h1>{{ project }}</h1>
 
-			<span class="header-button  search-button hb-right">
+			<span ng-hide="checkMimetype(artwork_mimetype) == 'no-file'" class="header-button  search-button hb-right">
 				<i class="fa fa-search"></i>
 			</span>
 			<br style="clear:both;" />
 		</div>
 
 		<div class="artwork-preview text-center">
-			<img src="{{artwork_url}}" class="img-class" width="45%" />
+            <img class="img-class" ng-show="checkMimetype(artwork_mimetype) == 'no-file'" src="/mobart/data/no_file.png" style="max-width: 65%;" />
+            <img class="img-class" ng-show="checkMimetype(artwork_mimetype) == 'video'" src="/mobart/data/ic_video.png" style="max-width: 65%;" />
+			<img class="img-class" ng-show="checkMimetype(artwork_mimetype) == 'image'" src="{{ artwork_url }}" style="max-width: 65%;" />
+
 			<div class="hidden">
-				<div id="large-image">
-					<img src="{{artwork_url}}" />
+				<div id="large-image" style="text-align: center;">
+                    <video ng-show="checkMimetype(artwork_mimetype) == 'video'" width="640" height="100%" controls>
+                        <source src="{{artwork_url}}" type="video/mp4">
+					</video>
+					<img ng-show="checkMimetype(artwork_mimetype) == 'image'" src="{{artwork_url}}" />
 				</div>
 			</div>
 		</div>
@@ -64,7 +70,7 @@
 					</div>
 
 					<div class="hidden">
-						<div id="colorbox-{{v.id}}">
+						<div id="colorbox-{{v.id}}" style="text-align: center;">
 							<video ng-show="{{v.isVideo}}" width="640" height="100%" controls>
 								  <source src="{{v.source}}" type="video/mp4">
 							</video>
