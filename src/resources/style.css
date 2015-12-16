@@ -401,6 +401,10 @@ form.login-form .input-area .sign-up-link {
 	margin-top: 2px;
 }
 
+.dashboard-view .exmplar-text label {
+	font-size: 18px!important;
+}
+
 .bootstrap-select.btn-group .dropdown-menu {
 	border-color: #c2c2c2;
 	font-weight: 500;

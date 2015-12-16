@@ -21,9 +21,7 @@
 
 			<div class="hidden">
 				<div id="large-image" style="text-align: center;">
-                    <video ng-show="checkMimetype(artwork_mimetype) == 'video'" width="640" height="100%" controls>
-                        <source src="{{artwork_url}}" type="video/mp4">
-					</video>
+                    <video ng-show="checkMimetype(artwork_mimetype) == 'video'" src="{{artwork_url}}" style="max-height: 500px;max-width: 100%;" controls></video>
 					<img ng-show="checkMimetype(artwork_mimetype) == 'image'" src="{{artwork_url}}" />
 				</div>
 			</div>
@@ -71,10 +69,7 @@
 
 					<div class="hidden">
 						<div id="colorbox-{{v.id}}" style="text-align: center;">
-							<video ng-show="{{v.isVideo}}" width="640" height="100%" controls>
-								  <source src="{{v.source}}" type="video/mp4">
-							</video>
-
+							<video ng-show="{{v.isVideo}}" src="{{v.source}}" style="max-height: 500px;max-width: 100%;" controls></video>
 							<img ng-show="{{v.isImage}}" src="{{v.source}}">
 						</div>
 					</div>

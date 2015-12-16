@@ -186,6 +186,9 @@ form.login-form {
   font-weight: 300;
   color: #001b37;
   font-size: 24px; }
+  .dashboard-view .exmplar-text label {
+  font-size: 2rem!important;
+}
 
 /** ARTWORK PREVIEW **/
 .artwork-preview {
