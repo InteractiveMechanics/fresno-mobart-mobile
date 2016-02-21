@@ -218,8 +218,46 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
     
     $scope.artwork_mimetype = item.artwork_mimetype;
     $scope.artwork_url = item.artwork_url;
+    
+    
+    //Json File Url
+    var json_url = 'http://iaccessfresno.com/mobart/src/resources/exemplars.json';
+    var promise = $http.get(json_url).then(function(response){
+	    var item = JSON.parse(localStorage.getItem('current_item')); 
+		var pid = item.pid;
+		
+		if(pid == 1) {
+	        $scope.project = '3rd Grade Unit Assessment';
+	        $scope.assessment = 'Physical Expression';
+			$scope.exmps = response.data.project1;	
+		}
+		
+		if(pid == 2) {
+	        $scope.project = '3rd Grade Unit Assessment';
+	        $scope.assessment = 'Physical Expression';
+			$scope.exmps = response.data.project2;	
+		}
+		
+		if(pid == 3) {
+	        $scope.project = '3rd Grade Unit Assessment';
+	        $scope.assessment = 'Physical Expression';
+			$scope.exmps = response.data.project3;	
+		}
+		
+		if(pid == 4) {
+	        $scope.project = '3rd Grade Unit Assessment';
+	        $scope.assessment = 'Physical Expression';
+			$scope.exmps = response.data.project4;	
+		}	
+		
+		if( item.exemplar_one > 0 ) {
+		 	var index = item.exemplar_one - 1;
+		 	$scope.exmps[index].class_value = 'active';
+		 	$scope.selected_item = item.exemplar_one;
+	    }	
+    });
 	
-	// Assessment 1
+	/*// Assessment 1
 	if(pid == 1) {
         $scope.project = '3rd Grade Unit Assessment';
         $scope.assessment = 'Physical Expression';
@@ -354,13 +392,9 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 	        'isImage': true,
 	        'class_value': ''
 	    }];	
-	}
+	}*/
     
-    if( item.exemplar_one > 0 ) {
-	 	var index = item.exemplar_one - 1;
-	 	$scope.exmps[index].class_value = 'active';
-	 	$scope.selected_item = item.exemplar_one;
-    }
+    
 });
 
 sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $http, $location) {

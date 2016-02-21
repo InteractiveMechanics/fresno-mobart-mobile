@@ -1,0 +1,118 @@
+{
+	"project1": [{
+		"thumbnail": "./src/resources/exmplars/third/PhysicalExpression/pe_1_thumb.jpg",
+		"id": 1,
+		"source": "./src/resources/exmplars/third/PhysicalExpression/pe_1.jpg",
+		"exmplars": "The students pose is unclear or difficult to view. Student detracts from the overall effect of the tableau.",
+		"isImage": true,
+		"class_value": ""
+	}, {
+		"thumbnail": "./src/resources/exmplars/third/PhysicalExpression/pe_2_thumb.jpg",
+		"id": 2,
+		"source": "./src/resources/exmplars/third/PhysicalExpression/pe_2.jpg",
+		"exmplars": "The student exhibits a frozen pose. Choices about level or shape are only partially visible. Student shows some attempt at physical expression.",
+		"isImage": true,
+		"class_value": ""
+	}, {
+		"thumbnail": "./src/resources/exmplars/third/PhysicalExpression/pe_3_thumb.jpg",
+		"id": 3,
+		"source": "./src/resources/exmplars/third/PhysicalExpression/pe_3.jpg",
+		"exmplars": "The student exhibits a frozen pose. Choices about  level and shape are visible. The pose lacks bold, strong choices for physical expression.",
+		"isImage": true,
+		"class_value": ""
+	}, {
+		"thumbnail": "./src/resources/exmplars/third/PhysicalExpression/pe_4_thumb.jpg",
+		"id": 4,
+		"source": "./src/resources/exmplars/third/PhysicalExpression/pe_4.jpg",
+		"exmplars": "The student exhibits a bold, strong pose. Choices about level and body shape are effective. The student is clearly visible and the spacing is well balanced.",
+		"isImage": true,
+		"class_value": ""
+	}],
+	"project2": [{
+		"thumbnail": "./src/resources/exmplars/fourth/FacialExpression/fe_1_thumb.jpg",
+		"id": 1,
+		"source": "./src/resources/exmplars/fourth/FacialExpression/fe_1.jpg",
+		"exmplars": "Facial Expression does not reflect character motivations or emotions.",
+		"isImage": true,
+		"class_value": ""
+	}, {
+		"thumbnail": "./src/resources/exmplars/fourth/FacialExpression/fe_2_thumb.jpg",
+		"id": 2,
+		"source": "./src/resources/exmplars/fourth/FacialExpression/fe_2.jpg",
+		"exmplars": "The student makes some attempt at showing what the character is feeling through facial expression. The focal point is somewhat appropriate for the scene.",
+		"isImage": true,
+		"class_value": ""
+	}, {
+		"thumbnail": "./src/resources/exmplars/fourth/FacialExpression/fe_3_thumb.jpg",
+		"id": 3,
+		"source": "./src/resources/exmplars/fourth/FacialExpression/fe_3.jpg",
+		"exmplars": "The student exhibits an appropriate facial expression and focal point. The face shows some emotional expression, but the student has not made a bold, strong choice to show what the character wants or feels.",
+		"isImage": true,
+		"class_value": ""
+	}, {
+		"thumbnail": "./src/resources/exmplars/fourth/FacialExpression/fe_4_thumb.jpg",
+		"id": 4,
+		"source": "./src/resources/exmplars/fourth/FacialExpression/fe_4.jpg",
+		"exmplars": "The student exhibits a bold, strong facial expression with an appropriate focal point. The face clearly expresses what the character wants or feels.",
+		"isImage": true,
+		"class_value": ""
+	}],
+	"project3": [{
+		"thumbnail": "./src/resources/exmplars/third/PhysicalExpression/pe_1_thumb.jpg",
+		"id": 1,
+		"source": "./src/resources/exmplars/third/PhysicalExpression/pe_1.jpg",
+		"exmplars": "The students pose is unclear or difficult to view. Student detracts from the overall effect of the tableau.",
+		"isImage": true,
+		"class_value": ""
+	}, {
+		"thumbnail": "./src/resources/exmplars/third/PhysicalExpression/pe_2_thumb.jpg",
+		"id": 2,
+		"source": "./src/resources/exmplars/third/PhysicalExpression/pe_2.jpg",
+		"exmplars": "The student exhibits a frozen pose. Choices about level or shape are only partially visible. Student shows some attempt at physical expression.",
+		"isImage": true,
+		"class_value": ""
+	}, {
+		"thumbnail": "./src/resources/exmplars/third/PhysicalExpression/pe_3_thumb.jpg",
+		"id": 3,
+		"source": "./src/resources/exmplars/third/PhysicalExpression/pe_3.jpg",
+		"exmplars": "The student exhibits a frozen pose. Choices about  level and shape are visible. The pose lacks bold, strong choices for physical expression.",
+		"isImage": true,
+		"class_value": ""
+	}, {
+		"thumbnail": "./src/resources/exmplars/third/PhysicalExpression/pe_4_thumb.jpg",
+		"id": 4,
+		"source": "./src/resources/exmplars/third/PhysicalExpression/pe_4.jpg",
+		"exmplars": "The student exhibits a bold, strong pose. Choices about level and body shape are effective. The student is clearly visible and the spacing is well balanced.",
+		"isImage": true,
+		"class_value": ""
+	}],
+	"project4": [{
+		"thumbnail": "./src/resources/exmplars/fourth/FacialExpression/fe_1_thumb.jpg",
+		"id": 1,
+		"source": "./src/resources/exmplars/fourth/FacialExpression/fe_1.jpg",
+		"exmplars": "Facial Expression does not reflect character motivations or emotions.",
+		"isImage": true,
+		"class_value": ""
+	}, {
+		"thumbnail": "./src/resources/exmplars/fourth/FacialExpression/fe_2_thumb.jpg",
+		"id": 2,
+		"source": "./src/resources/exmplars/fourth/FacialExpression/fe_2.jpg",
+		"exmplars": "The student makes some attempt at showing what the character is feeling through facial expression. The focal point is somewhat appropriate for the scene.",
+		"isImage": true,
+		"class_value": ""
+	}, {
+		"thumbnail": "./src/resources/exmplars/fourth/FacialExpression/fe_3_thumb.jpg",
+		"id": 3,
+		"source": "./src/resources/exmplars/fourth/FacialExpression/fe_3.jpg",
+		"exmplars": "The student exhibits an appropriate facial expression and focal point. The face shows some emotional expression, but the student has not made a bold, strong choice to show what the character wants or feels.",
+		"isImage": true,
+		"class_value": ""
+	}, {
+		"thumbnail": "./src/resources/exmplars/fourth/FacialExpression/fe_4_thumb.jpg",
+		"id": 4,
+		"source": "./src/resources/exmplars/fourth/FacialExpression/fe_4.jpg",
+		"exmplars": "The student exhibits a bold, strong facial expression with an appropriate focal point. The face clearly expresses what the character wants or feels.",
+		"isImage": true,
+		"class_value": ""
+	}]
+}
