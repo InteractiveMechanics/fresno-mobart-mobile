@@ -233,20 +233,20 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 		}
 		
 		if(pid == 2) {
-	        $scope.project = '3rd Grade Unit Assessment';
-	        $scope.assessment = 'Physical Expression';
+	        $scope.project = '4th Grade Unit Assessment';
+	        $scope.assessment = 'Facial Expression';
 			$scope.exmps = response.data.project2;	
 		}
 		
 		if(pid == 3) {
-	        $scope.project = '3rd Grade Unit Assessment';
+	        $scope.project = '3rd Grade Performance Task Assessment';
 	        $scope.assessment = 'Physical Expression';
 			$scope.exmps = response.data.project3;	
 		}
 		
 		if(pid == 4) {
-	        $scope.project = '3rd Grade Unit Assessment';
-	        $scope.assessment = 'Physical Expression';
+	        $scope.project = '4th Grade Performance Task Assessment';
+	        $scope.assessment = 'Facial Expression';
 			$scope.exmps = response.data.project4;	
 		}	
 		
