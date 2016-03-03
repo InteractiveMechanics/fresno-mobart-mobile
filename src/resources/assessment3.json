@@ -1,0 +1,118 @@
+{
+	"project1": [{
+	        "thumbnail": "./src/resources/exmplars/third/Storytelling/s_1_thumb.jpg",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/third/Storytelling/s_1.jpg",
+	        "exmplars": "It is unclear who or what the student is representing.The pose detracts from the story being told.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/third/Storytelling/s_2_thumb.jpg",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/third/Storytelling/s_2.jpg",
+	        "exmplars": "The student makes some attempt to show who or what he represents in the story being told. The pose does not seem to be an important part of the story.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/third/Storytelling/s_3_thumb.jpg",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/third/Storytelling/s_3.jpg",
+	        "exmplars": "The students pose is part of the story being told in the tableau. Who or what the student represents in the story needs clarification.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/third/Storytelling/s_4_thumb.jpg",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/third/Storytelling/s_4.jpg",
+	        "exmplars": "The student's pose is an integral part of the story being told. It is obvious who or what the student represents.",
+	        "isImage": true,
+	        "class_value": ""
+	    }],
+	"project2": [{
+	        "thumbnail": "./src/resources/exmplars/fourth/PhysicalExpression/pe_1_thumb.jpg",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/fourth/PhysicalExpression/pe_1.mp4",
+	        "exmplars": "The students physical expression is unclear or difficult to view. Gestures portray very little emotion or student breaks character.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/fourth/PhysicalExpression/pe_2_thumb.jpg",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/fourth/PhysicalExpression/pe_2.mp4",
+	        "exmplars": "Student shows some attempt at physical expression. Portrays emotion through a simple stereotyped gesture (such as pretend crying).",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/fourth/PhysicalExpression/pe_3_thumb.jpg",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/fourth/PhysicalExpression/pe_3.mp4",
+	        "exmplars": "The student exhibits body shape, level, and gesture to show what the character feels. Portrays simple emotions (happiness, sadness) through gestures and action.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/fourth/PhysicalExpression/pe_4_thumb.jpg",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/fourth/PhysicalExpression/pe_4.mp4",
+	        "exmplars": "The student exhibits a bold, strong choice in body shape, level, and gesture to show what the character feels. Portrays nuances of emotions (confusion, excitement, anxiety, etc.) that fit the character.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }],
+	"project3": [{
+	        "thumbnail": "./src/resources/exmplars/third/Storytelling/s_1_thumb.jpg",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/third/Storytelling/s_1.jpg",
+	        "exmplars": "It is unclear who or what the student is representing.The pose detracts from the story being told.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/third/Storytelling/s_2_thumb.jpg",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/third/Storytelling/s_2.jpg",
+	        "exmplars": "The student makes some attempt to show who or what he represents in the story being told. The pose does not seem to be an important part of the story.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/third/Storytelling/s_3_thumb.jpg",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/third/Storytelling/s_3.jpg",
+	        "exmplars": "The students pose is part of the story being told in the tableau. Who or what the student represents in the story needs clarification.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/third/Storytelling/s_4_thumb.jpg",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/third/Storytelling/s_4.jpg",
+	        "exmplars": "The student's pose is an integral part of the story being told. It is obvious who or what the student represents.",
+	        "isImage": true,
+	        "class_value": ""
+	    }],
+	"project4": [{
+	        "thumbnail": "./src/resources/exmplars/fourth/PhysicalExpression/pe_1_thumb.jpg",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/fourth/PhysicalExpression/pe_1.mp4",
+	        "exmplars": "The students physical expression is unclear or difficult to view. Gestures portray very little emotion or student breaks character.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/fourth/PhysicalExpression/pe_2_thumb.jpg",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/fourth/PhysicalExpression/pe_2.mp4",
+	        "exmplars": "Student shows some attempt at physical expression. Portrays emotion through a simple stereotyped gesture (such as pretend crying).",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/fourth/PhysicalExpression/pe_3_thumb.jpg",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/fourth/PhysicalExpression/pe_3.mp4",
+	        "exmplars": "The student exhibits body shape, level, and gesture to show what the character feels. Portrays simple emotions (happiness, sadness) through gestures and action.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/fourth/PhysicalExpression/pe_4_thumb.jpg",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/fourth/PhysicalExpression/pe_4.mp4",
+	        "exmplars": "The student exhibits a bold, strong choice in body shape, level, and gesture to show what the character feels. Portrays nuances of emotions (confusion, excitement, anxiety, etc.) that fit the character.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }]
+}

@@ -167,6 +167,7 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 	
     $scope.grade_project = function() {
     	if($scope.selected_item > 0) {
+	    	console.log($scope.selected_item);
     		item.exemplar_one = $scope.selected_item;
     		localStorage.setItem('current_item', JSON.stringify(item));
     		
@@ -221,7 +222,7 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
     
     
     //Json File Url
-    var json_url = 'http://iaccessfresno.com/mobart/src/resources/exemplars.json';
+    var json_url = $rootScope.baseUrl + '/api/assessment1';//'http://iaccessfresno.com/mobart/src/resources/assessment1.json';
     var promise = $http.get(json_url).then(function(response){
 	    var item = JSON.parse(localStorage.getItem('current_item')); 
 		var pid = item.pid;
@@ -251,10 +252,11 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 		}	
 		
 		if( item.exemplar_one > 0 ) {
+			console.log(item);
 		 	var index = item.exemplar_one - 1;
 		 	$scope.exmps[index].class_value = 'active';
 		 	$scope.selected_item = item.exemplar_one;
-	    }	
+	    }
     });
 	
 	/*// Assessment 1
@@ -425,8 +427,44 @@ sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $h
     $scope.artwork_mimetype = item.artwork_mimetype;
     $scope.artwork_url = item.artwork_url;
 
-  // Assessment 2
-	if(pid == 1) {
+	// Assessment 2
+	var json_url = $rootScope.baseUrl + '/api/assessment2';//'http://iaccessfresno.com/mobart/src/resources/assessment2.json';
+    var promise = $http.get(json_url).then(function(response){
+	    var item = JSON.parse(localStorage.getItem('current_item')); 
+		var pid = item.pid;
+		
+		if(pid == 1) {
+	        $scope.project = '3rd Grade Unit Assessment';
+	        $scope.assessment = 'Facial Expression';
+			$scope.exmps = response.data.project1;	
+		}
+		
+		if(pid == 2) {
+	        $scope.project = '4th Grade Unit Assessment';
+	        $scope.assessment = 'Vocal Expression';
+			$scope.exmps = response.data.project2;	
+		}
+		
+		if(pid == 3) {
+	        $scope.project = '3rd Grade Performance Task Assessment';
+	        $scope.assessment = 'Facial Expression';
+			$scope.exmps = response.data.project3;	
+		}
+		
+		if(pid == 4) {
+	        $scope.project = '4th Grade Performance Task Assessment';
+	        $scope.assessment = 'Vocal Expression';
+			$scope.exmps = response.data.project4;	
+		}	
+		
+		if( item.exemplar_two > 0 ) {
+		 	var index = item.exemplar_two - 1;
+		 	$scope.exmps[index].class_value = 'active';
+		 	$scope.selected_item = item.exemplar_two;
+	    }	
+    });
+    
+	/*if(pid == 1) {
         $scope.project = '3rd Grade Unit Assessment';
         $scope.assessment = 'Facial Expression';
 		$scope.exmps = [{
@@ -567,7 +605,7 @@ sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $h
 	 	var index = item.exemplar_two - 1;
 	 	$scope.exmps[index].class_value = 'active';
 	 	$scope.selected_item = item.exemplar_two;
-    }
+    }*/
 });
 
 sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $http, $location) {
@@ -599,7 +637,43 @@ sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $ht
     $scope.artwork_url = item.artwork_url;
     
     // Assessment 3
-    if(pid == 1) {
+	var json_url = $rootScope.baseUrl + '/api/assessment3';//http://iaccessfresno.com/mobart/src/resources/assessment3.json';
+    var promise = $http.get(json_url).then(function(response){
+	    var item = JSON.parse(localStorage.getItem('current_item')); 
+		var pid = item.pid;
+		
+		if(pid == 1) {
+	        $scope.project = '3rd Grade Unit Assessment';
+	        $scope.assessment = 'Storytelling Through Tableau';
+			$scope.exmps = response.data.project1;	
+		}
+		
+		if(pid == 2) {
+	        $scope.project = '4th Grade Unit Assessment';
+	        $scope.assessment = 'Character Physicalization';
+			$scope.exmps = response.data.project2;	
+		}
+		
+		if(pid == 3) {
+	        $scope.project = '3rd Grade Performance Task Assessment';
+	        $scope.assessment = 'Storytelling Through Tableau';
+			$scope.exmps = response.data.project3;	
+		}
+		
+		if(pid == 4) {
+	        $scope.project = '4th Grade Performance Task Assessment';
+	        $scope.assessment = 'Character Physicalization';
+			$scope.exmps = response.data.project4;	
+		}	
+		
+		if( item.exemplar_three > 0 ) {
+		 	var index = item.exemplar_three - 1;
+		 	$scope.exmps[index].class_value = 'active';
+		 	$scope.selected_item = item.exemplar_three;
+	    }	
+    });
+
+    /*if(pid == 1) {
         $scope.project = '3rd Grade Unit Assessment';
         $scope.assessment = 'Storytelling Through Tableau';
 		$scope.exmps = [{
@@ -739,7 +813,7 @@ sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $ht
 	 	var index = item.exemplar_three - 1;
 	 	$scope.exmps[index].class_value = 'active';
 	 	$scope.selected_item = item.exemplar_three;
-    }
+    }*/
 });
 
 sampleApp.controller('ProjectUploadController', function($scope, $location) {
