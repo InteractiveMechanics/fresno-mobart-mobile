@@ -480,6 +480,30 @@ sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $h
 	        $scope.assessment = 'Vocal Expression';
 			$scope.exmps = response.data.project4;	
 		}	
+
+		if(pid == 5) {
+	        $scope.project = '3rd Grade Unit Assessment';
+	        $scope.assessment = 'Illusion Of Space';
+			$scope.exmps = response.data.project5;	
+		}
+		
+		if(pid == 6) {
+	        $scope.project = '4th Grade Unit Assessment';
+	        $scope.assessment = 'Expression';
+			$scope.exmps = response.data.project6;	
+		}
+		
+		if(pid == 7) {
+	        $scope.project = '3rd Grade Performance Task Assessment';
+	        $scope.assessment = 'Illusion Of Space';
+			$scope.exmps = response.data.project7;	
+		}
+		
+		if(pid == 8) {
+	        $scope.project = '4th Grade Performance Task Assessment';
+	        $scope.assessment = 'Expression';
+			$scope.exmps = response.data.project8;	
+		}
 		
 		if( item.exemplar_two > 0 ) {
 		 	var index = item.exemplar_two - 1;
@@ -689,6 +713,30 @@ sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $ht
 	        $scope.assessment = 'Character Physicalization';
 			$scope.exmps = response.data.project4;	
 		}	
+
+		if(pid == 5) {
+	        $scope.project = '3rd Grade Unit Assessment';
+	        $scope.assessment = 'Creating Tints, Shades and Neutral Colors.';
+			$scope.exmps = response.data.project5;	
+		}
+		
+		if(pid == 6) {
+	        $scope.project = '4th Grade Unit Assessment';
+	        $scope.assessment = 'Historical Details';
+			$scope.exmps = response.data.project6;	
+		}
+		
+		if(pid == 7) {
+	        $scope.project = '3rd Grade Performance Task Assessment';
+	        $scope.assessment = 'Creating Tints, Shades and Neutral Colors.';
+			$scope.exmps = response.data.project7;	
+		}
+		
+		if(pid == 8) {
+	        $scope.project = '4th Grade Performance Task Assessment';
+	        $scope.assessment = 'Historical Details';
+			$scope.exmps = response.data.project8;	
+		}
 		
 		if( item.exemplar_three > 0 ) {
 		 	var index = item.exemplar_three - 1;
