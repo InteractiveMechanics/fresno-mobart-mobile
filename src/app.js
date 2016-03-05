@@ -250,6 +250,30 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 	        $scope.assessment = 'Facial Expression';
 			$scope.exmps = response.data.project4;	
 		}	
+
+		if(pid == 5) {
+	        $scope.project = '3rd Grade Unit Assessment';
+	        $scope.assessment = 'Making Observations';
+			$scope.exmps = response.data.project5;	
+		}
+		
+		if(pid == 6) {
+	        $scope.project = '4th Grade Unit Assessment';
+	        $scope.assessment = 'Proportions';
+			$scope.exmps = response.data.project6;	
+		}
+		
+		if(pid == 7) {
+	        $scope.project = '3rd Grade Performance Task Assessment';
+	        $scope.assessment = 'Making Observations';
+			$scope.exmps = response.data.project7;	
+		}
+		
+		if(pid == 8) {
+	        $scope.project = '4th Grade Performance Task Assessment';
+	        $scope.assessment = 'Proportions';
+			$scope.exmps = response.data.project8;	
+		}
 		
 		if( item.exemplar_one > 0 ) {
 			console.log(item);
