@@ -1153,7 +1153,9 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
         }//end if
     };
 
-    $scope.project_list = [{
+    $scope.project_list = [
+    /*
+    {
         'name': '3rd Grade Unit Assessment',
         id: 1
     }, {
@@ -1165,6 +1167,18 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
     }, {
         'name': '4th Grade Performance Task Assessment',
         id: 4
+    },*/{
+        'name': 'Third Grade Visual Art Unit Assessment',
+        id: 5
+    }, {
+        'name': 'Fourth Grade Visual Art Unit Assessment',
+        id: 6
+    }, {
+        'name': 'Third Grade Visual Art Perf Task Assessment',
+        id: 7
+    }, {
+        'name': 'Fourth Grade Visual Art Perf Task Assessment',
+        id: 8
     }];
 
     $scope.upload_artwork = function() {
