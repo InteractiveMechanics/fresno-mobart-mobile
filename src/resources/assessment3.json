@@ -114,5 +114,121 @@
 	        "exmplars": "The student exhibits a bold, strong choice in body shape, level, and gesture to show what the character feels. Portrays nuances of emotions (confusion, excitement, anxiety, etc.) that fit the character.",
 	        "isVideo": true,
 	        "class_value": ""
+	    }],
+	"project5": [{
+	        "thumbnail": "./src/resources/exmplars/VA_third/tints_1_thumb.jpg",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/VA_third/tints_1.jpg",
+	        "exmplars": "The artwork contains no evidence of mixing paints to create tints, shades, or neutral colors.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/VA_third/tints_2_thumb.jpg",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/VA_third/tints_2.jpg",
+	        "exmplars": "The artwork contains some attempt at mixing colors to create tints, shades, or neutral colors.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/VA_third/tints_3_thumb.jpg",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/VA_third/tints_3.jpg",
+	        "exmplars": "The artwork uses tempera paint in various tints, shades, and neutral colors. There is some attempt to show the illusion of space by the use of color (darker in the foreground, lighter in the background.)",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/VA_third/tints_4_thumb.jpg",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/VA_third/tints_4.jpg",
+	        "exmplars": "The artwork effectively uses tempera paint in various tints, shades, and neutral colors to show the illusion of space. (atmospheric perspective)",
+	        "isImage": true,
+	        "class_value": ""
+	    }],
+	"project6": [{
+	        "thumbnail": "./src/resources/exmplars/VA_fourth/historical_1_thumb.jpg",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/VA_fourth/historical_1.jpg",
+	        "exmplars": "The artwork includes one or no historical details. Details are inaccurate or unclear.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/VA_fourth/historical_2_thumb.jpg",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/VA_fourth/historical_2.jpg",
+	        "exmplars": "The artwork contains a few historical details. Details are inaccurate and/or unclear.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/VA_fourth/historical_3_thumb.jpg",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/VA_fourth/historical_3.jpg",
+	        "exmplars": "The artwork contains several accurate historical details. The details chosen may not complement the portrait and/or convey important ideas.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/VA_fourth/historical_4_thumb.jpg",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/VA_fourth/historical_4.jpg",
+	        "exmplars": "The artwork effectively uses accurate historical details that complement the portrait and communicate important ideas about the subject.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }],
+	"project7": [{
+	        "thumbnail": "./src/resources/exmplars/VA_third/tints_1_thumb.jpg",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/VA_third/tints_1.jpg",
+	        "exmplars": "The artwork contains no evidence of mixing paints to create tints, shades, or neutral colors.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/VA_third/tints_2_thumb.jpg",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/VA_third/tints_2.jpg",
+	        "exmplars": "The artwork contains some attempt at mixing colors to create tints, shades, or neutral colors.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/VA_third/tints_3_thumb.jpg",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/VA_third/tints_3.jpg",
+	        "exmplars": "The artwork uses tempera paint in various tints, shades, and neutral colors. There is some attempt to show the illusion of space by the use of color (darker in the foreground, lighter in the background.)",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/VA_third/tints_4_thumb.jpg",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/VA_third/tints_4.jpg",
+	        "exmplars": "The artwork effectively uses tempera paint in various tints, shades, and neutral colors to show the illusion of space. (atmospheric perspective)",
+	        "isImage": true,
+	        "class_value": ""
+	    }],
+	"project8": [{
+	        "thumbnail": "./src/resources/exmplars/VA_fourth/historical_1_thumb.jpg",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/VA_fourth/historical_1.jpg",
+	        "exmplars": "The artwork includes one or no historical details. Details are inaccurate or unclear.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/VA_fourth/historical_2_thumb.jpg",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/VA_fourth/historical_2.jpg",
+	        "exmplars": "The artwork contains a few historical details. Details are inaccurate and/or unclear.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/VA_fourth/historical_3_thumb.jpg",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/VA_fourth/historical_3.jpg",
+	        "exmplars": "The artwork contains several accurate historical details. The details chosen may not complement the portrait and/or convey important ideas.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/VA_fourth/historical_4_thumb.jpg",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/VA_fourth/historical_4.jpg",
+	        "exmplars": "The artwork effectively uses accurate historical details that complement the portrait and communicate important ideas about the subject.",
+	        "isVideo": true,
+	        "class_value": ""
 	    }]
 }
