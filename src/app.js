@@ -253,25 +253,25 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 
 		if(pid == 5) {
 	        $scope.project = '3rd Grade Unit Assessment';
-	        $scope.assessment = 'Making Observations';
+	        $scope.assessment = 'Resources Based on Observation';
 			$scope.exmps = response.data.project5;	
 		}
 		
 		if(pid == 6) {
 	        $scope.project = '4th Grade Unit Assessment';
-	        $scope.assessment = 'Proportions';
+	        $scope.assessment = 'Facial Proportions';
 			$scope.exmps = response.data.project6;	
 		}
 		
 		if(pid == 7) {
 	        $scope.project = '3rd Grade Performance Task Assessment';
-	        $scope.assessment = 'Making Observations';
+	        $scope.assessment = 'Resources Based on Observation';
 			$scope.exmps = response.data.project7;	
 		}
 		
 		if(pid == 8) {
 	        $scope.project = '4th Grade Performance Task Assessment';
-	        $scope.assessment = 'Proportions';
+	        $scope.assessment = 'Facial Proportions';
 			$scope.exmps = response.data.project8;	
 		}
 		

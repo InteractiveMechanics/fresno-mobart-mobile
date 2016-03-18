@@ -149,28 +149,28 @@
 	        "id": 1,
 	        "source": "./src/resources/exmplars/VA_fourth/proportion_1.jpg",
 	        "exmplars": "Facial proportions are inaccurate and/or facial features are missing.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_fourth/proportion_2_thumb.jpg",
 	        "id": 2,
 	        "source": "./src/resources/exmplars/VA_fourth/proportion_2.jpg",
 	        "exmplars": "All facial features are present. Most of the features are sized or placed inaccurately.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_fourth/proportion_3_thumb.jpg",
 	        "id": 3,
 	        "source": "./src/resources/exmplars/VA_fourth/proportion_3.jpg",
 	        "exmplars": "All facial features are present. One or two features are sized or placed inaccurately.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_fourth/proportion_4_thumb.jpg",
 	        "id": 4,
 	        "source": "./src/resources/exmplars/VA_fourth/proportion_4.jpg",
 	        "exmplars": "All facial features are present.  Facial  proportions are accurate.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }],
 	"project7": [{
@@ -207,28 +207,28 @@
 	        "id": 1,
 	        "source": "./src/resources/exmplars/VA_fourth/proportion_1.jpg",
 	        "exmplars": "Facial proportions are inaccurate and/or facial features are missing.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_fourth/proportion_2_thumb.jpg",
 	        "id": 2,
 	        "source": "./src/resources/exmplars/VA_fourth/proportion_2.jpg",
 	        "exmplars": "All facial features are present. Most of the features are sized or placed inaccurately.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_fourth/proportion_3_thumb.jpg",
 	        "id": 3,
 	        "source": "./src/resources/exmplars/VA_fourth/proportion_3.jpg",
 	        "exmplars": "All facial features are present. One or two features are sized or placed inaccurately.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_fourth/proportion_4_thumb.jpg",
 	        "id": 4,
 	        "source": "./src/resources/exmplars/VA_fourth/proportion_4.jpg",
 	        "exmplars": "All facial features are present.  Facial  proportions are accurate.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }]
 }

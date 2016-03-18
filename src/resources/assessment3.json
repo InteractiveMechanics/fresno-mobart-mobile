@@ -119,28 +119,28 @@
 	        "thumbnail": "./src/resources/exmplars/VA_third/tints_1_thumb.jpg",
 	        "id": 1,
 	        "source": "./src/resources/exmplars/VA_third/tints_1.jpg",
-	        "exmplars": "The artwork contains no evidence of mixing paints to create tints, shades, or neutral colors.",
+	        "exmplars": "The artwork contains no evidence of mixing tempera paints to create tints, shades, or neutral colors.",
 	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_third/tints_2_thumb.jpg",
 	        "id": 2,
 	        "source": "./src/resources/exmplars/VA_third/tints_2.jpg",
-	        "exmplars": "The artwork contains some attempt at mixing colors to create tints, shades, or neutral colors.",
+	        "exmplars": "The artwork contains some attempt at mixing tempera paints to create tints, shades, or neutral colors.",
 	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_third/tints_3_thumb.jpg",
 	        "id": 3,
 	        "source": "./src/resources/exmplars/VA_third/tints_3.jpg",
-	        "exmplars": "The artwork uses tempera paint in various tints, shades, and neutral colors. There is some attempt to show the illusion of space by the use of color (darker in the foreground, lighter in the background.)",
+	        "exmplars": "The artwork uses tempera paints in various tints, shades, and neutral colors. There is some attempt to show the illusion of space (atmospheric perspective).",
 	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_third/tints_4_thumb.jpg",
 	        "id": 4,
 	        "source": "./src/resources/exmplars/VA_third/tints_4.jpg",
-	        "exmplars": "The artwork effectively uses tempera paint in various tints, shades, and neutral colors to show the illusion of space. (atmospheric perspective)",
+	        "exmplars": "The artwork effectively uses tempera paints in various tints, shades, and neutral colors to show the illusion of space (atmospheric perspective).",
 	        "isImage": true,
 	        "class_value": ""
 	    }],
@@ -177,28 +177,28 @@
 	        "thumbnail": "./src/resources/exmplars/VA_third/tints_1_thumb.jpg",
 	        "id": 1,
 	        "source": "./src/resources/exmplars/VA_third/tints_1.jpg",
-	        "exmplars": "The artwork contains no evidence of mixing paints to create tints, shades, or neutral colors.",
+	        "exmplars": "The artwork contains no evidence of mixing tempera paints to create tints, shades, or neutral colors.",
 	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_third/tints_2_thumb.jpg",
 	        "id": 2,
 	        "source": "./src/resources/exmplars/VA_third/tints_2.jpg",
-	        "exmplars": "The artwork contains some attempt at mixing colors to create tints, shades, or neutral colors.",
+	        "exmplars": "The artwork contains some attempt at mixing tempera paints to create tints, shades, or neutral colors.",
 	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_third/tints_3_thumb.jpg",
 	        "id": 3,
 	        "source": "./src/resources/exmplars/VA_third/tints_3.jpg",
-	        "exmplars": "The artwork uses tempera paint in various tints, shades, and neutral colors. There is some attempt to show the illusion of space by the use of color (darker in the foreground, lighter in the background.)",
+	        "exmplars": "The artwork uses tempera paints in various tints, shades, and neutral colors. There is some attempt to show the illusion of space (atmospheric perspective).",
 	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_third/tints_4_thumb.jpg",
 	        "id": 4,
 	        "source": "./src/resources/exmplars/VA_third/tints_4.jpg",
-	        "exmplars": "The artwork effectively uses tempera paint in various tints, shades, and neutral colors to show the illusion of space. (atmospheric perspective)",
+	        "exmplars": "The artwork effectively uses tempera paints in various tints, shades, and neutral colors to show the illusion of space (atmospheric perspective).",
 	        "isImage": true,
 	        "class_value": ""
 	    }],
