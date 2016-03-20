@@ -149,28 +149,28 @@
 	        "id": 1,
 	        "source": "./src/resources/exmplars/VA_fourth/expression_1.jpg",
 	        "exmplars": "The portrait does not express emotion or mood. The portrait does not demonstrate understanding of  the subject’s character or personality.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_fourth/expression_2_thumb.jpg",
 	        "id": 2,
 	        "source": "./src/resources/exmplars/VA_fourth/expression_2.jpg",
 	        "exmplars": "The portrait shows some attempt to show emotion, mood, character or personality.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_fourth/expression_3_thumb.jpg",
 	        "id": 3,
 	        "source": "./src/resources/exmplars/VA_fourth/expression_3.jpg",
 	        "exmplars": "The portrait shows evidence of an emotion or mood and evidence of the student’s understanding of the subject’s character or personality.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_fourth/expression_4_thumb.jpg",
 	        "id": 4,
 	        "source": "./src/resources/exmplars/VA_fourth/expression_4.jpg",
 	        "exmplars": "The portrait creates a strong mood and/or communicates a clear emotion. The portrait clearly demonstrates the student’s understanding of the subject’s character and/or personality.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }],
 	"project7": [{
@@ -207,28 +207,28 @@
 	        "id": 1,
 	        "source": "./src/resources/exmplars/VA_fourth/expression_1.jpg",
 	        "exmplars": "The portrait does not express emotion or mood. The portrait does not demonstrate understanding of  the subject’s character or personality.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_fourth/expression_2_thumb.jpg",
 	        "id": 2,
 	        "source": "./src/resources/exmplars/VA_fourth/expression_2.jpg",
 	        "exmplars": "The portrait shows some attempt to show emotion, mood, character or personality.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_fourth/expression_3_thumb.jpg",
 	        "id": 3,
 	        "source": "./src/resources/exmplars/VA_fourth/expression_3.jpg",
 	        "exmplars": "The portrait shows evidence of an emotion or mood and evidence of the student’s understanding of the subject’s character or personality.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_fourth/expression_4_thumb.jpg",
 	        "id": 4,
 	        "source": "./src/resources/exmplars/VA_fourth/expression_4.jpg",
 	        "exmplars": "The portrait creates a strong mood and/or communicates a clear emotion. The portrait clearly demonstrates the student’s understanding of the subject’s character and/or personality.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }]
 }
