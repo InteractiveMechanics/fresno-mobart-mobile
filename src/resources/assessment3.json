@@ -149,28 +149,28 @@
 	        "id": 1,
 	        "source": "./src/resources/exmplars/VA_fourth/historical_1.jpg",
 	        "exmplars": "The artwork includes one or no historical details. Details are inaccurate or unclear.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_fourth/historical_2_thumb.jpg",
 	        "id": 2,
 	        "source": "./src/resources/exmplars/VA_fourth/historical_2.jpg",
 	        "exmplars": "The artwork contains a few historical details. Details are inaccurate and/or unclear.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_fourth/historical_3_thumb.jpg",
 	        "id": 3,
 	        "source": "./src/resources/exmplars/VA_fourth/historical_3.jpg",
 	        "exmplars": "The artwork contains several accurate historical details. The details chosen may not complement the portrait and/or convey important ideas.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_fourth/historical_4_thumb.jpg",
 	        "id": 4,
 	        "source": "./src/resources/exmplars/VA_fourth/historical_4.jpg",
 	        "exmplars": "The artwork effectively uses accurate historical details that complement the portrait and communicate important ideas about the subject.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }],
 	"project7": [{
@@ -207,28 +207,28 @@
 	        "id": 1,
 	        "source": "./src/resources/exmplars/VA_fourth/historical_1.jpg",
 	        "exmplars": "The artwork includes one or no historical details. Details are inaccurate or unclear.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_fourth/historical_2_thumb.jpg",
 	        "id": 2,
 	        "source": "./src/resources/exmplars/VA_fourth/historical_2.jpg",
 	        "exmplars": "The artwork contains a few historical details. Details are inaccurate and/or unclear.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_fourth/historical_3_thumb.jpg",
 	        "id": 3,
 	        "source": "./src/resources/exmplars/VA_fourth/historical_3.jpg",
 	        "exmplars": "The artwork contains several accurate historical details. The details chosen may not complement the portrait and/or convey important ideas.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/VA_fourth/historical_4_thumb.jpg",
 	        "id": 4,
 	        "source": "./src/resources/exmplars/VA_fourth/historical_4.jpg",
 	        "exmplars": "The artwork effectively uses accurate historical details that complement the portrait and communicate important ideas about the subject.",
-	        "isVideo": true,
+	        "isImage": true,
 	        "class_value": ""
 	    }]
 }
