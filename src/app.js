@@ -282,6 +282,30 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 	        $scope.assessment = 'Facial Proportions';
 			$scope.exmps = response.data.project8;	
 		}
+
+		if(pid == 9) {
+	        $scope.project = '3rd Grade Theatre';
+	        $scope.assessment = 'Facial Expression';
+			$scope.exmps = response.data.project9;	
+		}
+
+		if(pid == 10) {
+	        $scope.project = '3rd Grade Visual Arts';
+	        $scope.assessment = 'Illusion of Space';
+			$scope.exmps = response.data.project10;	
+		}
+
+		if(pid == 11) {
+	        $scope.project = '4th Grade Theatre';
+	        $scope.assessment = 'Facial Expression';
+			$scope.exmps = response.data.project11;	
+		}
+
+		if(pid == 12) {
+	        $scope.project = '4th Grade Visual Arts';
+	        $scope.assessment = 'Expression';
+			$scope.exmps = response.data.project12;	
+		}
 		
 		if( item.exemplar_one > 0 ) {
 			console.log(item);
@@ -373,6 +397,30 @@ sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $h
 	        $scope.assessment = 'Expression';
 			$scope.exmps = response.data.project8;	
 		}
+
+		if(pid == 9) {
+	        $scope.project = '3rd Grade Theatre';
+	        $scope.assessment = 'Physical Expression';
+			$scope.exmps = response.data.project9;	
+		}
+
+		if(pid == 10) {
+	        $scope.project = '3rd Grade Visual Arts';
+	        $scope.assessment = 'Resources Based on Observation';
+			$scope.exmps = response.data.project10;	
+		}
+
+		if(pid == 11) {
+	        $scope.project = '4th Grade Theatre';
+	        $scope.assessment = 'Physical Expression';
+			$scope.exmps = response.data.project11;	
+		}
+
+		if(pid == 12) {
+	        $scope.project = '4th Grade Visual Arts';
+	        $scope.assessment = 'Historical Details';
+			$scope.exmps = response.data.project12;	
+		}
 		
 		if( item.exemplar_two > 0 ) {
 		 	var index = item.exemplar_two - 1;
@@ -462,6 +510,30 @@ sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $ht
 	        $scope.project = '4th Grade Performance Task Assessment';
 	        $scope.assessment = 'Historical Details';
 			$scope.exmps = response.data.project8;	
+		}
+
+		if(pid == 9) {
+	        $scope.project = '3rd Grade Theatre';
+	        $scope.assessment = 'Storytelling';
+			$scope.exmps = response.data.project9;	
+		}
+
+		if(pid == 10) {
+	        $scope.project = '3rd Grade Visual Art';
+	        $scope.assessment = 'Creating Tints, Shades and Neutral Colors';
+			$scope.exmps = response.data.project10;	
+		}
+
+		if(pid == 11) {
+	        $scope.project = '4th Grade Theatre';
+	        $scope.assessment = 'Vocal Expression';
+			$scope.exmps = response.data.project11;	
+		}
+
+		if(pid == 12) {
+	        $scope.project = '4th Grade Visual Art';
+	        $scope.assessment = 'Proportion';
+			$scope.exmps = response.data.project12;	
 		}
 		
 		if( item.exemplar_three > 0 ) {
@@ -767,7 +839,7 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
     }, {
         'name': '4th Grade Performance Task Assessment',
         id: 4
-    },*/{
+    },{
         'name': 'Third Grade Visual Art Unit Assessment',
         id: 5
     }, {
@@ -779,6 +851,18 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
     }, {
         'name': 'Fourth Grade Visual Art Perf Task Assessment',
         id: 8
+    },*/{
+        'name': 'Third Grade Theatre',
+        id: 9
+    }, {
+        'name': 'Third Grade Visual Art',
+        id: 10
+    }, {
+        'name': 'Fourth Grade Theatre',
+        id: 11
+    }, {
+        'name': 'Fourth Grade Visual Art',
+        id: 12
     }];
 
     $scope.upload_artwork = function() {
