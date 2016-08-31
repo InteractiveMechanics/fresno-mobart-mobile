@@ -230,5 +230,121 @@
 	        "exmplars": "The artwork effectively uses accurate historical details that complement the portrait and communicate important ideas about the subject.",
 	        "isVideo": true,
 	        "class_value": ""
+	    }],
+	"project9": [{
+	        "thumbnail": "./src/resources/exmplars/2016/third-theatre/s_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/third-theatre/s_1.png",
+	        "exmplars": "It is unclear who or what the student is representing.The pose detracts from the story being told.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-theatre/s_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/third-theatre/s_2.png",
+	        "exmplars": "The student makes some attempt to show who or what he represents in the story being told. The pose does not seem to be an important part of the story.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-theatre/s_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/third-theatre/s_3.png",
+	        "exmplars": "The student’s pose is part of the story being told in the tableau. Who or what the student represents in the story needs clarification.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-theatre/s_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/third-theatre/s_4.png",
+	        "exmplars": "The student’s pose is an integral part of the story being told. It is obvious who or what the student represents.",
+	        "isImage": true,
+	        "class_value": ""
+	    }],
+	"project10": [{
+	        "thumbnail": "./src/resources/exmplars/2016/third-va/tints_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/third-va/tints_1.png",
+	        "exmplars": "The artwork contains no evidence of mixing tempera paints to create tints, shades, or neutral colors.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-va/tints_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/third-va/tints_2.png",
+	        "exmplars": "The artwork contains some attempt at mixing tempera paints to create tints, shades, or neutral colors.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-va/tints_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/third-va/tints_3.png",
+	        "exmplars": "The artwork contains some attempt at mixing tempera paints to create tints, shades, or neutral colors.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-va/tints_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/third-va/tints_4.png",
+	        "exmplars": "The artwork effectively uses tempera paints in various tints, shades, and neutral colors to show the illusion of space (atmospheric perspective).",
+	        "isImage": true,
+	        "class_value": ""
+	    }],
+	"project11": [{
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-theatre/ve_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/fourth-theatre/ve_1.mp4",
+	        "exmplars": "Student speaks in a monotone; tone does not match the character. It is unclear what the student is saying; student mumbles lines or races through them. Tone does not match the character.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-theatre/ve_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/fourth-theatre/ve_2.mp4",
+	        "exmplars": "The student has some difficulty speaking with appropriate diction, pace, or volume; it is sometimes hard to understand what the character is saying.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-theatre/ve_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/fourth-theatre/ve_3.mp4",
+	        "exmplars": "The student mostly speaks with appropriate diction, pace and volume; the character can be heard and understood most of the time. The tone sometimes matches the character being portrayed.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-theatre/ve_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/fourth-theatre/ve_4.mp4",
+	        "exmplars": "The student speaks with clear diction, at an appropriate pace and volume; the character can easily be heard and understood. The tone matches the character being portrayed.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }],
+	"project12": [{
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-va/proportion_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/fourth-va/proportion_1.png",
+	        "exmplars": "Facial proportions are inaccurate and/or facial features are missing.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-va/proportion_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/fourth-va/proportion_2.png",
+	        "exmplars": "All facial features are present. Most of the features are sized or placed inaccurately.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-va/proportion_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/fourth-va/proportion_3.png",
+	        "exmplars": "All facial features are present. One or two features are sized or placed inaccurately.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-va/proportion_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/fourth-va/proportion_4.png",
+	        "exmplars": "All facial features are present. Facial proportions are accurate.",
+	        "isImage": true,
+	        "class_value": ""
 	    }]
 }

@@ -230,5 +230,121 @@
 	        "exmplars": "All facial features are present.  Facial  proportions are accurate.",
 	        "isImage": true,
 	        "class_value": ""
+	    }],
+	"project9": [{
+	        "thumbnail": "./src/resources/exmplars/2016/third-theatre/fe_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/third-theatre/fe_1.png",
+	        "exmplars": "The students has very little facial expression or the facial  expression does not fit the tableau. The student looks right at the audience or camera.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-theatre/fe_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/third-theatre/fe_2.png",
+	        "exmplars": "The student makes some attempt at showing what the character is feeling through facial expression. The focal point is somewhat appropriate for the scene.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-theatre/fe_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/third-theatre/fe_3.png",
+	        "exmplars": "The student exhibits an appropriate facial expression and focal point. The face shows some emotional expression, but the student has not made a bold, strong choice to show what the character is feeling.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-theatre/fe_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/third-theatre/fe_4.png",
+	        "exmplars": "The student exhibits a bold, strong facial expression with an appropriate focal point. The face clearly expresses what the character is feeling.",
+	        "isImage": true,
+	        "class_value": ""
+	    }],
+	"project10": [{
+	        "thumbnail": "./src/resources/exmplars/2016/third-va/illusion_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/third-va/illusion_1.png",
+	        "exmplars": "The landscape does not show the illusion of space.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-va/illusion_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/third-va/illusion_2.png",
+	        "exmplars": "The landscape represents the illusion of space. The foreground, middle ground, and/or background are difficult to distinguish from one another.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-va/illusion_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/third-va/illusion_3.png",
+	        "exmplars": "The landscape represents the illusion of space to show foreground, middle ground and background.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-va/illusion_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/third-va/illusion_4.png",
+	        "exmplars": "The landscape represents the illusion of space with a clear foreground, middle ground and background. The illusion of space is represented through overlapping, atmospheric perspective, and/or size of objects.",
+	        "isImage": true,
+	        "class_value": ""
+	    }],
+	"project11": [{
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-theatre/fe_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/fourth-theatre/fe_1.mp4",
+	        "exmplars": "Facial expression does not reflect character motivations or emotions.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-theatre/fe_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/fourth-theatre/fe_2.mp4",
+	        "exmplars": "The student makes some attempt at showing what the character is feeling through facial expression. The focal point may be unclear.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-theatre/fe_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/fourth-theatre/fe_3.mp4",
+	        "exmplars": "The student exhibits an appropriate facial expression and focal point. The face shows some emotional expression, but the student has not made a bold, strong choice to show what the character wants or feels.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-theatre/fe_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/fourth-theatre/fe_4.mp4",
+	        "exmplars": "The student exhibits a bold, strong facial expression with an appropriate focal point. The face clearly expresses what the character wants or feels.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }],
+	"project12": [{
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-va/expression_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/fourth-va/expression_1.png",
+	        "exmplars": "The portrait does not express emotion or mood. The portrait does not demonstrate understanding of the subject’s character or personality.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-va/expression_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/fourth-va/expression_2.png",
+	        "exmplars": "The portrait shows some attempt to show emotion, mood, character or personality.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-va/expression_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/fourth-va/expression_3.png",
+	        "exmplars": "The portrait shows evidence of an emotion or mood and evidence of the student’s understanding of the subject’s character or personality.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-va/expression_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/fourth-va/expression_4.png",
+	        "exmplars": "The portrait creates a strong mood and/or communicates a clear emotion. The portrait clearly demonstrates the student’s understanding of the subject’s character and/or personality.",
+	        "isImage": true,
+	        "class_value": ""
 	    }]
 }

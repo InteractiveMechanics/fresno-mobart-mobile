@@ -230,5 +230,121 @@
 	        "exmplars": "The portrait creates a strong mood and/or communicates a clear emotion. The portrait clearly demonstrates the student’s understanding of the subject’s character and/or personality.",
 	        "isVideo": true,
 	        "class_value": ""
+	    }],
+	"project9": [{
+	        "thumbnail": "./src/resources/exmplars/2016/third-theatre/pe_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/third-theatre/pe_1.png",
+	        "exmplars": "The student’s pose is unclear or difficult to view. Student detracts from the overall effect of the tableau.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-theatre/pe_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/third-theatre/pe_2.png",
+	        "exmplars": "The student exhibits a frozen pose. Choices about level or shape are only partially visible. Student shows some attempt at physical expression.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-theatre/pe_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/third-theatre/pe_3.png",
+	        "exmplars": "The student exhibits a frozen pose. Choices about  level and shape are visible. The pose lacks bold, strong choices for physical expression.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-theatre/pe_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/third-theatre/pe_4.png",
+	        "exmplars": "The student exhibits a bold, strong pose. Choices about level and body shape are effective. The student is clearly visible and the spacing is well balanced.",
+	        "isImage": true,
+	        "class_value": ""
+	    }],
+	"project10": [{
+	        "thumbnail": "./src/resources/exmplars/2016/third-va/observation_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/third-va/observation_1.png",
+	        "exmplars": "The artwork does not represent a resource from the Valley.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-va/observation_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/third-va/observation_2.png",
+	        "exmplars": "The artwork contains little or inaccurate information about a resource from the Valley.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-va/observation_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/third-va/observation_3.png",
+	        "exmplars": "The artwork represents a resource from the Valley.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-va/observation_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/third-va/observation_4.png",
+	        "exmplars": "The artwork effectively represents a resource from the Valley. Details about the resource are clearly based on observation and research.",
+	        "isImage": true,
+	        "class_value": ""
+	    }],
+	"project11": [{
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-theatre/pe_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/fourth-theatre/pe_1.mp4",
+	        "exmplars": "The student’s physical expression is unclear or difficult to view. Gestures and actions portray very little emotion, or student breaks character.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-theatre/pe_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/fourth-theatre/pe_2.mp4",
+	        "exmplars": "Student shows some attempt at physical expression. Gestures and actions portray emotion through simple stereotyped gestures (such as pretend crying).",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-theatre/pe_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/fourth-theatre/pe_3.mp4",
+	        "exmplars": "The student exhibits body shape, level, and gesture to show what the character feels. Gestures and actions portray simple emotions (happiness, sadness) through gestures and action.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-theatre/pe_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/fourth-theatre/pe_4.mp4",
+	        "exmplars": "The student exhibits a bold, strong choice in body shape, level, and gesture to show what the character feels. Gestures and actions portray nuances of emotions (confusion, excitement, anxiety, etc.) that fit the character.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }],
+	"project12": [{
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-va/historical_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/fourth-va/historical_1.png",
+	        "exmplars": "The artwork does not include historical details.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-va/historical_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/fourth-va/historical_2.png",
+	        "exmplars": "The artwork contains a few historical details. Details are inaccurate and/or unclear.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-va/historical_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/fourth-va/historical_3.png",
+	        "exmplars": "The artwork contains several accurate historical details. The details chosen may not complement the portrait and/or convey important ideas.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-va/historical_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/fourth-va/historical_4.png",
+	        "exmplars": "The artwork effectively uses accurate historical details that complement the portrait and communicate important ideas about the subject.",
+	        "isImage": true,
+	        "class_value": ""
 	    }]
 }
