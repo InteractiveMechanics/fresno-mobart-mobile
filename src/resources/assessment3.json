@@ -346,5 +346,121 @@
 	        "exmplars": "All facial features are present. Facial proportions are accurate.",
 	        "isImage": true,
 	        "class_value": ""
+	    }],
+	    "project13": [{
+	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/blocking_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/fifth-theatre/blocking_1.mp4",
+	        "exmplars": "Student stands in a line  or faces away from the audience most of the time. The actor’s movements detract from the story.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/blocking_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/fifth-theatre/blocking_2.mp4",
+	        "exmplars": "Some actions are difficult to see. The actor stays in one place or has random movements that do not help tell the story.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/blocking_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/fifth-theatre/blocking_3.mp4",
+	        "exmplars": "Most actions can be seen by the audience. There is some attempt at using levels. For the most part, the actor’s movements fit the situation and help tell the story.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/blocking_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/fifth-theatre/blocking_4.mp4",
+	        "exmplars": "Most actions can be seen by the audience. There is some attempt at using levels. For the most part, the actor’s movements fit the situation and help tell the story.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }],
+	    "project14": [{
+	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/blocking_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/fifth-theatre/blocking_1.mp4",
+	        "exmplars": "Student stands in a line  or faces away from the audience most of the time. The actor’s movements detract from the story.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/blocking_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/fifth-theatre/blocking_2.mp4",
+	        "exmplars": "Some actions are difficult to see. The actor stays in one place or has random movements that do not help tell the story.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/blocking_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/fifth-theatre/blocking_3.mp4",
+	        "exmplars": "Most actions can be seen by the audience. There is some attempt at using levels. For the most part, the actor’s movements fit the situation and help tell the story.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/blocking_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/fifth-theatre/blocking_4.mp4",
+	        "exmplars": "Most actions can be seen by the audience. There is some attempt at using levels. For the most part, the actor’s movements fit the situation and help tell the story.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }],
+	    "project15": [{
+	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/script_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/sixth-theatre/script_1.mp4",
+	        "exmplars": "The dialogue does not show much about the characters or tell a story. It is unclear how the  script reflects the  civilization being represented. Lines consist of one or two words.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/script_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/sixth-theatre/script_2.mp4",
+	        "exmplars": "The dialogue adds little to the character or story. Choices do not always reflect the civilization being represented. The vocabulary is basic or repetitive.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/script_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/sixth-theatre/script_3.mp4",
+	        "exmplars": "For the most part, the dialogue fits the characters and adds some interest to the story. The script mostly reflects the civilization being represented. Some word choices are interesting and robust.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/script_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/sixth-theatre/script_4.mp4",
+	        "exmplars": "The dialogue brings the characters to life and adds interest to the story. The script shares interesting information about the civilization being represented. The vocabulary includes interesting, and robust language.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }],
+	    "project16": [{
+	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/script_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/sixth-theatre/script_1.mp4",
+	        "exmplars": "The dialogue does not show much about the characters or tell a story. It is unclear how the  script reflects the  civilization being represented. Lines consist of one or two words.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/script_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/sixth-theatre/script_2.mp4",
+	        "exmplars": "The dialogue adds little to the character or story. Choices do not always reflect the civilization being represented. The vocabulary is basic or repetitive.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/script_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/sixth-theatre/script_3.mp4",
+	        "exmplars": "For the most part, the dialogue fits the characters and adds some interest to the story. The script mostly reflects the civilization being represented. Some word choices are interesting and robust.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/script_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/sixth-theatre/script_4.mp4",
+	        "exmplars": "The dialogue brings the characters to life and adds interest to the story. The script shares interesting information about the civilization being represented. The vocabulary includes interesting, and robust language.",
+	        "isVideo": true,
+	        "class_value": ""
 	    }]
 }
