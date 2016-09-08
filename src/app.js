@@ -310,25 +310,25 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 		if(pid == 13) {
 	        $scope.project = '5TH Grade Theatre Performance Task';
 	        $scope.assessment = 'Theatrical Skills';
-			$scope.exmps = response.data.project12;	
+			$scope.exmps = response.data.project13;	
 		}
 
 		if(pid == 14) {
 	        $scope.project = '5TH Grade Theatre Unit AssessmenT';
 	        $scope.assessment = 'Theatrical Skills';
-			$scope.exmps = response.data.project12;	
+			$scope.exmps = response.data.project14;	
 		}
 
 		if(pid == 15) {
 	        $scope.project = '6TH Grade Theatre Performance Task';
 	        $scope.assessment = 'Theatrical Skills';
-			$scope.exmps = response.data.project12;	
+			$scope.exmps = response.data.project15;	
 		}
 
 		if(pid == 16) {
 	        $scope.project = '6TH Grade Theatre Unit Assessment';
 	        $scope.assessment = 'Theatrical Skills';
-			$scope.exmps = response.data.project12;	
+			$scope.exmps = response.data.project16;	
 		}
 		
 		if( item.exemplar_one > 0 ) {
@@ -449,25 +449,25 @@ sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $h
 		if(pid == 13) {
 	        $scope.project = '5TH Grade Theatre Performance Task';
 	        $scope.assessment = 'Improvisation';
-			$scope.exmps = response.data.project12;	
+			$scope.exmps = response.data.project13;	
 		}
 
 		if(pid == 14) {
 	        $scope.project = '5TH Grade Theatre Unit AssessmenT';
 	        $scope.assessment = 'Improvisation';
-			$scope.exmps = response.data.project12;	
+			$scope.exmps = response.data.project14;	
 		}
 
 		if(pid == 15) {
 	        $scope.project = '6TH Grade Theatre Performance Task';
 	        $scope.assessment = 'Improvisation';
-			$scope.exmps = response.data.project12;	
+			$scope.exmps = response.data.project15;	
 		}
 
 		if(pid == 16) {
 	        $scope.project = '6TH Grade Theatre Unit Assessment';
 	        $scope.assessment = 'Improvisation';
-			$scope.exmps = response.data.project12;	
+			$scope.exmps = response.data.project16;	
 		}
 		
 		if( item.exemplar_two > 0 ) {
@@ -587,25 +587,25 @@ sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $ht
 		if(pid == 13) {
 	        $scope.project = '5TH Grade Theatre Performance Task';
 	        $scope.assessment = 'Blocking';
-			$scope.exmps = response.data.project12;	
+			$scope.exmps = response.data.project13;	
 		}
 
 		if(pid == 14) {
 	        $scope.project = '5TH Grade Theatre Unit AssessmenT';
 	        $scope.assessment = 'Blocking';
-			$scope.exmps = response.data.project12;	
+			$scope.exmps = response.data.project14;	
 		}
 
 		if(pid == 15) {
 	        $scope.project = '6TH Grade Theatre Performance Task';
 	        $scope.assessment = 'Script Writing';
-			$scope.exmps = response.data.project12;	
+			$scope.exmps = response.data.project15;	
 		}
 
 		if(pid == 16) {
 	        $scope.project = '6TH Grade Theatre Unit Assessment';
 	        $scope.assessment = 'Script Writing';
-			$scope.exmps = response.data.project12;	
+			$scope.exmps = response.data.project16;	
 		}
 		
 		if( item.exemplar_three > 0 ) {
