@@ -306,6 +306,30 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 	        $scope.assessment = 'Expression';
 			$scope.exmps = response.data.project12;	
 		}
+
+		if(pid == 13) {
+	        $scope.project = '5TH Grade Theatre Performance Task';
+	        $scope.assessment = 'Theatrical Skills';
+			$scope.exmps = response.data.project12;	
+		}
+
+		if(pid == 14) {
+	        $scope.project = '5TH Grade Theatre Unit AssessmenT';
+	        $scope.assessment = 'Theatrical Skills';
+			$scope.exmps = response.data.project12;	
+		}
+
+		if(pid == 15) {
+	        $scope.project = '6TH Grade Theatre Performance Task';
+	        $scope.assessment = 'Theatrical Skills';
+			$scope.exmps = response.data.project12;	
+		}
+
+		if(pid == 16) {
+	        $scope.project = '6TH Grade Theatre Unit Assessment';
+	        $scope.assessment = 'Theatrical Skills';
+			$scope.exmps = response.data.project12;	
+		}
 		
 		if( item.exemplar_one > 0 ) {
 			console.log(item);
@@ -421,6 +445,30 @@ sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $h
 	        $scope.assessment = 'Historical Details';
 			$scope.exmps = response.data.project12;	
 		}
+
+		if(pid == 13) {
+	        $scope.project = '5TH Grade Theatre Performance Task';
+	        $scope.assessment = 'Improvisation';
+			$scope.exmps = response.data.project12;	
+		}
+
+		if(pid == 14) {
+	        $scope.project = '5TH Grade Theatre Unit AssessmenT';
+	        $scope.assessment = 'Improvisation';
+			$scope.exmps = response.data.project12;	
+		}
+
+		if(pid == 15) {
+	        $scope.project = '6TH Grade Theatre Performance Task';
+	        $scope.assessment = 'Improvisation';
+			$scope.exmps = response.data.project12;	
+		}
+
+		if(pid == 16) {
+	        $scope.project = '6TH Grade Theatre Unit Assessment';
+	        $scope.assessment = 'Improvisation';
+			$scope.exmps = response.data.project12;	
+		}
 		
 		if( item.exemplar_two > 0 ) {
 		 	var index = item.exemplar_two - 1;
@@ -533,6 +581,30 @@ sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $ht
 		if(pid == 12) {
 	        $scope.project = '4th Grade Visual Art';
 	        $scope.assessment = 'Proportion';
+			$scope.exmps = response.data.project12;	
+		}
+
+		if(pid == 13) {
+	        $scope.project = '5TH Grade Theatre Performance Task';
+	        $scope.assessment = 'Blocking';
+			$scope.exmps = response.data.project12;	
+		}
+
+		if(pid == 14) {
+	        $scope.project = '5TH Grade Theatre Unit AssessmenT';
+	        $scope.assessment = 'Blocking';
+			$scope.exmps = response.data.project12;	
+		}
+
+		if(pid == 15) {
+	        $scope.project = '6TH Grade Theatre Performance Task';
+	        $scope.assessment = 'Script Writing';
+			$scope.exmps = response.data.project12;	
+		}
+
+		if(pid == 16) {
+	        $scope.project = '6TH Grade Theatre Unit Assessment';
+	        $scope.assessment = 'Script Writing';
 			$scope.exmps = response.data.project12;	
 		}
 		
