@@ -352,28 +352,28 @@
 	        "id": 1,
 	        "source": "./src/resources/exmplars/2016/fifth-theatre/improv_1.mp4",
 	        "exmplars": "The student shows little or no focus, energy, or commitment. Speeches do not fit the situation or the student does not speak at all.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/improv_2_thumb.png",
 	        "id": 2,
 	        "source": "./src/resources/exmplars/2016/fifth-theatre/improv_2.mp4",
 	        "exmplars": "The student makes some attempt to deliver improvised lines, but lacks focus, energy, or commitment during the scene. Dialogue may be limited to one-word responses.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/improv_3_thumb.png",
 	        "id": 3,
 	        "source": "./src/resources/exmplars/2016/fifth-theatre/improv_3.mp4",
 	        "exmplars": "The student makes some attempt to deliver improvised lines, but lacks focus, energy, or commitment during the scene. Dialogue may be limited to one-word responses.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/improv_4_thumb.png",
 	        "id": 4,
 	        "source": "./src/resources/exmplars/2016/fifth-theatre/improv_4.mp4",
 	        "exmplars": "The student delivers improvised lines with strong energy, focus and concentration  to show what the character thinks and feels.The dialogue clearly fits the situation.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }],
 	    "project14": [{
@@ -381,28 +381,28 @@
 	        "id": 1,
 	        "source": "./src/resources/exmplars/2016/fifth-theatre/improv_1.mp4",
 	        "exmplars": "The student shows little or no focus, energy, or commitment. Speeches do not fit the situation or the student does not speak at all.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/improv_2_thumb.png",
 	        "id": 2,
 	        "source": "./src/resources/exmplars/2016/fifth-theatre/improv_2.mp4",
 	        "exmplars": "The student makes some attempt to deliver improvised lines, but lacks focus, energy, or commitment during the scene. Dialogue may be limited to one-word responses.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/improv_3_thumb.png",
 	        "id": 3,
 	        "source": "./src/resources/exmplars/2016/fifth-theatre/improv_3.mp4",
 	        "exmplars": "The student makes some attempt to deliver improvised lines, but lacks focus, energy, or commitment during the scene. Dialogue may be limited to one-word responses.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/improv_4_thumb.png",
 	        "id": 4,
 	        "source": "./src/resources/exmplars/2016/fifth-theatre/improv_4.mp4",
 	        "exmplars": "The student delivers improvised lines with strong energy, focus and concentration  to show what the character thinks and feels.The dialogue clearly fits the situation.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }],
 	    "project15": [{
@@ -410,28 +410,28 @@
 	        "id": 1,
 	        "source": "./src/resources/exmplars/2016/sixth-theatre/improv_1.mp4",
 	        "exmplars": "The student shows little or no attention to the context of the scene. There is very little evidence of energy, focus, or concentration. The student is unable to stay in character.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/improv_2_thumb.png",
 	        "id": 2,
 	        "source": "./src/resources/exmplars/2016/sixth-theatre/improv_2.mp4",
 	        "exmplars": "The student shows little or no attention to the context of the scene. There is very little evidence of energy, focus, or concentration. The student is unable to stay in character.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/improv_3_thumb.png",
 	        "id": 3,
 	        "source": "./src/resources/exmplars/2016/sixth-theatre/improv_3.mp4",
 	        "exmplars": "The  lines and actions mostly fit the context of the scene. The student delivers lines and actions with some energy, focus, or concentration. The student stays in character most of the time.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/improv_4_thumb.png",
 	        "id": 4,
 	        "source": "./src/resources/exmplars/2016/sixth-theatre/improv_4.mp4",
 	        "exmplars": "All lines and actions fit the context of the scene. The student stays in character the whole time.  Improvised lines and actions are delivered with strong energy, focus and concentration.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }],
 	    "project16": [{
@@ -439,28 +439,28 @@
 	        "id": 1,
 	        "source": "./src/resources/exmplars/2016/sixth-theatre/improv_1.mp4",
 	        "exmplars": "The student shows little or no attention to the context of the scene. There is very little evidence of energy, focus, or concentration. The student is unable to stay in character.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/improv_2_thumb.png",
 	        "id": 2,
 	        "source": "./src/resources/exmplars/2016/sixth-theatre/improv_2.mp4",
 	        "exmplars": "The student shows little or no attention to the context of the scene. There is very little evidence of energy, focus, or concentration. The student is unable to stay in character.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/improv_3_thumb.png",
 	        "id": 3,
 	        "source": "./src/resources/exmplars/2016/sixth-theatre/improv_3.mp4",
 	        "exmplars": "The  lines and actions mostly fit the context of the scene. The student delivers lines and actions with some energy, focus, or concentration. The student stays in character most of the time.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/improv_4_thumb.png",
 	        "id": 4,
 	        "source": "./src/resources/exmplars/2016/sixth-theatre/improv_4.mp4",
 	        "exmplars": "All lines and actions fit the context of the scene. The student stays in character the whole time.  Improvised lines and actions are delivered with strong energy, focus and concentration.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }]
 }

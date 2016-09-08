@@ -352,28 +352,28 @@
 	        "id": 1,
 	        "source": "./src/resources/exmplars/2016/fifth-theatre/theatrical_1.mp4",
 	        "exmplars": "The student shows little or no physical or vocal expression to portray a character. Little or no attempt to show imaginary objects.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/theatrical_2_thumb.png",
 	        "id": 2,
 	        "source": "./src/resources/exmplars/2016/fifth-theatre/theatrical_2.mp4",
 	        "exmplars": "The student makes some attempt at physical and vocal expression. It may be difficult to hear or understand what the student is saying. Pantomime of objects is unclear. ",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/theatrical_3_thumb.png",
 	        "id": 3,
 	        "source": "./src/resources/exmplars/2016/fifth-theatre/theatrical_3.mp4",
 	        "exmplars": "The student uses physical and vocal expression that matches the character, but has not made clear choices. The student can mostly be heard and understood. For the most part, imaginary objects are pantomimed with clarity.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/theatrical_4_thumb.png",
 	        "id": 4,
 	        "source": "./src/resources/exmplars/2016/fifth-theatre/theatrical_4.mp4",
 	        "exmplars": "The student uses physical and vocal expression that clearly matches the character’s thoughts and emotions. The student can be heard and easily understood. Imaginary objects are pantomimed with accuracy.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }],
 	    "project14": [{
@@ -381,28 +381,28 @@
 	        "id": 1,
 	        "source": "./src/resources/exmplars/2016/fifth-theatre/theatrical_1.mp4",
 	        "exmplars": "The student shows little or no physical or vocal expression to portray a character. Little or no attempt to show imaginary objects.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/theatrical_2_thumb.png",
 	        "id": 2,
 	        "source": "./src/resources/exmplars/2016/fifth-theatre/theatrical_2.mp4",
 	        "exmplars": "The student makes some attempt at physical and vocal expression. It may be difficult to hear or understand what the student is saying. Pantomime of objects is unclear. ",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/theatrical_3_thumb.png",
 	        "id": 3,
 	        "source": "./src/resources/exmplars/2016/fifth-theatre/theatrical_3.mp4",
 	        "exmplars": "The student uses physical and vocal expression that matches the character, but has not made clear choices. The student can mostly be heard and understood. For the most part, imaginary objects are pantomimed with clarity.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/theatrical_4_thumb.png",
 	        "id": 4,
 	        "source": "./src/resources/exmplars/2016/fifth-theatre/theatrical_4.mp4",
 	        "exmplars": "The student uses physical and vocal expression that clearly matches the character’s thoughts and emotions. The student can be heard and easily understood. Imaginary objects are pantomimed with accuracy.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }],
 	    "project15": [{
@@ -410,28 +410,28 @@
 	        "id": 1,
 	        "source": "./src/resources/exmplars/2016/sixth-theatre/theatrical_1.mp4",
 	        "exmplars": "The student shows little or no physical or vocal expression. Speeches are difficult to understand or the student does not speak at all. Pauses or missed cues detract from the overall performance.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/theatrical_2_thumb.png",
 	        "id": 2,
 	        "source": "./src/resources/exmplars/2016/sixth-theatre/theatrical_2.mp4",
 	        "exmplars": "The student makes some attempt at physical and vocal expression. It may be difficult to hear or understand what the student is saying. Student rushes speeches, adds  pauses or misses cues that sometimes detract from the overall performance.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/theatrical_3_thumb.png",
 	        "id": 3,
 	        "source": "./src/resources/exmplars/2016/sixth-theatre/theatrical_3.mp4",
 	        "exmplars": "The student exhibits appropriate physical and vocal expression, but has not made clear choices to portray the character. The student can mostly be heard and understood. Student may rush  a line or miss a cue, but it does not detract from the overall performance.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/theatrical_4_thumb.png",
 	        "id": 4,
 	        "source": "./src/resources/exmplars/2016/sixth-theatre/theatrical_4.mp4",
 	        "exmplars": "The student uses physical and vocal expression that clearly matches the character’s thoughts and emotions. The student can be heard and easily understood. Lines are delivered on cue without pauses or rushing.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }],
 	    "project16": [{
@@ -439,28 +439,28 @@
 	        "id": 1,
 	        "source": "./src/resources/exmplars/2016/sixth-theatre/theatrical_1.mp4",
 	        "exmplars": "The student shows little or no physical or vocal expression. Speeches are difficult to understand or the student does not speak at all. Pauses or missed cues detract from the overall performance.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/theatrical_2_thumb.png",
 	        "id": 2,
 	        "source": "./src/resources/exmplars/2016/sixth-theatre/theatrical_2.mp4",
 	        "exmplars": "The student makes some attempt at physical and vocal expression. It may be difficult to hear or understand what the student is saying. Student rushes speeches, adds  pauses or misses cues that sometimes detract from the overall performance.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/theatrical_3_thumb.png",
 	        "id": 3,
 	        "source": "./src/resources/exmplars/2016/sixth-theatre/theatrical_3.mp4",
 	        "exmplars": "The student exhibits appropriate physical and vocal expression, but has not made clear choices to portray the character. The student can mostly be heard and understood. Student may rush  a line or miss a cue, but it does not detract from the overall performance.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }, {
 	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/theatrical_4_thumb.png",
 	        "id": 4,
 	        "source": "./src/resources/exmplars/2016/sixth-theatre/theatrical_4.mp4",
 	        "exmplars": "The student uses physical and vocal expression that clearly matches the character’s thoughts and emotions. The student can be heard and easily understood. Lines are delivered on cue without pauses or rushing.",
-	        "isImage": true,
+	        "isVideo": true,
 	        "class_value": ""
 	    }]
 }

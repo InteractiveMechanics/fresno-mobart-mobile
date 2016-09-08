@@ -935,6 +935,18 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
     }, {
         'name': 'Fourth Grade Visual Art',
         id: 12
+    }, {
+        'name': 'Fifth Grade Theatre Performance Task',
+        id: 13
+    }, {
+        'name': 'Fifth Grade Theatre Unit Assessment',
+        id: 14
+    }, {
+        'name': 'Sixth Grade Theatre Performance Task',
+        id: 15
+    }, {
+        'name': 'Sixth Grade Theatre Unit Assessment',
+        id: 16
     }];
 
     $scope.upload_artwork = function() {
