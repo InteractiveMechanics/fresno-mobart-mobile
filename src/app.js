@@ -593,19 +593,19 @@ sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $ht
 		if(pid == 14) {
 	        $scope.project = '5TH Grade Theatre Unit AssessmenT';
 	        $scope.assessment = 'Blocking';
-			$scope.exmps = response.data.project13;	
+			$scope.exmps = response.data.project14;	
 		}
 
 		if(pid == 15) {
 	        $scope.project = '6TH Grade Theatre Performance Task';
 	        $scope.assessment = 'Script Writing';
-			$scope.exmps = response.data.project13;	
+			$scope.exmps = response.data.project15;	
 		}
 
 		if(pid == 16) {
 	        $scope.project = '6TH Grade Theatre Unit Assessment';
 	        $scope.assessment = 'Script Writing';
-			$scope.exmps = response.data.project13;	
+			$scope.exmps = response.data.project16;	
 		}
 		
 		if( item.exemplar_three > 0 ) {
