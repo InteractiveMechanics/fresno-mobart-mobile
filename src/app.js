@@ -29,6 +29,9 @@ sampleApp.run(function($rootScope, $location) {
                 return 'no-file';
         }
     }
+    $rootScope.clearCurrentItem = function () {
+        localStorage.removeItem('current_item');
+    }
 });
 
 sampleApp.config(['$routeProvider',
@@ -78,6 +81,10 @@ sampleApp.config(['$routeProvider',
             templateUrl: 'src/views/grade/finish.html',
             controller: 'FinishGradingController'
         }).
+        when('/next-student', {
+            templateUrl: 'src/views/grade/next-student.html',
+            controller: 'NextStudentController'
+        }).
         when('/project-uploaded', {
             templateUrl: 'src/views/projects/project-uploaded.html',
             controller: 'ProjectUploadController'
@@ -94,6 +101,7 @@ sampleApp.config(['$routeProvider',
 
 sampleApp.controller('LogoutController', function($scope, $rootScope, $http, $location) {
     localStorage.removeItem('user_data');
+    $rootScope.clearCurrentItem();
     $location.path('/login');
 });
 sampleApp.controller('LoginController', function($scope, $rootScope, $http, $location) {
@@ -274,6 +282,54 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 	        $scope.assessment = 'Facial Proportions';
 			$scope.exmps = response.data.project8;	
 		}
+
+		if(pid == 9) {
+	        $scope.project = '3rd Grade Theatre';
+	        $scope.assessment = 'Facial Expression';
+			$scope.exmps = response.data.project9;	
+		}
+
+		if(pid == 10) {
+	        $scope.project = '3rd Grade Visual Arts';
+	        $scope.assessment = 'Illusion of Space';
+			$scope.exmps = response.data.project10;	
+		}
+
+		if(pid == 11) {
+	        $scope.project = '4th Grade Theatre';
+	        $scope.assessment = 'Facial Expression';
+			$scope.exmps = response.data.project11;	
+		}
+
+		if(pid == 12) {
+	        $scope.project = '4th Grade Visual Arts';
+	        $scope.assessment = 'Expression';
+			$scope.exmps = response.data.project12;	
+		}
+
+		if(pid == 13) {
+	        $scope.project = '5TH Grade Theatre Performance Task';
+	        $scope.assessment = 'Theatrical Skills';
+			$scope.exmps = response.data.project13;	
+		}
+
+		if(pid == 14) {
+	        $scope.project = '5TH Grade Theatre Unit AssessmenT';
+	        $scope.assessment = 'Theatrical Skills';
+			$scope.exmps = response.data.project14;	
+		}
+
+		if(pid == 15) {
+	        $scope.project = '6TH Grade Theatre Performance Task';
+	        $scope.assessment = 'Theatrical Skills';
+			$scope.exmps = response.data.project15;	
+		}
+
+		if(pid == 16) {
+	        $scope.project = '6TH Grade Theatre Unit Assessment';
+	        $scope.assessment = 'Theatrical Skills';
+			$scope.exmps = response.data.project16;	
+		}
 		
 		if( item.exemplar_one > 0 ) {
 			console.log(item);
@@ -282,145 +338,6 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 		 	$scope.selected_item = item.exemplar_one;
 	    }
     });
-	
-	/*// Assessment 1
-	if(pid == 1) {
-        $scope.project = '3rd Grade Unit Assessment';
-        $scope.assessment = 'Physical Expression';
-		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/third/PhysicalExpression/pe_1_thumb.jpg',
-	        'id': 1,
-	        'source': './src/resources/exmplars/third/PhysicalExpression/pe_1.jpg',
-	        'exmplars': 'The students pose is unclear or difficult to view. Student detracts from the overall effect of the tableau.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/third/PhysicalExpression/pe_2_thumb.jpg',
-	        'id': 2,
-	        'source': './src/resources/exmplars/third/PhysicalExpression/pe_2.jpg',
-	        'exmplars': 'The student exhibits a frozen pose. Choices about level or shape are only partially visible. Student shows some attempt at physical expression.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/third/PhysicalExpression/pe_3_thumb.jpg',
-	        'id': 3,
-	        'source': './src/resources/exmplars/third/PhysicalExpression/pe_3.jpg',
-	        'exmplars': 'The student exhibits a frozen pose. Choices about  level and shape are visible. The pose lacks bold, strong choices for physical expression.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/third/PhysicalExpression/pe_4_thumb.jpg',
-	        'id': 4,
-	        'source': './src/resources/exmplars/third/PhysicalExpression/pe_4.jpg',
-	        'exmplars': 'The student exhibits a bold, strong pose. Choices about level and body shape are effective. The student is clearly visible and the spacing is well balanced.',
-	        'isImage': true,
-	        'class_value': ''
-	    }];	
-	}
-
-	if(pid == 2) {
-        $scope.project = '4th Grade Unit Assessment';
-        $scope.assessment = 'Facial Expression';
-		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/fourth/FacialExpression/fe_1_thumb.jpg',
-	        'id': 1,
-	        'source': './src/resources/exmplars/fourth/FacialExpression/fe_1.jpg',
-	        'exmplars': 'Facial Expression does not reflect character motivations or emotions.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/fourth/FacialExpression/fe_2_thumb.jpg',
-	        'id': 2,
-	        'source': './src/resources/exmplars/fourth/FacialExpression/fe_2.jpg',
-	        'exmplars': 'The student makes some attempt at showing what the character is feeling through facial expression. The focal point is somewhat appropriate for the scene.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/fourth/FacialExpression/fe_3_thumb.jpg',
-	        'id': 3,
-	        'source': './src/resources/exmplars/fourth/FacialExpression/fe_3.jpg',
-	        'exmplars': 'The student exhibits an appropriate facial expression and focal point. The face shows some emotional expression, but the student has not made a bold, strong choice to show what the character wants or feels.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/fourth/FacialExpression/fe_4_thumb.jpg',
-	        'id': 4,
-	        'source': './src/resources/exmplars/fourth/FacialExpression/fe_4.jpg',
-	        'exmplars': 'The student exhibits a bold, strong facial expression with an appropriate focal point. The face clearly expresses what the character wants or feels.',
-	        'isImage': true,
-	        'class_value': ''
-	    }];	
-	}
-
-	if(pid == 3) {
-        $scope.project = '3rd Grade Performance Task Assessment';
-        $scope.assessment = 'Physical Expression';
-		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/third/PhysicalExpression/pe_1_thumb.jpg',
-	        'id': 1,
-	        'source': './src/resources/exmplars/third/PhysicalExpression/pe_1.jpg',
-	        'exmplars': 'The students pose is unclear or difficult to view. Student detracts from the overall effect of the tableau.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/third/PhysicalExpression/pe_2_thumb.jpg',
-	        'id': 2,
-	        'source': './src/resources/exmplars/third/PhysicalExpression/pe_2.jpg',
-	        'exmplars': 'The student exhibits a frozen pose. Choices about level or shape are only partially visible. Student shows some attempt at physical expression.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/third/PhysicalExpression/pe_3_thumb.jpg',
-	        'id': 3,
-	        'source': './src/resources/exmplars/third/PhysicalExpression/pe_3.jpg',
-	        'exmplars': 'The student exhibits a frozen pose. Choices about  level and shape are visible. The pose lacks bold, strong choices for physical expression.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/third/PhysicalExpression/pe_4_thumb.jpg',
-	        'id': 4,
-	        'source': './src/resources/exmplars/third/PhysicalExpression/pe_4.jpg',
-	        'exmplars': 'The student exhibits a bold, strong pose. Choices about level and body shape are effective. The student is clearly visible and the spacing is well balanced.',
-	        'isImage': true,
-	        'class_value': ''
-	    }];	
-	}
-
-	if(pid == 4) {
-        $scope.project = '4th Grade Performance Task Assessment';
-        $scope.assessment = 'Facial Expression';
-		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/fourth/FacialExpression/fe_1_thumb.jpg',
-	        'id': 1,
-	        'source': './src/resources/exmplars/fourth/FacialExpression/fe_1.jpg',
-	        'exmplars': 'Facial Expression does not reflect character motivations or emotions.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/fourth/FacialExpression/fe_2_thumb.jpg',
-	        'id': 2,
-	        'source': './src/resources/exmplars/fourth/FacialExpression/fe_2.jpg',
-	        'exmplars': 'The student makes some attempt at showing what the character is feeling through facial expression. The focal point is somewhat appropriate for the scene.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/fourth/FacialExpression/fe_3_thumb.jpg',
-	        'id': 3,
-	        'source': './src/resources/exmplars/fourth/FacialExpression/fe_3.jpg',
-	        'exmplars': 'The student exhibits an appropriate facial expression and focal point. The face shows some emotional expression, but the student has not made a bold, strong choice to show what the character wants or feels.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/fourth/FacialExpression/fe_4_thumb.jpg',
-	        'id': 4,
-	        'source': './src/resources/exmplars/fourth/FacialExpression/fe_4.jpg',
-	        'exmplars': 'The student exhibits a bold, strong facial expression with an appropriate focal point. The face clearly expresses what the character wants or feels.',
-	        'isImage': true,
-	        'class_value': ''
-	    }];	
-	}*/
-    
-    
 });
 
 sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $http, $location) {
@@ -504,6 +421,54 @@ sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $h
 	        $scope.assessment = 'Expression';
 			$scope.exmps = response.data.project8;	
 		}
+
+		if(pid == 9) {
+	        $scope.project = '3rd Grade Theatre';
+	        $scope.assessment = 'Physical Expression';
+			$scope.exmps = response.data.project9;	
+		}
+
+		if(pid == 10) {
+	        $scope.project = '3rd Grade Visual Arts';
+	        $scope.assessment = 'Resources Based on Observation';
+			$scope.exmps = response.data.project10;	
+		}
+
+		if(pid == 11) {
+	        $scope.project = '4th Grade Theatre';
+	        $scope.assessment = 'Physical Expression';
+			$scope.exmps = response.data.project11;	
+		}
+
+		if(pid == 12) {
+	        $scope.project = '4th Grade Visual Arts';
+	        $scope.assessment = 'Historical Details';
+			$scope.exmps = response.data.project12;	
+		}
+
+		if(pid == 13) {
+	        $scope.project = '5TH Grade Theatre Performance Task';
+	        $scope.assessment = 'Improvisation';
+			$scope.exmps = response.data.project13;	
+		}
+
+		if(pid == 14) {
+	        $scope.project = '5TH Grade Theatre Unit AssessmenT';
+	        $scope.assessment = 'Improvisation';
+			$scope.exmps = response.data.project14;	
+		}
+
+		if(pid == 15) {
+	        $scope.project = '6TH Grade Theatre Performance Task';
+	        $scope.assessment = 'Improvisation';
+			$scope.exmps = response.data.project15;	
+		}
+
+		if(pid == 16) {
+	        $scope.project = '6TH Grade Theatre Unit Assessment';
+	        $scope.assessment = 'Improvisation';
+			$scope.exmps = response.data.project16;	
+		}
 		
 		if( item.exemplar_two > 0 ) {
 		 	var index = item.exemplar_two - 1;
@@ -511,149 +476,6 @@ sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $h
 		 	$scope.selected_item = item.exemplar_two;
 	    }	
     });
-    
-	/*if(pid == 1) {
-        $scope.project = '3rd Grade Unit Assessment';
-        $scope.assessment = 'Facial Expression';
-		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/third/FacialExpression/fe_1_thumb.jpg',
-	        'id': 1,
-	        'source': './src/resources/exmplars/third/FacialExpression/fe_1.jpg',
-	        'exmplars': 'The student has very little facial expression or the facial  expression does not fit the tableau. The student looks right at the audience or camera.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/third/FacialExpression/fe_2_thumb.jpg',
-	        'id': 2,
-	        'source': './src/resources/exmplars/third/FacialExpression/fe_2.jpg',
-	        'exmplars': 'The student makes some attempt at showing what the character is feeling through facial expression. The focal point is somewhat appropriate for the scene.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/third/FacialExpression/fe_3_thumb.jpg',
-	        'id': 3,
-	        'source': './src/resources/exmplars/third/FacialExpression/fe_3.jpg',
-	        'exmplars': 'The student exhibits an appropriate facial expression and focal point. The face shows some emotional expression, but the student has not made a bold, strong choice to show what the character is feeling.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/third/FacialExpression/fe_4_thumb.jpg',
-	        'id': 4,
-	        'source': './src/resources/exmplars/third/FacialExpression/fe_4.jpg',
-	        'exmplars': 'The student exhibits a bold, strong facial expression with an appropriate focal point. The face clearly expresses what the character is feeling.',
-	        'isImage': true,
-	        'class_value': ''
-	    }];	
-	}
-
-	if(pid == 2) {
-        $scope.project = '4th Grade Unit Assessment';
-        $scope.assessment = 'Vocal Expression';
-		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/fourth/VocalExpression/ve_1_thumb.jpg',
-	        'id': 1,
-	        'source': './src/resources/exmplars/fourth/VocalExpression/ve_1.mp4',
-	        'exmplars': 'It is unclear what the student is saying;student mumbles lines or races through them. Tone does not match the character.',
-	        'isVideo': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/fourth/VocalExpression/ve_2_thumb.jpg',
-	        'id': 2,
-	        'source': './src/resources/exmplars/fourth/VocalExpression/ve_2.mp4',
-	        'exmplars': 'The student has some difficulty speaking with appropriate diction, pace, or volume; sometimes hard to understand what the character is saying. Student speaks in a monotone.',
-	        'isVideo': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/fourth/VocalExpression/ve_3_thumb.jpg',
-	        'id': 3,
-	        'source': './src/resources/exmplars/fourth/VocalExpression/ve_3.mp4',
-	        'exmplars': 'The student speaks with appropriate diction, pace and volume; the character can be heard and understood most of the time. The tone sometimes matches the character being portrayed.',
-	        'isVideo': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/fourth/VocalExpression/ve_4_thumb.jpg',
-	        'id': 4,
-	        'source': './src/resources/exmplars/fourth/VocalExpression/ve_4.mp4',
-	        'exmplars': 'The student speaks with clear diction, at an appropriate pace and volume; the character can easily be heard and understood. The tone matches the character being portrayed. ',
-	        'isVideo': true,
-	        'class_value': ''
-	    }];	
-	}
-
-	if(pid == 3) {
-        $scope.project = '3rd Grade Performance Task Assessment';
-        $scope.assessment = 'Facial Expression';
-		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/third/FacialExpression/fe_1_thumb.jpg',
-	        'id': 1,
-	        'source': './src/resources/exmplars/third/FacialExpression/fe_1.jpg',
-	        'exmplars': 'The student has very little facial expression or the facial  expression does not fit the tableau. The student looks right at the audience or camera.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/third/FacialExpression/fe_2_thumb.jpg',
-	        'id': 2,
-	        'source': './src/resources/exmplars/third/FacialExpression/fe_2.jpg',
-	        'exmplars': 'The student makes some attempt at showing what the character is feeling through facial expression. The focal point is somewhat appropriate for the scene.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/third/FacialExpression/fe_3_thumb.jpg',
-	        'id': 3,
-	        'source': './src/resources/exmplars/third/FacialExpression/fe_3.jpg',
-	        'exmplars': 'The student exhibits an appropriate facial expression and focal point. The face shows some emotional expression, but the student has not made a bold, strong choice to show what the character is feeling.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/third/FacialExpression/fe_4_thumb.jpg',
-	        'id': 4,
-	        'source': './src/resources/exmplars/third/FacialExpression/fe_4.jpg',
-	        'exmplars': 'The student exhibits a bold, strong facial expression with an appropriate focal point. The face clearly expresses what the character is feeling.',
-	        'isImage': true,
-	        'class_value': ''
-	    }];	
-	}
-
-	if(pid == 4) {
-        $scope.project = '4th Grade Performance Task Assessment';
-        $scope.assessment = 'Facial Expression';
-		$scope.assessment = 'Vocal Expression';
-		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/fourth/VocalExpression/ve_1_thumb.jpg',
-	        'id': 1,
-	        'source': './src/resources/exmplars/fourth/VocalExpression/ve_1.mp4',
-	        'exmplars': 'It is unclear what the student is saying;student mumbles lines or races through them. Tone does not match the character.',
-	        'isVideo': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/fourth/VocalExpression/ve_2_thumb.jpg',
-	        'id': 2,
-	        'source': './src/resources/exmplars/fourth/VocalExpression/ve_2.mp4',
-	        'exmplars': 'The student has some difficulty speaking with appropriate diction, pace, or volume; sometimes hard to understand what the character is saying. Student speaks in a monotone.',
-	        'isVideo': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/fourth/VocalExpression/ve_3_thumb.jpg',
-	        'id': 3,
-	        'source': './src/resources/exmplars/fourth/VocalExpression/ve_3.mp4',
-	        'exmplars': 'The student speaks with appropriate diction, pace and volume; the character can be heard and understood most of the time. The tone sometimes matches the character being portrayed.',
-	        'isVideo': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/fourth/VocalExpression/ve_4_thumb.jpg',
-	        'id': 4,
-	        'source': './src/resources/exmplars/fourth/VocalExpression/ve_4.mp4',
-	        'exmplars': 'The student speaks with clear diction, at an appropriate pace and volume; the character can easily be heard and understood. The tone matches the character being portrayed. ',
-	        'isVideo': true,
-	        'class_value': ''
-	    }];	
-	}
-	    
-    if( item.exemplar_two > 0 ) {
-	 	var index = item.exemplar_two - 1;
-	 	$scope.exmps[index].class_value = 'active';
-	 	$scope.selected_item = item.exemplar_two;
-    }*/
 });
 
 sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $http, $location) {
@@ -737,6 +559,54 @@ sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $ht
 	        $scope.assessment = 'Historical Details';
 			$scope.exmps = response.data.project8;	
 		}
+
+		if(pid == 9) {
+	        $scope.project = '3rd Grade Theatre';
+	        $scope.assessment = 'Storytelling';
+			$scope.exmps = response.data.project9;	
+		}
+
+		if(pid == 10) {
+	        $scope.project = '3rd Grade Visual Art';
+	        $scope.assessment = 'Creating Tints, Shades and Neutral Colors';
+			$scope.exmps = response.data.project10;	
+		}
+
+		if(pid == 11) {
+	        $scope.project = '4th Grade Theatre';
+	        $scope.assessment = 'Vocal Expression';
+			$scope.exmps = response.data.project11;	
+		}
+
+		if(pid == 12) {
+	        $scope.project = '4th Grade Visual Art';
+	        $scope.assessment = 'Proportion';
+			$scope.exmps = response.data.project12;	
+		}
+
+		if(pid == 13) {
+	        $scope.project = '5TH Grade Theatre Performance Task';
+	        $scope.assessment = 'Blocking';
+			$scope.exmps = response.data.project13;	
+		}
+
+		if(pid == 14) {
+	        $scope.project = '5TH Grade Theatre Unit AssessmenT';
+	        $scope.assessment = 'Blocking';
+			$scope.exmps = response.data.project14;	
+		}
+
+		if(pid == 15) {
+	        $scope.project = '6TH Grade Theatre Performance Task';
+	        $scope.assessment = 'Script Writing';
+			$scope.exmps = response.data.project15;	
+		}
+
+		if(pid == 16) {
+	        $scope.project = '6TH Grade Theatre Unit Assessment';
+	        $scope.assessment = 'Script Writing';
+			$scope.exmps = response.data.project16;	
+		}
 		
 		if( item.exemplar_three > 0 ) {
 		 	var index = item.exemplar_three - 1;
@@ -744,148 +614,6 @@ sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $ht
 		 	$scope.selected_item = item.exemplar_three;
 	    }	
     });
-
-    /*if(pid == 1) {
-        $scope.project = '3rd Grade Unit Assessment';
-        $scope.assessment = 'Storytelling Through Tableau';
-		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/third/Storytelling/s_1_thumb.jpg',
-	        'id': 1,
-	        'source': './src/resources/exmplars/third/Storytelling/s_1.jpg',
-	        'exmplars': 'It is unclear who or what the student is representing.The pose detracts from the story being told.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/third/Storytelling/s_2_thumb.jpg',
-	        'id': 2,
-	        'source': './src/resources/exmplars/third/Storytelling/s_2.jpg',
-	        'exmplars': 'The student makes some attempt to show who or what he represents in the story being told. The pose does not seem to be an important part of the story.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/third/Storytelling/s_3_thumb.jpg',
-	        'id': 3,
-	        'source': './src/resources/exmplars/third/Storytelling/s_3.jpg',
-	        'exmplars': "The students pose is part of the story being told in the tableau. Who or what the student represents in the story needs clarification.",
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/third/Storytelling/s_4_thumb.jpg',
-	        'id': 4,
-	        'source': './src/resources/exmplars/third/Storytelling/s_4.jpg',
-	        'exmplars': "The student's pose is an integral part of the story being told. It is obvious who or what the student represents.",
-	        'isImage': true,
-	        'class_value': ''
-	    }];	
-	}
-
-	if(pid == 2) {
-        $scope.project = '4th Grade Unit Assessment';
-        $scope.assessment = 'Character Physicalization';
-		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/fourth/PhysicalExpression/pe_1_thumb.jpg',
-	        'id': 1,
-	        'source': './src/resources/exmplars/fourth/PhysicalExpression/pe_1.mp4',
-	        'exmplars': 'The students physical expression is unclear or difficult to view. Gestures portray very little emotion or student breaks character.',
-	        'isVideo': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/fourth/PhysicalExpression/pe_2_thumb.jpg',
-	        'id': 2,
-	        'source': './src/resources/exmplars/fourth/PhysicalExpression/pe_2.mp4',
-	        'exmplars': 'Student shows some attempt at physical expression. Portrays emotion through a simple stereotyped gesture (such as pretend crying).',
-	        'isVideo': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/fourth/PhysicalExpression/pe_3_thumb.jpg',
-	        'id': 3,
-	        'source': './src/resources/exmplars/fourth/PhysicalExpression/pe_3.mp4',
-	        'exmplars': 'The student exhibits body shape, level, and gesture to show what the character feels. Portrays simple emotions (happiness, sadness) through gestures and action.',
-	        'isVideo': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/fourth/PhysicalExpression/pe_4_thumb.jpg',
-	        'id': 4,
-	        'source': './src/resources/exmplars/fourth/PhysicalExpression/pe_4.mp4',
-	        'exmplars': 'The student exhibits a bold, strong choice in body shape, level, and gesture to show what the character feels. Portrays nuances of emotions (confusion, excitement, anxiety, etc.) that fit the character.',
-	        'isVideo': true,
-	        'class_value': ''
-	    }];	
-	}
-
-	if(pid == 3) {
-        $scope.project = '3rd Grade Performance Task Assessment';
-        $scope.assessment = 'Storytelling Through Tableau';
-		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/third/Storytelling/s_1_thumb.jpg',
-	        'id': 1,
-	        'source': './src/resources/exmplars/third/Storytelling/s_1.jpg',
-	        'exmplars': 'It is unclear who or what the student is representing.The pose detracts from the story being told.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/third/Storytelling/s_2_thumb.jpg',
-	        'id': 2,
-	        'source': './src/resources/exmplars/third/Storytelling/s_2.jpg',
-	        'exmplars': 'The student makes some attempt to show who or what he represents in the story being told. The pose does not seem to be an important part of the story.',
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/third/Storytelling/s_3_thumb.jpg',
-	        'id': 3,
-	        'source': './src/resources/exmplars/third/Storytelling/s_3.jpg',
-	        'exmplars': "The students pose is part of the story being told in the tableau. Who or what the student represents in the story needs clarification.",
-	        'isImage': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/third/Storytelling/s_4_thumb.jpg',
-	        'id': 4,
-	        'source': './src/resources/exmplars/third/Storytelling/s_4.jpg',
-	        'exmplars': "The student's pose is an integral part of the story being told. It is obvious who or what the student represents.",
-	        'isImage': true,
-	        'class_value': ''
-	    }];	
-	}
-
-	if(pid == 4) {
-        $scope.project = '4th Grade Performance Task Assessment';
-        $scope.assessment = 'Character Physicalization';
-		$scope.exmps = [{
-	        'thumbnail': './src/resources/exmplars/fourth/PhysicalExpression/pe_1_thumb.jpg',
-	        'id': 1,
-	        'source': './src/resources/exmplars/fourth/PhysicalExpression/pe_1.mp4',
-	        'exmplars': 'The students physical expression is unclear or difficult to view. Gestures portray very little emotion or student breaks character.',
-	        'isVideo': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/fourth/PhysicalExpression/pe_2_thumb.jpg',
-	        'id': 2,
-	        'source': './src/resources/exmplars/fourth/PhysicalExpression/pe_2.mp4',
-	        'exmplars': 'Student shows some attempt at physical expression. Portrays emotion through a simple stereotyped gesture (such as pretend crying).',
-	        'isVideo': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/fourth/PhysicalExpression/pe_3_thumb.jpg',
-	        'id': 3,
-	        'source': './src/resources/exmplars/fourth/PhysicalExpression/pe_3.mp4',
-	        'exmplars': 'The student exhibits body shape, level, and gesture to show what the character feels. Portrays simple emotions (happiness, sadness) through gestures and action.',
-	        'isVideo': true,
-	        'class_value': ''
-	    }, {
-	        'thumbnail': './src/resources/exmplars/fourth/PhysicalExpression/pe_4_thumb.jpg',
-	        'id': 4,
-	        'source': './src/resources/exmplars/fourth/PhysicalExpression/pe_4.mp4',
-	        'exmplars': 'The student exhibits a bold, strong choice in body shape, level, and gesture to show what the character feels. Portrays nuances of emotions (confusion, excitement, anxiety, etc.) that fit the character.',
-	        'isVideo': true,
-	        'class_value': ''
-	    }];	
-	}
-    
-    if( item.exemplar_three > 0 ) {
-	 	var index = item.exemplar_three - 1;
-	 	$scope.exmps[index].class_value = 'active';
-	 	$scope.selected_item = item.exemplar_three;
-    }*/
 });
 
 sampleApp.controller('ProjectUploadController', function($scope, $location) {
@@ -924,27 +652,34 @@ sampleApp.controller('FinishGradingController', function($scope, $rootScope, $ht
 	        var promise = $http.post($rootScope.baseUrl + '/api/grades', postData);
 	        promise.success(function(data, status, headers, config){
 	            if (status == 200){
-	            	localStorage.removeItem('from_saved_projects');
-					localStorage.removeItem('current_item');
-	            	
-	            	$location.path('dashboard');
+	            	localStorage.removeItem('from_saved_projects');	            	
+	            	$location.path('next-student');
 	            } else {
-					alert("Unable to save later.");
+					alert("Unable to save. Try again.");
 	            }
 	        });
 		} else {
 			var promise = $http.put($rootScope.baseUrl + '/api/grades/' + postData.gid, postData);
 	        promise.success(function(data, status, headers, config){
 	            if (status == 200){
-	            	localStorage.removeItem('from_saved_projects');
-					localStorage.removeItem('current_item');
-	            	
-	            	$location.path('dashboard');
+	            	localStorage.removeItem('from_saved_projects');            	
+	            	$location.path('next-student');
 	            } else {
-					alert("Unable to save later.");
+					alert("Unable to save. Try again.");
 	            }
 	        });
 		}
+    };
+});
+
+sampleApp.controller('NextStudentController', function($scope, $rootScope, $http, $location) {
+    $scope.grade_next_student = function() {
+        $location.path('new-projects');
+    };
+
+    $scope.back_to_home = function() {
+    	$location.path('dashboard');
+        $rootScope.clearCurrentItem();
     };
 });
 
@@ -1042,8 +777,7 @@ sampleApp.controller('WritingUploadedController', function($scope, $location, $h
         var promise = $http.post($rootScope.baseUrl + '/api/grades', postData);
         promise.success(function(data, status, headers, config){
             if (status == 200) {
-            	localStorage.removeItem('current_item');
-            	$location.path('dashboard');
+            	$location.path('next-student');
             } else {
 				alert("Unable to save later.");
             }
@@ -1087,17 +821,27 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
     $scope.is_uploading = false;
     $scope.uploaded = false;
     var userData = JSON.parse(localStorage.getItem('user_data'));
+    var currentItem = JSON.parse(localStorage.getItem('current_item'));
     $http
         .get($rootScope.baseUrl + '/api/classes')
         .success(function(response) {
-        	console.log(response);
         	var arr = [];
         	for(var i = 0; i < response.length; i++) {
 	        	if(response[i].tid == userData.uid) {
 		        	arr.push(response[i]);
 	        	}
         	}
-        	
+            if (currentItem) {
+            	if (currentItem.class_id) {
+                    $scope.selected_class = [];
+                    $scope.selected_class.id = currentItem.class_id;
+                    $scope.update_students();
+                }
+                if (currentItem.pid) {
+                    $scope.selected_project = [];
+                    $scope.selected_project.id = parseInt(currentItem.pid);
+                }
+            }
         	$scope.classes = arr;
         });
 
@@ -1167,7 +911,7 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
     }, {
         'name': '4th Grade Performance Task Assessment',
         id: 4
-    },*/{
+    },{
         'name': 'Third Grade Visual Art Unit Assessment',
         id: 5
     }, {
@@ -1179,6 +923,30 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
     }, {
         'name': 'Fourth Grade Visual Art Perf Task Assessment',
         id: 8
+    },*/{
+        'name': 'Third Grade Theatre',
+        id: 9
+    }, {
+        'name': 'Third Grade Visual Art',
+        id: 10
+    }, {
+        'name': 'Fourth Grade Theatre',
+        id: 11
+    }, {
+        'name': 'Fourth Grade Visual Art',
+        id: 12
+    }, {
+        'name': 'Fifth Grade Theatre Performance Task',
+        id: 13
+    }, {
+        'name': 'Fifth Grade Theatre Unit Assessment',
+        id: 14
+    }, {
+        'name': 'Sixth Grade Theatre Performance Task',
+        id: 15
+    }, {
+        'name': 'Sixth Grade Theatre Unit Assessment',
+        id: 16
     }];
 
     $scope.upload_artwork = function() {
