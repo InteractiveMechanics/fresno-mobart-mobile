@@ -230,5 +230,237 @@
 	        "exmplars": "The artwork effectively uses accurate historical details that complement the portrait and communicate important ideas about the subject.",
 	        "isImage": true,
 	        "class_value": ""
+	    }],
+	"project9": [{
+	        "thumbnail": "./src/resources/exmplars/2016/third-theatre/s_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/third-theatre/s_1.png",
+	        "exmplars": "It is unclear who or what the student is representing.The pose detracts from the story being told.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-theatre/s_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/third-theatre/s_2.png",
+	        "exmplars": "The student makes some attempt to show who or what he represents in the story being told. The pose does not seem to be an important part of the story.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-theatre/s_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/third-theatre/s_3.png",
+	        "exmplars": "The student’s pose is part of the story being told in the tableau. Who or what the student represents in the story needs clarification.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-theatre/s_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/third-theatre/s_4.png",
+	        "exmplars": "The student’s pose is an integral part of the story being told. It is obvious who or what the student represents.",
+	        "isImage": true,
+	        "class_value": ""
+	    }],
+	"project10": [{
+	        "thumbnail": "./src/resources/exmplars/2016/third-va/tints_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/third-va/tints_1.png",
+	        "exmplars": "The artwork contains no evidence of mixing tempera paints to create tints, shades, or neutral colors.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-va/tints_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/third-va/tints_2.png",
+	        "exmplars": "The artwork contains some attempt at mixing tempera paints to create tints, shades, or neutral colors.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-va/tints_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/third-va/tints_3.png",
+	        "exmplars": "The artwork contains some attempt at mixing tempera paints to create tints, shades, or neutral colors.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/third-va/tints_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/third-va/tints_4.png",
+	        "exmplars": "The artwork effectively uses tempera paints in various tints, shades, and neutral colors to show the illusion of space (atmospheric perspective).",
+	        "isImage": true,
+	        "class_value": ""
+	    }],
+	"project11": [{
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-theatre/ve_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/fourth-theatre/ve_1.mp4",
+	        "exmplars": "Student speaks in a monotone; tone does not match the character. It is unclear what the student is saying; student mumbles lines or races through them. Tone does not match the character.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-theatre/ve_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/fourth-theatre/ve_2.mp4",
+	        "exmplars": "The student has some difficulty speaking with appropriate diction, pace, or volume; it is sometimes hard to understand what the character is saying.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-theatre/ve_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/fourth-theatre/ve_3.mp4",
+	        "exmplars": "The student mostly speaks with appropriate diction, pace and volume; the character can be heard and understood most of the time. The tone sometimes matches the character being portrayed.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-theatre/ve_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/fourth-theatre/ve_4.mp4",
+	        "exmplars": "The student speaks with clear diction, at an appropriate pace and volume; the character can easily be heard and understood. The tone matches the character being portrayed.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }],
+	"project12": [{
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-va/proportion_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/fourth-va/proportion_1.png",
+	        "exmplars": "Facial proportions are inaccurate and/or facial features are missing.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-va/proportion_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/fourth-va/proportion_2.png",
+	        "exmplars": "All facial features are present. Most of the features are sized or placed inaccurately.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-va/proportion_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/fourth-va/proportion_3.png",
+	        "exmplars": "All facial features are present. One or two features are sized or placed inaccurately.",
+	        "isImage": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fourth-va/proportion_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/fourth-va/proportion_4.png",
+	        "exmplars": "All facial features are present. Facial proportions are accurate.",
+	        "isImage": true,
+	        "class_value": ""
+	    }],
+	    "project13": [{
+	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/blocking_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/fifth-theatre/blocking_1.mp4",
+	        "exmplars": "Student stands in a line  or faces away from the audience most of the time. The actor’s movements detract from the story.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/blocking_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/fifth-theatre/blocking_2.mp4",
+	        "exmplars": "Some actions are difficult to see. The actor stays in one place or has random movements that do not help tell the story.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/blocking_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/fifth-theatre/blocking_3.mp4",
+	        "exmplars": "Most actions can be seen by the audience. There is some attempt at using levels. For the most part, the actor’s movements fit the situation and help tell the story.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/blocking_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/fifth-theatre/blocking_4.mp4",
+	        "exmplars": "All actions can be clearly seen by the audience. Different levels are used. The actor’s movements fit the situation and add greatly to the telling of the story.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }],
+	    "project14": [{
+	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/blocking_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/fifth-theatre/blocking_1.mp4",
+	        "exmplars": "Student stands in a line  or faces away from the audience most of the time. The actor’s movements detract from the story.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/blocking_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/fifth-theatre/blocking_2.mp4",
+	        "exmplars": "Some actions are difficult to see. The actor stays in one place or has random movements that do not help tell the story.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/blocking_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/fifth-theatre/blocking_3.mp4",
+	        "exmplars": "Most actions can be seen by the audience. There is some attempt at using levels. For the most part, the actor’s movements fit the situation and help tell the story.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/blocking_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/fifth-theatre/blocking_4.mp4",
+	        "exmplars": "All actions can be clearly seen by the audience. Different levels are used. The actor’s movements fit the situation and add greatly to the telling of the story.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }],
+	    "project15": [{
+	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/script_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/sixth-theatre/script_1.mp4",
+	        "exmplars": "The dialogue does not show much about the characters or tell a story. It is unclear how the  script reflects the  civilization being represented. Lines consist of one or two words.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/script_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/sixth-theatre/script_2.mp4",
+	        "exmplars": "The dialogue adds little to the character or story. Choices do not always reflect the civilization being represented. The vocabulary is basic or repetitive.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/script_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/sixth-theatre/script_3.mp4",
+	        "exmplars": "For the most part, the dialogue fits the characters and adds some interest to the story. The script mostly reflects the civilization being represented. Some word choices are interesting and robust.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/script_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/sixth-theatre/script_4.mp4",
+	        "exmplars": "The dialogue brings the characters to life and adds interest to the story. The script shares interesting information about the civilization being represented. The vocabulary includes interesting, and robust language.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }],
+	    "project16": [{
+	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/script_1_thumb.png",
+	        "id": 1,
+	        "source": "./src/resources/exmplars/2016/sixth-theatre/script_1.mp4",
+	        "exmplars": "The dialogue does not show much about the characters or tell a story. It is unclear how the  script reflects the  civilization being represented. Lines consist of one or two words.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/script_2_thumb.png",
+	        "id": 2,
+	        "source": "./src/resources/exmplars/2016/sixth-theatre/script_2.mp4",
+	        "exmplars": "The dialogue adds little to the character or story. Choices do not always reflect the civilization being represented. The vocabulary is basic or repetitive.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/script_3_thumb.png",
+	        "id": 3,
+	        "source": "./src/resources/exmplars/2016/sixth-theatre/script_3.mp4",
+	        "exmplars": "For the most part, the dialogue fits the characters and adds some interest to the story. The script mostly reflects the civilization being represented. Some word choices are interesting and robust.",
+	        "isVideo": true,
+	        "class_value": ""
+	    }, {
+	        "thumbnail": "./src/resources/exmplars/2016/sixth-theatre/script_4_thumb.png",
+	        "id": 4,
+	        "source": "./src/resources/exmplars/2016/sixth-theatre/script_4.mp4",
+	        "exmplars": "The dialogue brings the characters to life and adds interest to the story. The script shares interesting information about the civilization being represented. The vocabulary includes interesting, and robust language.",
+	        "isVideo": true,
+	        "class_value": ""
 	    }]
 }
