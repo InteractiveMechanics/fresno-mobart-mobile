@@ -365,7 +365,7 @@
 	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/improv_3_thumb.png",
 	        "id": 3,
 	        "source": "./src/resources/exmplars/2016/fifth-theatre/improv_3.mp4",
-	        "exmplars": "The student makes some attempt to deliver improvised lines, but lacks focus, energy, or commitment during the scene. Dialogue may be limited to one-word responses.",
+	        "exmplars": "The student delivers improvised lines to show what the character thinks and feels, with some energy, focus, or concentration. The dialogue mostly fits the situation.",
 	        "isVideo": true,
 	        "class_value": ""
 	    }, {
@@ -394,7 +394,7 @@
 	        "thumbnail": "./src/resources/exmplars/2016/fifth-theatre/improv_3_thumb.png",
 	        "id": 3,
 	        "source": "./src/resources/exmplars/2016/fifth-theatre/improv_3.mp4",
-	        "exmplars": "The student makes some attempt to deliver improvised lines, but lacks focus, energy, or commitment during the scene. Dialogue may be limited to one-word responses.",
+	        "exmplars": "The student delivers improvised lines to show what the character thinks and feels, with some energy, focus, or concentration. The dialogue mostly fits the situation.",
 	        "isVideo": true,
 	        "class_value": ""
 	    }, {

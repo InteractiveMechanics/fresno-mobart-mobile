@@ -314,7 +314,7 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 		}
 
 		if(pid == 14) {
-	        $scope.project = '5TH Grade Theatre Unit AssessmenT';
+	        $scope.project = '5TH Grade Theatre Unit Assessment';
 	        $scope.assessment = 'Theatrical Skills';
 			$scope.exmps = response.data.project14;	
 		}
@@ -453,7 +453,7 @@ sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $h
 		}
 
 		if(pid == 14) {
-	        $scope.project = '5TH Grade Theatre Unit AssessmenT';
+	        $scope.project = '5TH Grade Theatre Unit Assessment';
 	        $scope.assessment = 'Improvisation';
 			$scope.exmps = response.data.project14;	
 		}
@@ -591,7 +591,7 @@ sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $ht
 		}
 
 		if(pid == 14) {
-	        $scope.project = '5TH Grade Theatre Unit AssessmenT';
+	        $scope.project = '5TH Grade Theatre Unit Assessment';
 	        $scope.assessment = 'Blocking';
 			$scope.exmps = response.data.project13;	
 		}
