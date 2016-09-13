@@ -19,10 +19,12 @@ sampleApp.run(function($rootScope, $location) {
         switch (mimetype) {
             case 'video/mov':
             case 'video/mp4':
+            case 'video/quicktime':
                 return 'video';
                 break;
             case 'image/png':
             case 'image/jpeg':
+            case 'image/gif':
                 return 'image';
                 break;
             default:
