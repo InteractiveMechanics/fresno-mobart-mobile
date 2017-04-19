@@ -19,10 +19,12 @@ sampleApp.run(function($rootScope, $location) {
         switch (mimetype) {
             case 'video/mov':
             case 'video/mp4':
+            case 'video/quicktime':
                 return 'video';
                 break;
             case 'image/png':
             case 'image/jpeg':
+            case 'image/gif':
                 return 'image';
                 break;
             default:
@@ -330,6 +332,30 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 	        $scope.assessment = 'Theatrical Skills';
 			$scope.exmps = response.data.project16;	
 		}
+
+		if(pid == 17) {
+	        $scope.project = '5TH Grade Visual Art Performance Task';
+	        $scope.assessment = 'One Point Perspective';
+			$scope.exmps = response.data.project17;	
+		}
+
+		if(pid == 18) {
+	        $scope.project = '5TH Grade Visual Art Unit Assessment';
+	        $scope.assessment = 'One Point Perspective';
+			$scope.exmps = response.data.project18;	
+		}
+
+		if(pid == 19) {
+	        $scope.project = '6TH Grade Visual Art Performance Task';
+	        $scope.assessment = 'Observational Drawing';
+			$scope.exmps = response.data.project19;	
+		}
+
+		if(pid == 20) {
+	        $scope.project = '6TH Grade Visual Art Unit Assessment';
+	        $scope.assessment = 'Observational Drawing';
+			$scope.exmps = response.data.project20;	
+		}
 		
 		if( item.exemplar_one > 0 ) {
 			console.log(item);
@@ -469,6 +495,30 @@ sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $h
 	        $scope.assessment = 'Improvisation';
 			$scope.exmps = response.data.project16;	
 		}
+
+		if(pid == 17) {
+	        $scope.project = '5TH Grade Visual Art Performance Task';
+	        $scope.assessment = 'Communication';
+			$scope.exmps = response.data.project17;	
+		}
+
+		if(pid == 18) {
+	        $scope.project = '5TH Grade Visual Art Unit Assessment';
+	        $scope.assessment = 'Communication';
+			$scope.exmps = response.data.project18;	
+		}
+
+		if(pid == 19) {
+	        $scope.project = '6TH Grade Visual Art Performance Task';
+	        $scope.assessment = 'Technical Skill';
+			$scope.exmps = response.data.project19;	
+		}
+
+		if(pid == 20) {
+	        $scope.project = '6TH Grade Visual Art Unit Assessment';
+	        $scope.assessment = 'Technical Skill';
+			$scope.exmps = response.data.project20;	
+		}
 		
 		if( item.exemplar_two > 0 ) {
 		 	var index = item.exemplar_two - 1;
@@ -606,6 +656,30 @@ sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $ht
 	        $scope.project = '6TH Grade Theatre Unit Assessment';
 	        $scope.assessment = 'Script Writing';
 			$scope.exmps = response.data.project16;	
+		}
+
+		if(pid == 17) {
+	        $scope.project = '5TH Grade Visual Art Performance Task';
+	        $scope.assessment = 'Observational Drawing ';
+			$scope.exmps = response.data.project17;	
+		}
+
+		if(pid == 18) {
+	        $scope.project = '5TH Grade Visual Art Unit Assessment';
+	        $scope.assessment = 'Observational Drawing ';
+			$scope.exmps = response.data.project18;	
+		}
+
+		if(pid == 19) {
+	        $scope.project = '6TH Grade Visual Art Performance Task';
+	        $scope.assessment = 'Traditions and Myths ';
+			$scope.exmps = response.data.project19;	
+		}
+
+		if(pid == 20) {
+	        $scope.project = '6TH Grade Visual Art Unit Assessment';
+	        $scope.assessment = 'Traditions and Myths ';
+			$scope.exmps = response.data.project20;	
 		}
 		
 		if( item.exemplar_three > 0 ) {
@@ -942,11 +1016,23 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
         'name': 'Fifth Grade Theatre Unit Assessment',
         id: 14
     }, {
+        'name': 'Fifth Grade Visual Art  Performance Task',
+        id: 17
+    }, {
+        'name': 'Fifth Grade Visual Art Unit Assessment',
+        id: 18
+    }, {
         'name': 'Sixth Grade Theatre Performance Task',
         id: 15
     }, {
         'name': 'Sixth Grade Theatre Unit Assessment',
         id: 16
+    }, {
+        'name': 'Sixth Grade Visual Art  Performance Task',
+        id: 19
+    }, {
+        'name': 'Sixth Grade Visual Art  Unit Assessment',
+        id: 20
     }];
 
     $scope.upload_artwork = function() {
