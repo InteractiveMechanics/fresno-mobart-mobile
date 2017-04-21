@@ -484,28 +484,28 @@
     "id": 1,
     "source": "./src/resources/exmplars/2016/fifth-va/perspective_1.png",
     "exmplars": "The artwork does not show one-point perspective.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/fifth-va/perspective_2_thumb.png",
     "id": 2,
     "source": "./src/resources/exmplars/2016/fifth-va/perspective_2.png",
     "exmplars": "The artwork shows an attempt at one-point perspective, but most lines do not go toward a vanishing point. ",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/fifth-va/perspective_3_thumb.png",
     "id": 3,
     "source": "./src/resources/exmplars/2016/fifth-va/perspective_3.png",
     "exmplars": "The artwork shows one-point perspective through a landscape. Most lines appear to go toward a vanishing point, but some do not.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/fifth-va/perspective_4_thumb.png",
     "id": 4,
     "source": "./src/resources/exmplars/2016/fifth-va/perspective_4.png",
     "exmplars": "The artwork clearly shows one-point perspective through a landscape. Lines and objects in the landscape effectively show a single vanishing point.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }],
 
@@ -514,28 +514,28 @@
     "id": 1,
     "source": "./src/resources/exmplars/2016/fifth-va/perspective_1.png",
     "exmplars": "The artwork does not show one-point perspective.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/fifth-va/perspective_2_thumb.png",
     "id": 2,
     "source": "./src/resources/exmplars/2016/fifth-va/perspective_2.png",
     "exmplars": "The artwork shows an attempt at one-point perspective, but most lines do not go toward a vanishing point. ",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/fifth-va/perspective_3_thumb.png",
     "id": 3,
     "source": "./src/resources/exmplars/2016/fifth-va/perspective_3.png",
     "exmplars": "The artwork shows one-point perspective through a landscape. Most lines appear to go toward a vanishing point, but some do not.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/fifth-va/perspective_4_thumb.png",
     "id": 4,
     "source": "./src/resources/exmplars/2016/fifth-va/perspective_4.png",
     "exmplars": "The artwork clearly shows one-point perspective through a landscape. Lines and objects in the landscape effectively show a single vanishing point.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }],
 
@@ -544,28 +544,28 @@
     "id": 1,
     "source": "./src/resources/exmplars/2016/sixth-va/observational_1.png",
     "exmplars": "There is little or no relationship between the drawings and images depicted on pottery from the time period.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/sixth-va/observational_2_thumb.png",
     "id": 2,
     "source": "./src/resources/exmplars/2016/sixth-va/observational_2.png",
     "exmplars": "There is some attempt to base the drawings on observation. Drawings may be unclear or contain objects not appropriate to the time period.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/sixth-va/observational_3_thumb.png",
     "id": 3,
     "source": "./src/resources/exmplars/2016/sixth-va/observational_3.png",
     "exmplars": "Drawings are based on observation. They mostly copy or trace the images depicted on pottery from the time period.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/sixth-va/observational_4_thumb.png",
     "id": 4,
     "source": "./src/resources/exmplars/2016/sixth-va/observational_4.png",
     "exmplars": "Drawings are based on careful observation. Original work matches the style depicted on pottery from the time period.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }],
 
@@ -574,28 +574,28 @@
     "id": 1,
     "source": "./src/resources/exmplars/2016/sixth-va/observational_1.png",
     "exmplars": "There is little or no relationship between the drawings and images depicted on pottery from the time period.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/sixth-va/observational_2_thumb.png",
     "id": 2,
     "source": "./src/resources/exmplars/2016/sixth-va/observational_2.png",
     "exmplars": "There is some attempt to base the drawings on observation. Drawings may be unclear or contain objects not appropriate to the time period.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/sixth-va/observational_3_thumb.png",
     "id": 3,
     "source": "./src/resources/exmplars/2016/sixth-va/observational_3.png",
     "exmplars": "Drawings are based on observation. They mostly copy or trace the images depicted on pottery from the time period.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/sixth-va/observational_4_thumb.png",
     "id": 4,
     "source": "./src/resources/exmplars/2016/sixth-va/observational_4.png",
     "exmplars": "Drawings are based on careful observation. Original work matches the style depicted on pottery from the time period.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }]
 }
