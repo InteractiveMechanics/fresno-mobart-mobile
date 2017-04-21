@@ -484,28 +484,28 @@
     "id": 1,
     "source": "./src/resources/exmplars/2016/fifth-va/observational_1.png",
     "exmplars": "There is little or no evidence that the drawings are based on observation; many visual stereotypes.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/fifth-va/observational_2_thumb.png",
     "id": 2,
     "source": "./src/resources/exmplars/2016/fifth-va/observational_2.png",
     "exmplars": "There is some attempt to base the drawings on observation. Drawings may be unclear or contain  stereotypes.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/fifth-va/observational_3_thumb.png",
     "id": 3,
     "source": "./src/resources/exmplars/2016/fifth-va/observational_3.png",
     "exmplars": "Drawings are based on observation. Objects may be copied or traced; some details may need clarification.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/fifth-va/observational_4_thumb.png",
     "id": 4,
     "source": "./src/resources/exmplars/2016/fifth-va/observational_4.png",
     "exmplars": "Drawings are clearly based on careful observation. Objects are easily  identifiable and original.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }],
 
@@ -514,28 +514,28 @@
     "id": 1,
     "source": "./src/resources/exmplars/2016/fifth-va/observational_1.png",
     "exmplars": "There is little or no evidence that the drawings are based on observation; many visual stereotypes.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/fifth-va/observational_2_thumb.png",
     "id": 2,
     "source": "./src/resources/exmplars/2016/fifth-va/observational_2.png",
     "exmplars": "There is some attempt to base the drawings on observation. Drawings may be unclear or contain  stereotypes.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/fifth-va/observational_3_thumb.png",
     "id": 3,
     "source": "./src/resources/exmplars/2016/fifth-va/observational_3.png",
     "exmplars": "Drawings are based on observation. Objects may be copied or traced; some details may need clarification.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/fifth-va/observational_4_thumb.png",
     "id": 4,
     "source": "./src/resources/exmplars/2016/fifth-va/observational_4.png",
     "exmplars": "Drawings are clearly based on careful observation. Objects are easily  identifiable and original.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }],
 
@@ -544,28 +544,28 @@
     "id": 1,
     "source": "./src/resources/exmplars/2016/sixth-va/traditions_1.png",
     "exmplars": "The artwork does not represent a tradition or myth from the culture of Ancient Greece.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/sixth-va/traditions_2_thumb.png",
     "id": 2,
     "source": "./src/resources/exmplars/2016/sixth-va/traditions_2.png",
     "exmplars": "Some attempt is made to represent the culture, but the representation of gods, people and/or objects is mostly inaccurate or contains very little detail.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/sixth-va/traditions_3_thumb.png",
     "id": 3,
     "source": "./src/resources/exmplars/2016/sixth-va/traditions_3.png",
     "exmplars": "The design represents gods, people and/or objects that accurately reflect the culture. There may be one or two mistakes or some lack of detail.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/sixth-va/traditions_4_thumb.png",
     "id": 4,
     "source": "./src/resources/exmplars/2016/sixth-va/traditions_4.png",
     "exmplars": "Details in the design contain visual metaphors that clearly reflect the culture and effectively represent gods, people and /or objects that are historically accurate.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }],
 
@@ -574,28 +574,28 @@
     "id": 1,
     "source": "./src/resources/exmplars/2016/sixth-va/traditions_1.png",
     "exmplars": "The artwork does not represent a tradition or myth from the culture of Ancient Greece.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/sixth-va/traditions_2_thumb.png",
     "id": 2,
     "source": "./src/resources/exmplars/2016/sixth-va/traditions_2.png",
     "exmplars": "Some attempt is made to represent the culture, but the representation of gods, people and/or objects is mostly inaccurate or contains very little detail.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/sixth-va/traditions_3_thumb.png",
     "id": 3,
     "source": "./src/resources/exmplars/2016/sixth-va/traditions_3.png",
     "exmplars": "The design represents gods, people and/or objects that accurately reflect the culture. There may be one or two mistakes or some lack of detail.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/sixth-va/traditions_4_thumb.png",
     "id": 4,
     "source": "./src/resources/exmplars/2016/sixth-va/traditions_4.png",
     "exmplars": "Details in the design contain visual metaphors that clearly reflect the culture and effectively represent gods, people and /or objects that are historically accurate.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }]
 }

@@ -484,28 +484,28 @@
     "id": 1,
     "source": "./src/resources/exmplars/2016/fifth-va/communication_1.png",
     "exmplars": "The artwork contains little or inaccurate information about  the state being represented.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/fifth-va/communication_2_thumb.png",
     "id": 2,
     "source": "./src/resources/exmplars/2016/fifth-va/communication_2.png",
     "exmplars": "The artwork attempts to communicate a personal point of view about the state being represented, but the message is unclear or inaccurate.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/fifth-va/communication_3_thumb.png",
     "id": 3,
     "source": "./src/resources/exmplars/2016/fifth-va/communication_3.png",
     "exmplars": "The artwork communicates accurate information about the state being represented. ",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/fifth-va/communication_4_thumb.png",
     "id": 4,
     "source": "./src/resources/exmplars/2016/fifth-va/communication_4.png",
     "exmplars": "The artwork effectively communicates a personal viewpoint about the state being represented.  Details in the design are clearly based on observation and research.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }],
 
@@ -514,28 +514,28 @@
     "id": 1,
     "source": "./src/resources/exmplars/2016/fifth-va/communication_1.png",
     "exmplars": "The artwork contains little or inaccurate information about  the state being represented.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/fifth-va/communication_2_thumb.png",
     "id": 2,
     "source": "./src/resources/exmplars/2016/fifth-va/communication_2.png",
     "exmplars": "The artwork attempts to communicate a personal point of view about the state being represented, but the message is unclear or inaccurate.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/fifth-va/communication_3_thumb.png",
     "id": 3,
     "source": "./src/resources/exmplars/2016/fifth-va/communication_3.png",
     "exmplars": "The artwork communicates accurate information about the state being represented. ",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/fifth-va/communication_4_thumb.png",
     "id": 4,
     "source": "./src/resources/exmplars/2016/fifth-va/communication_4.png",
     "exmplars": "The artwork effectively communicates a personal viewpoint about the state being represented.  Details in the design are clearly based on observation and research.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }],
 
@@ -544,28 +544,28 @@
     "id": 1,
     "source": "./src/resources/exmplars/2016/sixth-va/technical_1.png",
     "exmplars": "Proportions are inaccurate and/or features are missing.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/sixth-va/technical_2_thumb.png",
     "id": 2,
     "source": "./src/resources/exmplars/2016/sixth-va/technical_2.png",
     "exmplars": "There is some attempt to represent the human form in proportion. Many features are sized or placed inaccurately.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/sixth-va/technical_3_thumb.png",
     "id": 3,
     "source": "./src/resources/exmplars/2016/sixth-va/technical_3.png",
     "exmplars": "Human figures that are mostly drawn in proportion. One or two features are sized or placed inaccurately.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/sixth-va/technical_4_thumb.png",
     "id": 4,
     "source": "./src/resources/exmplars/2016/sixth-va/technical_4.png",
     "exmplars": "Human figures that are drawn in proportion with great detail and  accuracy.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }],
 
@@ -574,28 +574,28 @@
     "id": 1,
     "source": "./src/resources/exmplars/2016/sixth-va/technical_1.png",
     "exmplars": "Proportions are inaccurate and/or features are missing.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/sixth-va/technical_2_thumb.png",
     "id": 2,
     "source": "./src/resources/exmplars/2016/sixth-va/technical_2.png",
     "exmplars": "There is some attempt to represent the human form in proportion. Many features are sized or placed inaccurately.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/sixth-va/technical_3_thumb.png",
     "id": 3,
     "source": "./src/resources/exmplars/2016/sixth-va/technical_3.png",
     "exmplars": "Human figures that are mostly drawn in proportion. One or two features are sized or placed inaccurately.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/2016/sixth-va/technical_4_thumb.png",
     "id": 4,
     "source": "./src/resources/exmplars/2016/sixth-va/technical_4.png",
     "exmplars": "Human figures that are drawn in proportion with great detail and  accuracy.",
-    "isVideo": true,
+    "isImage": true,
     "class_value": ""
   }]
 }
