@@ -59,6 +59,10 @@ sampleApp.config(['$routeProvider',
             templateUrl: 'src/views/projects/detail.html',
             controller: 'ProjectDetailController'
         }).
+        when('/art-not-uploaded', {
+            templateUrl: 'src/views/projects/art-not-uploaded.html',
+            controller: 'ArtNotUploadedController'
+        }).
         when('/art-uploaded/:id', {
             templateUrl: 'src/views/projects/art-uploaded.html',
             controller: 'ArtUploadedController'
@@ -861,6 +865,42 @@ sampleApp.controller('WritingUploadedController', function($scope, $location, $h
     
 });
 
+sampleApp.controller('ArtNotUploadedController', function($scope, $location, $http, $rootScope) {
+	var item = JSON.parse(localStorage.getItem('current_item'));
+	
+	$scope.current_item = item;
+	
+    $scope.grade_now = function() {
+    	localStorage.setItem('from_saved_projects', false);
+        $location.path('grade-project');
+    };
+    
+    $scope.grade_later = function() {
+    	var postData = {
+	    	cid: item.class_id,
+	    	sid: item.student_id,
+	    	saved: 1,
+	    	incomplete: 0,
+	    	ex1grade: 0,
+	    	ex2grade: 0,
+	    	ex3grade: 0,
+	    	ex4grade: 0,
+            pid: item.pid
+    	}
+    	
+        var promise = $http.post($rootScope.baseUrl + '/api/grades', postData);
+        promise.success(function(data, status, headers, config){
+            if (status == 200) {
+            	$location.path('next-student');
+            } else {
+				alert("Unable to save later.");
+            }
+        });
+    };
+    
+    
+});
+
 sampleApp.controller('ProjectDetailController', function($scope, $location) {
     $scope.project = {
         'image_url': 'http://i.imgur.com/JLxuCgr.jpg',
@@ -1072,8 +1112,14 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
 			} else {
 			
 				if(!$scope.artwork_id) {
-					error_str += "Error: No Artwork Uploaded.";
-					$('p.error_message').html(error_str);
+					var post_data = {
+						class_id: _class,
+						student_id: _student,
+                        pid: _project
+					};
+					
+					localStorage.setItem('current_item', JSON.stringify(post_data));
+					$location.path('art-not-uploaded');
 				} else {
 					var post_data = {
 						class_id: _class,
