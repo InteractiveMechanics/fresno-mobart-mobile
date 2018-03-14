@@ -597,5 +597,64 @@
     "exmplars": "Drawings are based on careful observation. Original work matches the style depicted on pottery from the time period.",
     "isImage": true,
     "class_value": ""
+  }],
+
+  "project21": [{
+    "thumbnail": "./src/resources/exmplars/digital/draw_1_thumb.png",
+    "id": 1,
+    "source": "./src/resources/exmplars/digital/draw_1.png",
+    "exmplars": "There is little or no relationship between the observational drawing and the subject image(s).",
+    "isImage": true,
+    "class_value": ""
+  }, {
+    "thumbnail": "./src/resources/exmplars/digital/draw_2_thumb.png",
+    "id": 2,
+    "source": "./src/resources/exmplars/digital/draw_2.png",
+    "exmplars": "There is some attempt to base the drawings on observation of the subject image(s), but little drawing skill is evident. Drawing skills include accurate proportions and accurate representation of the image using line, shape and form.",
+    "isImage": true,
+    "class_value": ""
+  }, {
+    "thumbnail": "./src/resources/exmplars/digital/draw_3_thumb.png",
+    "id": 3,
+    "source": "./src/resources/exmplars/digital/draw_3.png",
+    "exmplars": "Drawings are clearly based on observation of the subject image(s) with some evidence of drawing skill. Drawing skills include accurate proportions and accurate representation of the image using line, shape and form.",
+    "isImage": true,
+    "class_value": ""
+  }, {
+    "thumbnail": "./src/resources/exmplars/digital/draw_4_thumb.png",
+    "id": 4,
+    "source": "./src/resources/exmplars/digital/draw_4.png",
+    "exmplars": "Drawings are based on careful observation of the subject image(s), and drawing skill is evident. Drawing skills include accurate proportions and accurate representation of the image using line, shape and form.There is unique original content such added texture, color,  detail or background.",
+    "isImage": true,
+    "class_value": ""
+  }],
+  "project22": [{
+    "thumbnail": "./src/resources/exmplars/digital/draw_1_thumb.png",
+    "id": 1,
+    "source": "./src/resources/exmplars/digital/draw_1.png",
+    "exmplars": "There is little or no relationship between the observational drawing and the subject image(s).",
+    "isImage": true,
+    "class_value": ""
+  }, {
+    "thumbnail": "./src/resources/exmplars/digital/draw_2_thumb.png",
+    "id": 2,
+    "source": "./src/resources/exmplars/digital/draw_2.png",
+    "exmplars": "There is some attempt to base the drawings on observation of the subject image(s), but little drawing skill is evident. Drawing skills include accurate proportions and accurate representation of the image using line, shape and form.",
+    "isImage": true,
+    "class_value": ""
+  }, {
+    "thumbnail": "./src/resources/exmplars/digital/draw_3_thumb.png",
+    "id": 3,
+    "source": "./src/resources/exmplars/digital/draw_3.png",
+    "exmplars": "Drawings are clearly based on observation of the subject image(s) with some evidence of drawing skill. Drawing skills include accurate proportions and accurate representation of the image using line, shape and form.",
+    "isImage": true,
+    "class_value": ""
+  }, {
+    "thumbnail": "./src/resources/exmplars/digital/draw_4_thumb.png",
+    "id": 4,
+    "source": "./src/resources/exmplars/digital/draw_4.png",
+    "exmplars": "Drawings are based on careful observation of the subject image(s), and drawing skill is evident. Drawing skills include accurate proportions and accurate representation of the image using line, shape and form.There is unique original content such added texture, color,  detail or background.",
+    "isImage": true,
+    "class_value": ""
   }]
 }

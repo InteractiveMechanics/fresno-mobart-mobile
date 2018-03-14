@@ -362,6 +362,18 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 	        $scope.assessment = 'Observational Drawing';
 			$scope.exmps = response.data.project20;	
 		}
+
+		if(pid == 21) {
+	        $scope.project = 'Digital Media Performance Task';
+	        $scope.assessment = 'Observational Drawing';
+			$scope.exmps = response.data.project21;	
+		}
+
+		if(pid == 22) {
+	        $scope.project = 'Digital Media Unit Assessment';
+	        $scope.assessment = 'Observational Drawing';
+			$scope.exmps = response.data.project22;	
+		}
 		
 		if( item.exemplar_one > 0 ) {
 			console.log(item);
@@ -525,6 +537,18 @@ sampleApp.controller('SecondExemplarController', function($scope, $rootScope, $h
 	        $scope.assessment = 'Technical Skill';
 			$scope.exmps = response.data.project20;	
 		}
+
+		if(pid == 21) {
+	        $scope.project = 'Digital Media Performance Task';
+	        $scope.assessment = 'Theatre Arts Skill';
+			$scope.exmps = response.data.project21;	
+		}
+
+		if(pid == 22) {
+	        $scope.project = 'Digital Media Unit Assessment';
+	        $scope.assessment = 'Theatre Arts Skill';
+			$scope.exmps = response.data.project22;	
+		}
 		
 		if( item.exemplar_two > 0 ) {
 		 	var index = item.exemplar_two - 1;
@@ -686,6 +710,18 @@ sampleApp.controller('ThirdExemplarController', function($scope, $rootScope, $ht
 	        $scope.project = '6TH Grade Visual Art Unit Assessment';
 	        $scope.assessment = 'Traditions and Myths ';
 			$scope.exmps = response.data.project20;	
+		}
+
+		if(pid == 21) {
+	        $scope.project = 'Digital Media Performance Task';
+	        $scope.assessment = 'Media Arts';
+			$scope.exmps = response.data.project21;	
+		}
+
+		if(pid == 22) {
+	        $scope.project = 'Digital Media Unit Assessment';
+	        $scope.assessment = 'Media Arts';
+			$scope.exmps = response.data.project22;	
 		}
 		
 		if( item.exemplar_three > 0 ) {
@@ -1079,7 +1115,16 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
     }, {
         'name': 'Sixth Grade Visual Art Performance Task',
         id: 19
-    }*/];
+    }*/, {
+        'name': 'Sixth Grade Visual Art  Unit Assessment',
+        id: 20
+    }, {
+        'name': 'Digital Media Performance Task',
+        id: 21
+    }, {
+        'name': 'Digital Media Unit Assessment',
+        id: 22
+    }];
 
     $scope.upload_artwork = function() {
 		

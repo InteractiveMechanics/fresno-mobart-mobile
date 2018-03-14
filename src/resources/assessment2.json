@@ -597,5 +597,66 @@
     "exmplars": "Human figures that are drawn in proportion with great detail and  accuracy.",
     "isImage": true,
     "class_value": ""
+  }],
+
+  "project21": [{
+    "thumbnail": "./src/resources/exmplars/digital/vocal_1_thumb.png",
+    "id": 1,
+    "source": "./src/resources/exmplars/digital/vocal_1.mp3",
+    "exmplars": "Student speaks in a monotone; tone does not match the character. It is unclear what the student is saying; student mumbles lines or races through them. Tone does not match the mood of the text.",
+    "isAudio": true,
+    "class_value": ""
+  }, {
+    "thumbnail": "./src/resources/exmplars/digital/vocal_2_thumb.png",
+    "id": 2,
+    "source": "./src/resources/exmplars/digital/vocal_2.mp3",
+    "exmplars": "The student has some difficulty speaking with appropriate diction, pace, or volume; it is sometimes hard to understand what the speaker is saying.",
+    "isAudio": true,
+    "class_value": ""
+  }, {
+    "thumbnail": "./src/resources/exmplars/digital/vocal_3_thumb.png",
+    "id": 3,
+    "source": "./src/resources/exmplars/digital/vocal_3.mp3",
+    "exmplars": "The student mostly speaks with appropriate diction, pace and volume; the speaker can be heard and understood most of the time. The tone sometimes matches the mood of the text.",
+    "isAudio": true,
+    "class_value": ""
+  }, {
+    "thumbnail": "./src/resources/exmplars/digital/vocal_4_thumb.png",
+    "id": 4,
+    "source": "./src/resources/exmplars/digital/vocal_4.mp3",
+    "exmplars": "The student speaks with clear diction, at an appropriate pace and volume; the speaker can easily be heard and understood. The tone creates interest for the listener and clearly matches the mood in the text.",
+    "isAudio": true,
+    "class_value": ""
+  }],
+
+  "project22": [{
+    "thumbnail": "./src/resources/exmplars/digital/vocal_1_thumb.png",
+    "id": 1,
+    "source": "./src/resources/exmplars/digital/vocal_1.mp3",
+    "exmplars": "Student speaks in a monotone; tone does not match the character. It is unclear what the student is saying; student mumbles lines or races through them. Tone does not match the mood of the text.",
+    "isAudio": true,
+    "class_value": ""
+  }, {
+    "thumbnail": "./src/resources/exmplars/digital/vocal_2_thumb.png",
+    "id": 2,
+    "source": "./src/resources/exmplars/digital/vocal_2.mp3",
+    "exmplars": "The student has some difficulty speaking with appropriate diction, pace, or volume; it is sometimes hard to understand what the speaker is saying.",
+    "isAudio": true,
+    "class_value": ""
+  }, {
+    "thumbnail": "./src/resources/exmplars/digital/vocal_3_thumb.png",
+    "id": 3,
+    "source": "./src/resources/exmplars/digital/vocal_3.mp3",
+    "exmplars": "The student mostly speaks with appropriate diction, pace and volume; the speaker can be heard and understood most of the time. The tone sometimes matches the mood of the text.",
+    "isAudio": true,
+    "class_value": ""
+  }, {
+    "thumbnail": "./src/resources/exmplars/digital/vocal_4_thumb.png",
+    "id": 4,
+    "source": "./src/resources/exmplars/digital/vocal_4.mp3",
+    "exmplars": "The student speaks with clear diction, at an appropriate pace and volume; the speaker can easily be heard and understood. The tone creates interest for the listener and clearly matches the mood in the text.",
+    "isAudio": true,
+    "class_value": ""
   }]
+
 }
