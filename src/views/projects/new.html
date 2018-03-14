@@ -83,6 +83,24 @@
 				  </select>
 			</div>
 
+            <div class="input-group">
+                <span class="input-group-addon" id="URL">URL</span>
+                <input type="text" class="form-control url-input" placeholder="Enter project URL" aria-describedby="URL" ng-model="selected_url">
+            </div>
+
+            <br/><br/>
+
+            <div class="form-group">
+				<select class="form-control grade-dropdown"
+						ng-model="selected_grade">
+						<option value="" selected="selected">Select Grade Level</option>
+                        <option value="3rd Grade">3rd Grade</option>
+                        <option value="4th Grade">4th Grade</option>
+                        <option value="5th Grade">5th Grade</option>
+                        <option value="6th Grade">6th Grade</option>
+				  </select>
+			</div>
+
 			<div class="checkbox">
 				<label>
 				  <input type="checkbox"  class="checkbox" > Project Incomplete

@@ -197,6 +197,7 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 	        var postData = {
 		    	cid: item.class_id,
 		    	sid: item.student_id,
+                gradetype: item.gradetype,
 		    	artworkid: item.artwork_id,
                 artwork_mimetype: item.artwork_mimetype,
 		    	saved: 1,
@@ -205,7 +206,8 @@ sampleApp.controller('GradeController', function($scope, $rootScope, $http, $loc
 		    	ex2grade: 0,
 		    	ex3grade: 0,
 		    	ex4grade: 0,
-                pid: item.pid
+                pid: item.pid,
+                url: item.url,
 	    	}
 	    	
 	    	if(item.writing_id) {
@@ -747,6 +749,7 @@ sampleApp.controller('FinishGradingController', function($scope, $rootScope, $ht
     	var postData = {
 	    	cid: parseInt(item.class_id),
 	    	sid: parseInt(item.student_id),
+            gradetype: item.gradetype,
 	    	saved: 0,
 	    	incomplete: 0,
 	    	artworkid: parseInt(item.artwork_id),
@@ -755,7 +758,8 @@ sampleApp.controller('FinishGradingController', function($scope, $rootScope, $ht
 	    	ex2grade: parseInt(item.exemplar_two),
 	    	ex3grade: parseInt(item.exemplar_three),
 	    	ex4grade: 0,
-            pid: parseInt(item.pid)
+            pid: parseInt(item.pid),
+            url: item.url,
     	}
     	
     	if(item.gid) {
@@ -874,6 +878,7 @@ sampleApp.controller('WritingUploadedController', function($scope, $location, $h
     	var postData = {
 	    	cid: item.class_id,
 	    	sid: item.student_id,
+            gradetype: item.gradetype,
 	    	artworkid: item.artwork_id,
 	    	saved: 1,
 	    	incomplete: 0,
@@ -881,7 +886,8 @@ sampleApp.controller('WritingUploadedController', function($scope, $location, $h
 	    	ex2grade: 0,
 	    	ex3grade: 0,
 	    	ex4grade: 0,
-            pid: item.pid
+            pid: item.pid,
+            url: item.url
     	}
     	
     	if(item.writing_id) {
@@ -1085,27 +1091,31 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
     }, {
         'name': 'Fourth Grade Visual Art',
         id: 12
-    }/*, {
-        'name': 'Fifth Grade Theatre Performance Task',
-        id: 13
-    }*/, {
+    }, {
         'name': 'Fifth Grade Theatre Unit Assessment',
         id: 14
-    }/*, {
-        'name': 'Fifth Grade Visual Art  Performance Task',
-        id: 17
-    }*/, {
+    }, {
+        'name': 'Sixth Grade Theatre Unit Assessment',
+        id: 16
+    }, {
+        'name': 'Sixth Grade Visual Art  Unit Assessment',
+        id: 20
+    }, {
         'name': 'Fifth Grade Visual Art Unit Assessment',
         id: 18
     }/*, {
+        'name': 'Fifth Grade Theatre Performance Task',
+        id: 13
+    }, {
         'name': 'Sixth Grade Theatre Performance Task',
         id: 15
-    }*/, {
-        'name': 'Sixth Grade Theatre Unit Assessment',
-        id: 16
-    }/*, {
-        'name': 'Sixth Grade Visual Art  Performance Task',
+    }, {
+        'name': 'Fifth Grade Visual Art Performance Task',
+        id: 17
+    }, {
+        'name': 'Sixth Grade Visual Art Performance Task',
         id: 19
+
     }*/, {
         'name': 'Sixth Grade Visual Art  Unit Assessment',
         id: 20
@@ -1125,8 +1135,10 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
 		var _class = $('.class-dropdown').val();
 		var _student = $('.student-dropdownlist').val();
 		var _project = $('.project-dropdown').val();
+        var _url = $('.url-input').val();
+        var _gradetype = $('.grade-dropdown').val();
 		
-		if(_student && _class && _project) {
+		if(_student && _class && _project && _gradetype) {
 		
 			if (incomplete_project) {
 				//Post data	then dashboard
@@ -1140,7 +1152,9 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
 			    	ex2grade: 0,
 			    	ex3grade: 0,
 			    	ex4grade: 0,
-			    	pid: _project
+			    	pid: _project,
+                    gradetype: _gradetype,
+                    url: _url
 		    	}
 		        var promise = $http.post($rootScope.baseUrl + '/api/grades', postData);
 		        promise.success(function(data, status, headers, config){
@@ -1157,7 +1171,9 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
 					var post_data = {
 						class_id: _class,
 						student_id: _student,
-                        pid: _project
+                        pid: _project,
+                        gradetype: _gradetype,
+                        url: _url
 					};
 					
 					localStorage.setItem('current_item', JSON.stringify(post_data));
@@ -1169,7 +1185,9 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
 						artwork_id: $scope.artwork_id,
 						artwork_url: $scope.artwork_url,
                         artwork_mimetype: $scope.artwork_mimetype,
-                        pid: _project
+                        pid: _project,
+                        gradetype: _gradetype,
+                        url: _url
 					};
 					
 					localStorage.setItem('current_item', JSON.stringify(post_data));
@@ -1191,6 +1209,10 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
 			if(!_student) {
 				error_str += "Error: No Student Selected. <br />";	
 			}
+            
+            if(!_gradetype) {
+                error_str += "Error: No Grade Level Selected. <br />";
+            }
 			
 			$('p.error_message').html(error_str);
 			
@@ -1225,7 +1247,9 @@ sampleApp.controller('ProjectController', function($scope, $rootScope, $http, $l
 		    	exemplar_three: response[0].ex3grade,
 		    	ex4grade: 0, 
 		    	gid: response[0].id,
-                pid: response[0].pid
+                pid: response[0].pid,
+                gradetype: response[0].gradetype,
+                url: response[0].url
 			};
 			
 			console.log(postData);
