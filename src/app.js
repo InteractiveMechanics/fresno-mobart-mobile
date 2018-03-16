@@ -27,6 +27,11 @@ sampleApp.run(function($rootScope, $location) {
             case 'image/gif':
                 return 'image';
                 break;
+            case 'audio/mp3':
+            case 'audio/mpeg':
+            case 'audio/mp4':
+                return 'audio';
+                break;
             default:
                 return 'no-file';
         }
