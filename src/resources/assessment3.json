@@ -602,60 +602,60 @@
   "project21": [{
     "thumbnail": "./src/resources/exmplars/digital/digital_1_thumb.png",
     "id": 1,
-    "source": "https://spark.adobe.com/video/K8dmKdVJw2Kch/embed",
+    "source": "./src/resources/exmplars/digital/digital_1.mp4",
     "exmplars": "The slide does not present a unified concept that interprets an artistic work.",
-    "isIframe": true,
+    "isVideo": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/digital/digital_2_thumb.png",
     "id": 2,
-    "source": "https://spark.adobe.com/video/ZSnD5hsylMaar/embed",
+    "source": "./src/resources/exmplars/digital/digital_2.mp4",
     "exmplars": "One element of the slide (tableau, written text*, drawn images and spoken text) effectively creates a unified concept that interprets an artistic work.",
-    "isIframe": true,
+    "isVideo": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/digital/digital_3_thumb.png",
     "id": 3,
-    "source": "https://spark.adobe.com/video/0XDQiHsnrVaMZ/embed",
+    "source": "./src/resources/exmplars/digital/digital_3.mp4",
     "exmplars": "Two elements of the slide (tableau, written text*, drawn images and spoken text) effectively create a unified concept that interprets an artistic work.",
-    "isIframe": true,
+    "isVideo": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/digital/digital_3_thumb.png",
     "id": 4,
-    "source": "https://spark.adobe.com/video/0XDQiHsnrVaMZ/embed",
+    "source": "./src/resources/exmplars/digital/digital_4.mp4",
     "exmplars": "All elements of the slide (tableau, written text*, drawn images and spoken text) effectively create a unified concept that interprets an artistic work.",
-    "isIframe": true,
+    "isVideo": true,
     "class_value": ""
   }],
 
   "project22": [{
     "thumbnail": "./src/resources/exmplars/digital/digital_1_thumb.png",
     "id": 1,
-    "source": "https://spark.adobe.com/video/K8dmKdVJw2Kch/embed",
+    "source": "./src/resources/exmplars/digital/digital_1.mp4",
     "exmplars": "The slide does not present a unified concept that interprets an artistic work.",
-    "isIframe": true,
+    "isVideo": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/digital/digital_2_thumb.png",
     "id": 2,
-    "source": "https://spark.adobe.com/video/ZSnD5hsylMaar/embed",
+    "source": "./src/resources/exmplars/digital/digital_2.mp4",
     "exmplars": "One element of the slide (tableau, written text*, drawn images and spoken text) effectively creates a unified concept that interprets an artistic work.",
-    "isIframe": true,
+    "isVideo": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/digital/digital_3_thumb.png",
     "id": 3,
-    "source": "https://spark.adobe.com/video/0XDQiHsnrVaMZ/embed",
+    "source": "./src/resources/exmplars/digital/digital_3.mp4",
     "exmplars": "Two elements of the slide (tableau, written text*, drawn images and spoken text) effectively create a unified concept that interprets an artistic work.",
-    "isIframe": true,
+    "isVideo": true,
     "class_value": ""
   }, {
     "thumbnail": "./src/resources/exmplars/digital/digital_3_thumb.png",
     "id": 4,
-    "source": "https://spark.adobe.com/video/0XDQiHsnrVaMZ/embed",
+    "source": "./src/resources/exmplars/digital/digital_4.mp4",
     "exmplars": "All elements of the slide (tableau, written text*, drawn images and spoken text) effectively create a unified concept that interprets an artistic work.",
-    "isIframe": true,
+    "isVideo": true,
     "class_value": ""
   }]
 }
