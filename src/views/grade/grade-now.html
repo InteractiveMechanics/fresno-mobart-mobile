@@ -15,10 +15,9 @@
 		</div>
 
 		<div class="artwork-preview text-center">
-            <img class="img-class" ng-show="checkMimetype(artwork_mimetype) == 'no-file'" src="/mobart/data/no_file.png" style="max-width: 65%;" />
-            <img class="img-class" ng-show="checkMimetype(artwork_mimetype) == 'video'" src="/mobart/data/ic_video.png" style="max-width: 65%;" />
-            <img class="img-class" ng-show="checkMimetype(artwork_mimetype) == 'image'" src="/mobart/data/ic_audio.png" style="max-width: 65%;" />
-
+        <img class="img-class" ng-show="checkMimetype(artwork_mimetype) == 'no-file'" src="/mobart/data/no_file.png" style="max-width: 65%;" />
+        <img class="img-class" ng-show="checkMimetype(artwork_mimetype) == 'video'" src="/mobart/data/ic_video.png" style="max-width: 65%;" />
+        <img class="img-class" ng-show="checkMimetype(artwork_mimetype) == 'image'" src="/mobart/data/ic_audio.png" style="max-width: 65%;" />
 			<div class="hidden">
 				<div id="large-image" style="text-align: center;">
                     <video ng-show="checkMimetype(artwork_mimetype) == 'video'" width="640" controls>

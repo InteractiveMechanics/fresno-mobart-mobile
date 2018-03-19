@@ -1103,9 +1103,6 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
         'name': 'Sixth Grade Theatre Unit Assessment',
         id: 16
     }, {
-        'name': 'Sixth Grade Visual Art  Unit Assessment',
-        id: 20
-    }, {
         'name': 'Fifth Grade Visual Art Unit Assessment',
         id: 18
     }/*, {
