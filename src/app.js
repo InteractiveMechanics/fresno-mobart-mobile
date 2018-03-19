@@ -27,6 +27,11 @@ sampleApp.run(function($rootScope, $location) {
             case 'image/gif':
                 return 'image';
                 break;
+            case 'audio/mp3':
+            case 'audio/mpeg':
+            case 'audio/mp4':
+                return 'audio';
+                break;
             default:
                 return 'no-file';
         }
@@ -1098,9 +1103,6 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
         'name': 'Sixth Grade Theatre Unit Assessment',
         id: 16
     }, {
-        'name': 'Sixth Grade Visual Art  Unit Assessment',
-        id: 20
-    }, {
         'name': 'Fifth Grade Visual Art Unit Assessment',
         id: 18
     }/*, {
@@ -1115,7 +1117,6 @@ sampleApp.controller('NewProjectController', function($scope, $rootScope, $http,
     }, {
         'name': 'Sixth Grade Visual Art Performance Task',
         id: 19
-
     }*/, {
         'name': 'Sixth Grade Visual Art  Unit Assessment',
         id: 20
